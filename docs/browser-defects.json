@@ -1,0 +1,12 @@
+[
+  {
+    "id": "D01",
+    "before": "Dialog focus stays behind modal; Escape leaves modal open.",
+    "fix": "Move focus inside dialog, trap Tab, close with Escape, restore prior focus."
+  },
+  {
+    "id": "D02",
+    "before": "Failed network message remains after a successful refresh.",
+    "fix": "Clear the network error when shared storage responds; retain action denial messages."
+  }
+]

@@ -1,0 +1,50 @@
+
+> relay-logistics@0.1.0 test
+> node --test --test-concurrency=1 tests/*.test.mjs
+
+✔ I01 assessment and coordination persist consistent records and audit links (354.712937ms)
+✔ I02 shortage correction waits for approval and resumes fulfillment (134.888447ms)
+✔ I03 shipment release consumes stock exactly once (209.702678ms)
+✔ I04 retries do not duplicate tasks or reservations (156.899112ms)
+✔ I05 concurrent orders cannot reserve the same stock (117.107711ms)
+✔ I06 concurrent approval and rejection accept one decision (120.621378ms)
+✔ I07 backend enforces roles and revoked permissions (144.147081ms)
+✔ I08 rejection records its reason without changing inventory (105.573954ms)
+✔ I09 stale proposals cannot execute (102.090768ms)
+✔ I10 reset preserves history and rejects old-run actions (117.032984ms)
+✔ I11 separate requests and reloads see the same persistent data (92.250831ms)
+✔ I12 failed writes preserve the entire previous state (118.214201ms)
+✔ I13 custom task types participate and invalid types are rejected (110.800943ms)
+✔ I14 reset requires explicit confirmation (51.921048ms)
+✔ I15 foreign-origin writes are rejected (28.600153ms)
+✔ I16 unknown roles cannot mutate state (43.289409ms)
+✔ I17 first read seeds the migrated database once (62.226156ms)
+✔ I18 staff cannot configure tasks (41.931903ms)
+✔ U01 enough stock permits readiness (5.239542ms)
+✔ U02 shortage blocks the order (0.212418ms)
+✔ U03 missing inventory remains unknown (0.178838ms)
+✔ U04 due dates and stable IDs determine priority (0.125278ms)
+✔ U05 invalid quantities block only the affected order (0.156207ms)
+✔ U06 non-finite and missing quantities are rejected (0.205359ms)
+✔ U07 plans include enabled configured task types (0.910157ms)
+✔ U08 plans preserve task dependencies (0.211006ms)
+✔ U09 eligibility and workload determine assignments (0.268448ms)
+✔ U10 no eligible worker causes escalation (0.408325ms)
+✔ U11 unknown and cyclic dependencies are rejected (0.211633ms)
+✔ U12 disabled types produce no new tasks (0.806074ms)
+✔ U13 shortage proposal uses the current records (1.568876ms)
+✔ U14 a correction proposal never changes stock (0.068917ms)
+✔ U15 unauthorized protected actions fail (0.229684ms)
+✔ U16 packing requires completed picking (0.621116ms)
+✔ U17 release requires completed work (0.171142ms)
+✔ U18 changed source records invalidate decisions (0.13955ms)
+✔ U19 revoked permissions prevent agent execution (0.121931ms)
+✔ U20 rejection requires a nonblank explanation (0.166783ms)
+ℹ tests 38
+ℹ suites 0
+ℹ pass 38
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2378.321347

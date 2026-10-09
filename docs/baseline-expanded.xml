@@ -1,0 +1,880 @@
+<?xml version="1.0" encoding="utf-8"?>
+<testsuites>
+	<testcase name="I01 assessment and coordination persist consistent records and audit links" time="0.269209" classname="test" file="/home/mike/Codex/Projects/logistics-implementation/tests/integration.test.mjs" failure="Expected values to be strictly equal:&#10;&#10;501 !== 200&#10;">
+		<failure type="testCodeFailure" message="Expected values to be strictly equal:&#10;&#10;501 !== 200">
+[Error [ERR_TEST_FAILURE]: Expected values to be strictly equal:
+
+501 !== 200
+] {
+  code: 'ERR_TEST_FAILURE',
+  failureType: 'testCodeFailure',
+  cause: AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  501 !== 200
+  
+      at prepare (file:///home/mike/Codex/Projects/logistics-implementation/tests/integration.test.mjs:12:33)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async TestContext.&lt;anonymous> (file:///home/mike/Codex/Projects/logistics-implementation/tests/integration.test.mjs:14:101)
+      at async Test.run (node:internal/test_runner/test:1313:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:385:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 501,
+    expected: 200,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+}
+		</failure>
+	</testcase>
+	<testcase name="I02 shortage correction waits for approval and resumes fulfillment" time="0.022924" classname="test" file="/home/mike/Codex/Projects/logistics-implementation/tests/integration.test.mjs" failure="Expected values to be strictly equal:&#10;&#10;501 !== 200&#10;">
+		<failure type="testCodeFailure" message="Expected values to be strictly equal:&#10;&#10;501 !== 200">
+[Error [ERR_TEST_FAILURE]: Expected values to be strictly equal:
+
+501 !== 200
+] {
+  code: 'ERR_TEST_FAILURE',
+  failureType: 'testCodeFailure',
+  cause: AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  501 !== 200
+  
+      at TestContext.&lt;anonymous> (file:///home/mike/Codex/Projects/logistics-implementation/tests/integration.test.mjs:15:92)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async Test.run (node:internal/test_runner/test:1313:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:897:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 501,
+    expected: 200,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+}
+		</failure>
+	</testcase>
+	<testcase name="I03 shipment release consumes stock exactly once" time="0.020708" classname="test" file="/home/mike/Codex/Projects/logistics-implementation/tests/integration.test.mjs" failure="Expected values to be strictly equal:&#10;&#10;501 !== 200&#10;">
+		<failure type="testCodeFailure" message="Expected values to be strictly equal:&#10;&#10;501 !== 200">
+[Error [ERR_TEST_FAILURE]: Expected values to be strictly equal:
+
+501 !== 200
+] {
+  code: 'ERR_TEST_FAILURE',
+  failureType: 'testCodeFailure',
+  cause: AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  501 !== 200
+  
+      at prepare (file:///home/mike/Codex/Projects/logistics-implementation/tests/integration.test.mjs:12:33)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async complete (file:///home/mike/Codex/Projects/logistics-implementation/tests/integration.test.mjs:13:35)
+      at async TestContext.&lt;anonymous> (file:///home/mike/Codex/Projects/logistics-implementation/tests/integration.test.mjs:16:67)
+      at async Test.run (node:internal/test_runner/test:1313:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:897:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 501,
+    expected: 200,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+}
+		</failure>
+	</testcase>
+	<testcase name="I04 retries do not duplicate tasks or reservations" time="0.021537" classname="test" file="/home/mike/Codex/Projects/logistics-implementation/tests/integration.test.mjs" failure="Expected values to be strictly equal:&#10;&#10;501 !== 200&#10;">
+		<failure type="testCodeFailure" message="Expected values to be strictly equal:&#10;&#10;501 !== 200">
+[Error [ERR_TEST_FAILURE]: Expected values to be strictly equal:
+
+501 !== 200
+] {
+  code: 'ERR_TEST_FAILURE',
+  failureType: 'testCodeFailure',
+  cause: AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  501 !== 200
+  
+      at prepare (file:///home/mike/Codex/Projects/logistics-implementation/tests/integration.test.mjs:12:33)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async TestContext.&lt;anonymous> (file:///home/mike/Codex/Projects/logistics-implementation/tests/integration.test.mjs:17:69)
+      at async Test.run (node:internal/test_runner/test:1313:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:897:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 501,
+    expected: 200,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+}
+		</failure>
+	</testcase>
+	<testcase name="I05 concurrent orders cannot reserve the same stock" time="0.029628" classname="test" file="/home/mike/Codex/Projects/logistics-implementation/tests/integration.test.mjs" failure="Expected values to be strictly equal:&#10;&#10;501 !== 200&#10;">
+		<failure type="testCodeFailure" message="Expected values to be strictly equal:&#10;&#10;501 !== 200">
+[Error [ERR_TEST_FAILURE]: Expected values to be strictly equal:
+
+501 !== 200
+] {
+  code: 'ERR_TEST_FAILURE',
+  failureType: 'testCodeFailure',
+  cause: AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  501 !== 200
+  
+      at TestContext.&lt;anonymous> (file:///home/mike/Codex/Projects/logistics-implementation/tests/integration.test.mjs:18:251)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async Test.run (node:internal/test_runner/test:1313:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:897:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 501,
+    expected: 200,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+}
+		</failure>
+	</testcase>
+	<testcase name="I06 concurrent approval and rejection accept one decision" time="0.020879" classname="test" file="/home/mike/Codex/Projects/logistics-implementation/tests/integration.test.mjs" failure="Expected values to be strictly equal:&#10;&#10;501 !== 200&#10;">
+		<failure type="testCodeFailure" message="Expected values to be strictly equal:&#10;&#10;501 !== 200">
+[Error [ERR_TEST_FAILURE]: Expected values to be strictly equal:
+
+501 !== 200
+] {
+  code: 'ERR_TEST_FAILURE',
+  failureType: 'testCodeFailure',
+  cause: AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  501 !== 200
+  
+      at TestContext.&lt;anonymous> (file:///home/mike/Codex/Projects/logistics-implementation/tests/integration.test.mjs:19:83)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async Test.run (node:internal/test_runner/test:1313:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:897:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 501,
+    expected: 200,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+}
+		</failure>
+	</testcase>
+	<testcase name="I07 backend enforces roles and revoked permissions" time="0.019908" classname="test" file="/home/mike/Codex/Projects/logistics-implementation/tests/integration.test.mjs" failure="Expected values to be strictly equal:&#10;&#10;501 !== 200&#10;">
+		<failure type="testCodeFailure" message="Expected values to be strictly equal:&#10;&#10;501 !== 200">
+[Error [ERR_TEST_FAILURE]: Expected values to be strictly equal:
+
+501 !== 200
+] {
+  code: 'ERR_TEST_FAILURE',
+  failureType: 'testCodeFailure',
+  cause: AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  501 !== 200
+  
+      at TestContext.&lt;anonymous> (file:///home/mike/Codex/Projects/logistics-implementation/tests/integration.test.mjs:20:76)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async Test.run (node:internal/test_runner/test:1313:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:897:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 501,
+    expected: 200,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+}
+		</failure>
+	</testcase>
+	<testcase name="I08 rejection records its reason without changing inventory" time="0.019634" classname="test" file="/home/mike/Codex/Projects/logistics-implementation/tests/integration.test.mjs" failure="Expected values to be strictly equal:&#10;&#10;501 !== 200&#10;">
+		<failure type="testCodeFailure" message="Expected values to be strictly equal:&#10;&#10;501 !== 200">
+[Error [ERR_TEST_FAILURE]: Expected values to be strictly equal:
+
+501 !== 200
+] {
+  code: 'ERR_TEST_FAILURE',
+  failureType: 'testCodeFailure',
+  cause: AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  501 !== 200
+  
+      at TestContext.&lt;anonymous> (file:///home/mike/Codex/Projects/logistics-implementation/tests/integration.test.mjs:21:85)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async Test.run (node:internal/test_runner/test:1313:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:897:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 501,
+    expected: 200,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+}
+		</failure>
+	</testcase>
+	<testcase name="I09 stale proposals cannot execute" time="0.020560" classname="test" file="/home/mike/Codex/Projects/logistics-implementation/tests/integration.test.mjs" failure="Expected values to be strictly equal:&#10;&#10;501 !== 200&#10;">
+		<failure type="testCodeFailure" message="Expected values to be strictly equal:&#10;&#10;501 !== 200">
+[Error [ERR_TEST_FAILURE]: Expected values to be strictly equal:
+
+501 !== 200
+] {
+  code: 'ERR_TEST_FAILURE',
+  failureType: 'testCodeFailure',
+  cause: AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  501 !== 200
+  
+      at TestContext.&lt;anonymous> (file:///home/mike/Codex/Projects/logistics-implementation/tests/integration.test.mjs:22:60)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async Test.run (node:internal/test_runner/test:1313:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:897:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 501,
+    expected: 200,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+}
+		</failure>
+	</testcase>
+	<testcase name="I10 reset preserves history and rejects old-run actions" time="0.020584" classname="test" file="/home/mike/Codex/Projects/logistics-implementation/tests/integration.test.mjs" failure="Expected values to be strictly equal:&#10;&#10;501 !== 200&#10;">
+		<failure type="testCodeFailure" message="Expected values to be strictly equal:&#10;&#10;501 !== 200">
+[Error [ERR_TEST_FAILURE]: Expected values to be strictly equal:
+
+501 !== 200
+] {
+  code: 'ERR_TEST_FAILURE',
+  failureType: 'testCodeFailure',
+  cause: AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  501 !== 200
+  
+      at prepare (file:///home/mike/Codex/Projects/logistics-implementation/tests/integration.test.mjs:12:33)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async TestContext.&lt;anonymous> (file:///home/mike/Codex/Projects/logistics-implementation/tests/integration.test.mjs:23:74)
+      at async Test.run (node:internal/test_runner/test:1313:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:897:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 501,
+    expected: 200,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+}
+		</failure>
+	</testcase>
+	<testcase name="I11 separate requests and reloads see the same persistent data" time="0.020538" classname="test" file="/home/mike/Codex/Projects/logistics-implementation/tests/integration.test.mjs" failure="Expected values to be strictly equal:&#10;&#10;501 !== 200&#10;">
+		<failure type="testCodeFailure" message="Expected values to be strictly equal:&#10;&#10;501 !== 200">
+[Error [ERR_TEST_FAILURE]: Expected values to be strictly equal:
+
+501 !== 200
+] {
+  code: 'ERR_TEST_FAILURE',
+  failureType: 'testCodeFailure',
+  cause: AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  501 !== 200
+  
+      at prepare (file:///home/mike/Codex/Projects/logistics-implementation/tests/integration.test.mjs:12:33)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async TestContext.&lt;anonymous> (file:///home/mike/Codex/Projects/logistics-implementation/tests/integration.test.mjs:24:81)
+      at async Test.run (node:internal/test_runner/test:1313:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:897:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 501,
+    expected: 200,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+}
+		</failure>
+	</testcase>
+	<testcase name="I12 failed writes preserve the entire previous state" time="0.020296" classname="test" file="/home/mike/Codex/Projects/logistics-implementation/tests/integration.test.mjs" failure="Expected values to be strictly equal:&#10;&#10;501 !== 200&#10;">
+		<failure type="testCodeFailure" message="Expected values to be strictly equal:&#10;&#10;501 !== 200">
+[Error [ERR_TEST_FAILURE]: Expected values to be strictly equal:
+
+501 !== 200
+] {
+  code: 'ERR_TEST_FAILURE',
+  failureType: 'testCodeFailure',
+  cause: AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  501 !== 200
+  
+      at prepare (file:///home/mike/Codex/Projects/logistics-implementation/tests/integration.test.mjs:12:33)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async TestContext.&lt;anonymous> (file:///home/mike/Codex/Projects/logistics-implementation/tests/integration.test.mjs:25:71)
+      at async Test.run (node:internal/test_runner/test:1313:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:897:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 501,
+    expected: 200,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+}
+		</failure>
+	</testcase>
+	<testcase name="I13 custom task types participate and invalid types are rejected" time="0.020928" classname="test" file="/home/mike/Codex/Projects/logistics-implementation/tests/integration.test.mjs" failure="Expected values to be strictly equal:&#10;&#10;501 !== 200&#10;">
+		<failure type="testCodeFailure" message="Expected values to be strictly equal:&#10;&#10;501 !== 200">
+[Error [ERR_TEST_FAILURE]: Expected values to be strictly equal:
+
+501 !== 200
+] {
+  code: 'ERR_TEST_FAILURE',
+  failureType: 'testCodeFailure',
+  cause: AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  501 !== 200
+  
+      at TestContext.&lt;anonymous> (file:///home/mike/Codex/Projects/logistics-implementation/tests/integration.test.mjs:26:217)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async Test.run (node:internal/test_runner/test:1313:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:897:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 501,
+    expected: 200,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+}
+		</failure>
+	</testcase>
+	<testcase name="I14 reset requires explicit confirmation" time="0.019529" classname="test" file="/home/mike/Codex/Projects/logistics-implementation/tests/integration.test.mjs" failure="Expected values to be strictly equal:&#10;&#10;501 !== 200&#10;">
+		<failure type="testCodeFailure" message="Expected values to be strictly equal:&#10;&#10;501 !== 200">
+[Error [ERR_TEST_FAILURE]: Expected values to be strictly equal:
+
+501 !== 200
+] {
+  code: 'ERR_TEST_FAILURE',
+  failureType: 'testCodeFailure',
+  cause: AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  501 !== 200
+  
+      at state (file:///home/mike/Codex/Projects/logistics-implementation/tests/integration.test.mjs:11:105)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async TestContext.&lt;anonymous> (file:///home/mike/Codex/Projects/logistics-implementation/tests/integration.test.mjs:27:72)
+      at async Test.run (node:internal/test_runner/test:1313:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:897:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 501,
+    expected: 200,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+}
+		</failure>
+	</testcase>
+	<testcase name="I15 foreign-origin writes are rejected" time="0.020159" classname="test" file="/home/mike/Codex/Projects/logistics-implementation/tests/integration.test.mjs" failure="Expected values to be strictly equal:&#10;&#10;501 !== 403&#10;">
+		<failure type="testCodeFailure" message="Expected values to be strictly equal:&#10;&#10;501 !== 403">
+[Error [ERR_TEST_FAILURE]: Expected values to be strictly equal:
+
+501 !== 403
+] {
+  code: 'ERR_TEST_FAILURE',
+  failureType: 'testCodeFailure',
+  cause: AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  501 !== 403
+  
+      at TestContext.&lt;anonymous> (file:///home/mike/Codex/Projects/logistics-implementation/tests/integration.test.mjs:28:317)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async Test.run (node:internal/test_runner/test:1313:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:897:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 501,
+    expected: 403,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+}
+		</failure>
+	</testcase>
+	<testcase name="I16 unknown roles cannot mutate state" time="0.022471" classname="test" file="/home/mike/Codex/Projects/logistics-implementation/tests/integration.test.mjs" failure="Expected values to be strictly equal:&#10;&#10;501 !== 403&#10;">
+		<failure type="testCodeFailure" message="Expected values to be strictly equal:&#10;&#10;501 !== 403">
+[Error [ERR_TEST_FAILURE]: Expected values to be strictly equal:
+
+501 !== 403
+] {
+  code: 'ERR_TEST_FAILURE',
+  failureType: 'testCodeFailure',
+  cause: AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  501 !== 403
+  
+      at TestContext.&lt;anonymous> (file:///home/mike/Codex/Projects/logistics-implementation/tests/integration.test.mjs:29:63)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async Test.run (node:internal/test_runner/test:1313:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:897:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 501,
+    expected: 403,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+}
+		</failure>
+	</testcase>
+	<testcase name="I17 first read seeds the migrated database once" time="0.029112" classname="test" file="/home/mike/Codex/Projects/logistics-implementation/tests/integration.test.mjs" failure="Expected values to be strictly equal:&#10;&#10;501 !== 200&#10;">
+		<failure type="testCodeFailure" message="Expected values to be strictly equal:&#10;&#10;501 !== 200">
+[Error [ERR_TEST_FAILURE]: Expected values to be strictly equal:
+
+501 !== 200
+] {
+  code: 'ERR_TEST_FAILURE',
+  failureType: 'testCodeFailure',
+  cause: AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  501 !== 200
+  
+      at state (file:///home/mike/Codex/Projects/logistics-implementation/tests/integration.test.mjs:11:105)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async TestContext.&lt;anonymous> (file:///home/mike/Codex/Projects/logistics-implementation/tests/integration.test.mjs:30:123)
+      at async Test.run (node:internal/test_runner/test:1313:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:897:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 501,
+    expected: 200,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+}
+		</failure>
+	</testcase>
+	<testcase name="I18 staff cannot configure tasks" time="0.019677" classname="test" file="/home/mike/Codex/Projects/logistics-implementation/tests/integration.test.mjs" failure="Expected values to be strictly equal:&#10;&#10;501 !== 403&#10;">
+		<failure type="testCodeFailure" message="Expected values to be strictly equal:&#10;&#10;501 !== 403">
+[Error [ERR_TEST_FAILURE]: Expected values to be strictly equal:
+
+501 !== 403
+] {
+  code: 'ERR_TEST_FAILURE',
+  failureType: 'testCodeFailure',
+  cause: AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  501 !== 403
+  
+      at TestContext.&lt;anonymous> (file:///home/mike/Codex/Projects/logistics-implementation/tests/integration.test.mjs:31:58)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async Test.run (node:internal/test_runner/test:1313:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:897:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 501,
+    expected: 403,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+}
+		</failure>
+	</testcase>
+	<testcase name="U01 enough stock permits readiness" time="0.001206" classname="test" file="/home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs" failure="NOT_IMPLEMENTED: order assessment">
+		<failure type="testCodeFailure" message="NOT_IMPLEMENTED: order assessment">
+[Error [ERR_TEST_FAILURE]: NOT_IMPLEMENTED: order assessment] {
+  code: 'ERR_TEST_FAILURE',
+  failureType: 'testCodeFailure',
+  cause: Error: NOT_IMPLEMENTED: order assessment
+      at assessOrders (file:///home/mike/Codex/Projects/logistics-implementation/domain/rules.mjs:1:40)
+      at TestContext.&lt;anonymous> (file:///home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs:7:60)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1306:25)
+      at Test.start (node:internal/test_runner/test:1177:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:385:17)
+}
+		</failure>
+	</testcase>
+	<testcase name="U02 shortage blocks the order" time="0.000117" classname="test" file="/home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs" failure="NOT_IMPLEMENTED: order assessment">
+		<failure type="testCodeFailure" message="NOT_IMPLEMENTED: order assessment">
+[Error [ERR_TEST_FAILURE]: NOT_IMPLEMENTED: order assessment] {
+  code: 'ERR_TEST_FAILURE',
+  failureType: 'testCodeFailure',
+  cause: Error: NOT_IMPLEMENTED: order assessment
+      at assessOrders (file:///home/mike/Codex/Projects/logistics-implementation/domain/rules.mjs:1:40)
+      at TestContext.&lt;anonymous> (file:///home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs:8:51)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1306:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:897:18)
+      at Test.postRun (node:internal/test_runner/test:1447:19)
+      at Test.run (node:internal/test_runner/test:1372:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:385:3)
+}
+		</failure>
+	</testcase>
+	<testcase name="U03 missing inventory remains unknown" time="0.000073" classname="test" file="/home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs" failure="NOT_IMPLEMENTED: order assessment">
+		<failure type="testCodeFailure" message="NOT_IMPLEMENTED: order assessment">
+[Error [ERR_TEST_FAILURE]: NOT_IMPLEMENTED: order assessment] {
+  code: 'ERR_TEST_FAILURE',
+  failureType: 'testCodeFailure',
+  cause: Error: NOT_IMPLEMENTED: order assessment
+      at assessOrders (file:///home/mike/Codex/Projects/logistics-implementation/domain/rules.mjs:1:40)
+      at TestContext.&lt;anonymous> (file:///home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs:9:97)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1306:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:897:18)
+      at Test.postRun (node:internal/test_runner/test:1447:19)
+      at Test.run (node:internal/test_runner/test:1372:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:897:7)
+}
+		</failure>
+	</testcase>
+	<testcase name="U04 due dates and stable IDs determine priority" time="0.000068" classname="test" file="/home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs" failure="NOT_IMPLEMENTED: order assessment">
+		<failure type="testCodeFailure" message="NOT_IMPLEMENTED: order assessment">
+[Error [ERR_TEST_FAILURE]: NOT_IMPLEMENTED: order assessment] {
+  code: 'ERR_TEST_FAILURE',
+  failureType: 'testCodeFailure',
+  cause: Error: NOT_IMPLEMENTED: order assessment
+      at assessOrders (file:///home/mike/Codex/Projects/logistics-implementation/domain/rules.mjs:1:40)
+      at TestContext.&lt;anonymous> (file:///home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs:10:146)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1306:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:897:18)
+      at Test.postRun (node:internal/test_runner/test:1447:19)
+      at Test.run (node:internal/test_runner/test:1372:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:897:7)
+}
+		</failure>
+	</testcase>
+	<testcase name="U05 invalid quantities block only the affected order" time="0.000066" classname="test" file="/home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs" failure="NOT_IMPLEMENTED: order assessment">
+		<failure type="testCodeFailure" message="NOT_IMPLEMENTED: order assessment">
+[Error [ERR_TEST_FAILURE]: NOT_IMPLEMENTED: order assessment] {
+  code: 'ERR_TEST_FAILURE',
+  failureType: 'testCodeFailure',
+  cause: Error: NOT_IMPLEMENTED: order assessment
+      at assessOrders (file:///home/mike/Codex/Projects/logistics-implementation/domain/rules.mjs:1:40)
+      at TestContext.&lt;anonymous> (file:///home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs:11:125)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1306:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:897:18)
+      at Test.postRun (node:internal/test_runner/test:1447:19)
+      at Test.run (node:internal/test_runner/test:1372:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:897:7)
+}
+		</failure>
+	</testcase>
+	<testcase name="U06 non-finite and missing quantities are rejected" time="0.000097" classname="test" file="/home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs" failure="NOT_IMPLEMENTED: order assessment">
+		<failure type="testCodeFailure" message="NOT_IMPLEMENTED: order assessment">
+[Error [ERR_TEST_FAILURE]: NOT_IMPLEMENTED: order assessment] {
+  code: 'ERR_TEST_FAILURE',
+  failureType: 'testCodeFailure',
+  cause: Error: NOT_IMPLEMENTED: order assessment
+      at assessOrders (file:///home/mike/Codex/Projects/logistics-implementation/domain/rules.mjs:1:40)
+      at TestContext.&lt;anonymous> (file:///home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs:12:170)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1306:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:897:18)
+      at Test.postRun (node:internal/test_runner/test:1447:19)
+      at Test.run (node:internal/test_runner/test:1372:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:897:7)
+}
+		</failure>
+	</testcase>
+	<testcase name="U07 plans include enabled configured task types" time="0.000073" classname="test" file="/home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs" failure="NOT_IMPLEMENTED: order assessment">
+		<failure type="testCodeFailure" message="NOT_IMPLEMENTED: order assessment">
+[Error [ERR_TEST_FAILURE]: NOT_IMPLEMENTED: order assessment] {
+  code: 'ERR_TEST_FAILURE',
+  failureType: 'testCodeFailure',
+  cause: Error: NOT_IMPLEMENTED: order assessment
+      at assessOrders (file:///home/mike/Codex/Projects/logistics-implementation/domain/rules.mjs:1:40)
+      at prepared (file:///home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs:5:51)
+      at TestContext.&lt;anonymous> (file:///home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs:13:69)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1306:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:897:18)
+      at Test.postRun (node:internal/test_runner/test:1447:19)
+      at Test.run (node:internal/test_runner/test:1372:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:897:7)
+}
+		</failure>
+	</testcase>
+	<testcase name="U08 plans preserve task dependencies" time="0.000052" classname="test" file="/home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs" failure="NOT_IMPLEMENTED: order assessment">
+		<failure type="testCodeFailure" message="NOT_IMPLEMENTED: order assessment">
+[Error [ERR_TEST_FAILURE]: NOT_IMPLEMENTED: order assessment] {
+  code: 'ERR_TEST_FAILURE',
+  failureType: 'testCodeFailure',
+  cause: Error: NOT_IMPLEMENTED: order assessment
+      at assessOrders (file:///home/mike/Codex/Projects/logistics-implementation/domain/rules.mjs:1:40)
+      at prepared (file:///home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs:5:51)
+      at TestContext.&lt;anonymous> (file:///home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs:14:58)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1306:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:897:18)
+      at Test.postRun (node:internal/test_runner/test:1447:19)
+      at Test.run (node:internal/test_runner/test:1372:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:897:7)
+}
+		</failure>
+	</testcase>
+	<testcase name="U09 eligibility and workload determine assignments" time="0.000110" classname="test" file="/home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs" failure="NOT_IMPLEMENTED: order assessment">
+		<failure type="testCodeFailure" message="NOT_IMPLEMENTED: order assessment">
+[Error [ERR_TEST_FAILURE]: NOT_IMPLEMENTED: order assessment] {
+  code: 'ERR_TEST_FAILURE',
+  failureType: 'testCodeFailure',
+  cause: Error: NOT_IMPLEMENTED: order assessment
+      at assessOrders (file:///home/mike/Codex/Projects/logistics-implementation/domain/rules.mjs:1:40)
+      at prepared (file:///home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs:5:51)
+      at TestContext.&lt;anonymous> (file:///home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs:15:82)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1306:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:897:18)
+      at Test.postRun (node:internal/test_runner/test:1447:19)
+      at Test.run (node:internal/test_runner/test:1372:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:897:7)
+}
+		</failure>
+	</testcase>
+	<testcase name="U10 no eligible worker causes escalation" time="0.000122" classname="test" file="/home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs" failure="NOT_IMPLEMENTED: order assessment">
+		<failure type="testCodeFailure" message="NOT_IMPLEMENTED: order assessment">
+[Error [ERR_TEST_FAILURE]: NOT_IMPLEMENTED: order assessment] {
+  code: 'ERR_TEST_FAILURE',
+  failureType: 'testCodeFailure',
+  cause: Error: NOT_IMPLEMENTED: order assessment
+      at assessOrders (file:///home/mike/Codex/Projects/logistics-implementation/domain/rules.mjs:1:40)
+      at prepared (file:///home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs:5:51)
+      at TestContext.&lt;anonymous> (file:///home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs:16:62)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1306:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:897:18)
+      at Test.postRun (node:internal/test_runner/test:1447:19)
+      at Test.run (node:internal/test_runner/test:1372:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:897:7)
+}
+		</failure>
+	</testcase>
+	<testcase name="U11 unknown and cyclic dependencies are rejected" time="0.000577" classname="test" file="/home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs" failure="The input did not match the regular expression /dependency/i. Input:&#10;&#10;'Error: NOT_IMPLEMENTED: task configuration'&#10;">
+		<failure type="testCodeFailure" message="The input did not match the regular expression /dependency/i. Input:&#10;&#10;'Error: NOT_IMPLEMENTED: task configuration'">
+[Error [ERR_TEST_FAILURE]: The input did not match the regular expression /dependency/i. Input:
+
+'Error: NOT_IMPLEMENTED: task configuration'
+] {
+  code: 'ERR_TEST_FAILURE',
+  failureType: 'testCodeFailure',
+  cause: AssertionError [ERR_ASSERTION]: The input did not match the regular expression /dependency/i. Input:
+  
+  'Error: NOT_IMPLEMENTED: task configuration'
+  
+      at TestContext.&lt;anonymous> (file:///home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs:17:124)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1306:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:897:18)
+      at Test.postRun (node:internal/test_runner/test:1447:19)
+      at Test.run (node:internal/test_runner/test:1372:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:897:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: Error: NOT_IMPLEMENTED: task configuration
+        at validateTypes (file:///home/mike/Codex/Projects/logistics-implementation/domain/rules.mjs:4:41)
+        at file:///home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs:17:135
+        at getActual (node:assert:611:5)
+        at strict.throws (node:assert:759:24)
+        at TestContext.&lt;anonymous> (file:///home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs:17:124)
+        at Test.runInAsyncScope (node:async_hooks:227:14)
+        at Test.run (node:internal/test_runner/test:1306:25)
+        at Test.processPendingSubtests (node:internal/test_runner/test:897:18)
+        at Test.postRun (node:internal/test_runner/test:1447:19)
+        at Test.run (node:internal/test_runner/test:1372:12),
+    expected: /dependency/i,
+    operator: 'throws',
+    diff: 'simple'
+  }
+}
+		</failure>
+	</testcase>
+	<testcase name="U12 disabled types produce no new tasks" time="0.000103" classname="test" file="/home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs" failure="NOT_IMPLEMENTED: order assessment">
+		<failure type="testCodeFailure" message="NOT_IMPLEMENTED: order assessment">
+[Error [ERR_TEST_FAILURE]: NOT_IMPLEMENTED: order assessment] {
+  code: 'ERR_TEST_FAILURE',
+  failureType: 'testCodeFailure',
+  cause: Error: NOT_IMPLEMENTED: order assessment
+      at assessOrders (file:///home/mike/Codex/Projects/logistics-implementation/domain/rules.mjs:1:40)
+      at prepared (file:///home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs:5:51)
+      at TestContext.&lt;anonymous> (file:///home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs:18:61)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1306:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:897:18)
+      at Test.postRun (node:internal/test_runner/test:1447:19)
+      at Test.run (node:internal/test_runner/test:1372:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:897:7)
+}
+		</failure>
+	</testcase>
+	<testcase name="U13 shortage proposal uses the current records" time="0.000101" classname="test" file="/home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs" failure="NOT_IMPLEMENTED: exception proposal">
+		<failure type="testCodeFailure" message="NOT_IMPLEMENTED: exception proposal">
+[Error [ERR_TEST_FAILURE]: NOT_IMPLEMENTED: exception proposal] {
+  code: 'ERR_TEST_FAILURE',
+  failureType: 'testCodeFailure',
+  cause: Error: NOT_IMPLEMENTED: exception proposal
+      at proposeCorrection (file:///home/mike/Codex/Projects/logistics-implementation/domain/rules.mjs:3:45)
+      at TestContext.&lt;anonymous> (file:///home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs:19:86)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1306:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:897:18)
+      at Test.postRun (node:internal/test_runner/test:1447:19)
+      at Test.run (node:internal/test_runner/test:1372:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:897:7)
+}
+		</failure>
+	</testcase>
+	<testcase name="U14 a correction proposal never changes stock" time="0.000053" classname="test" file="/home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs" failure="NOT_IMPLEMENTED: exception proposal">
+		<failure type="testCodeFailure" message="NOT_IMPLEMENTED: exception proposal">
+[Error [ERR_TEST_FAILURE]: NOT_IMPLEMENTED: exception proposal] {
+  code: 'ERR_TEST_FAILURE',
+  failureType: 'testCodeFailure',
+  cause: Error: NOT_IMPLEMENTED: exception proposal
+      at proposeCorrection (file:///home/mike/Codex/Projects/logistics-implementation/domain/rules.mjs:3:45)
+      at TestContext.&lt;anonymous> (file:///home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs:20:85)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1306:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:897:18)
+      at Test.postRun (node:internal/test_runner/test:1447:19)
+      at Test.run (node:internal/test_runner/test:1372:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:897:7)
+}
+		</failure>
+	</testcase>
+	<testcase name="U15 unauthorized protected actions fail" time="0.000192" classname="test" file="/home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs" failure="The input did not match the regular expression /manager/i. Input:&#10;&#10;'Error: NOT_IMPLEMENTED: permissions'&#10;">
+		<failure type="testCodeFailure" message="The input did not match the regular expression /manager/i. Input:&#10;&#10;'Error: NOT_IMPLEMENTED: permissions'">
+[Error [ERR_TEST_FAILURE]: The input did not match the regular expression /manager/i. Input:
+
+'Error: NOT_IMPLEMENTED: permissions'
+] {
+  code: 'ERR_TEST_FAILURE',
+  failureType: 'testCodeFailure',
+  cause: AssertionError [ERR_ASSERTION]: The input did not match the regular expression /manager/i. Input:
+  
+  'Error: NOT_IMPLEMENTED: permissions'
+  
+      at TestContext.&lt;anonymous> (file:///home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs:21:60)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1306:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:897:18)
+      at Test.postRun (node:internal/test_runner/test:1447:19)
+      at Test.run (node:internal/test_runner/test:1372:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:897:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: Error: NOT_IMPLEMENTED: permissions
+        at authorize (file:///home/mike/Codex/Projects/logistics-implementation/domain/rules.mjs:5:37)
+        at file:///home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs:21:71
+        at getActual (node:assert:611:5)
+        at strict.throws (node:assert:759:24)
+        at TestContext.&lt;anonymous> (file:///home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs:21:60)
+        at Test.runInAsyncScope (node:async_hooks:227:14)
+        at Test.run (node:internal/test_runner/test:1306:25)
+        at Test.processPendingSubtests (node:internal/test_runner/test:897:18)
+        at Test.postRun (node:internal/test_runner/test:1447:19)
+        at Test.run (node:internal/test_runner/test:1372:12),
+    expected: /manager/i,
+    operator: 'throws',
+    diff: 'simple'
+  }
+}
+		</failure>
+	</testcase>
+	<testcase name="U16 packing requires completed picking" time="0.000061" classname="test" file="/home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs" failure="NOT_IMPLEMENTED: order assessment">
+		<failure type="testCodeFailure" message="NOT_IMPLEMENTED: order assessment">
+[Error [ERR_TEST_FAILURE]: NOT_IMPLEMENTED: order assessment] {
+  code: 'ERR_TEST_FAILURE',
+  failureType: 'testCodeFailure',
+  cause: Error: NOT_IMPLEMENTED: order assessment
+      at assessOrders (file:///home/mike/Codex/Projects/logistics-implementation/domain/rules.mjs:1:40)
+      at prepared (file:///home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs:5:51)
+      at TestContext.&lt;anonymous> (file:///home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs:22:60)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1306:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:897:18)
+      at Test.postRun (node:internal/test_runner/test:1447:19)
+      at Test.run (node:internal/test_runner/test:1372:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:897:7)
+}
+		</failure>
+	</testcase>
+	<testcase name="U17 release requires completed work" time="0.000070" classname="test" file="/home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs" failure="NOT_IMPLEMENTED: order assessment">
+		<failure type="testCodeFailure" message="NOT_IMPLEMENTED: order assessment">
+[Error [ERR_TEST_FAILURE]: NOT_IMPLEMENTED: order assessment] {
+  code: 'ERR_TEST_FAILURE',
+  failureType: 'testCodeFailure',
+  cause: Error: NOT_IMPLEMENTED: order assessment
+      at assessOrders (file:///home/mike/Codex/Projects/logistics-implementation/domain/rules.mjs:1:40)
+      at prepared (file:///home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs:5:51)
+      at TestContext.&lt;anonymous> (file:///home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs:23:57)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1306:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:897:18)
+      at Test.postRun (node:internal/test_runner/test:1447:19)
+      at Test.run (node:internal/test_runner/test:1372:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:897:7)
+}
+		</failure>
+	</testcase>
+	<testcase name="U18 changed source records invalidate decisions" time="0.000060" classname="test" file="/home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs" failure="NOT_IMPLEMENTED: order assessment">
+		<failure type="testCodeFailure" message="NOT_IMPLEMENTED: order assessment">
+[Error [ERR_TEST_FAILURE]: NOT_IMPLEMENTED: order assessment] {
+  code: 'ERR_TEST_FAILURE',
+  failureType: 'testCodeFailure',
+  cause: Error: NOT_IMPLEMENTED: order assessment
+      at assessOrders (file:///home/mike/Codex/Projects/logistics-implementation/domain/rules.mjs:1:40)
+      at prepared (file:///home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs:5:51)
+      at TestContext.&lt;anonymous> (file:///home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs:24:69)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1306:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:897:18)
+      at Test.postRun (node:internal/test_runner/test:1447:19)
+      at Test.run (node:internal/test_runner/test:1372:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:897:7)
+}
+		</failure>
+	</testcase>
+	<testcase name="U19 revoked permissions prevent agent execution" time="0.000044" classname="test" file="/home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs" failure="NOT_IMPLEMENTED: order assessment">
+		<failure type="testCodeFailure" message="NOT_IMPLEMENTED: order assessment">
+[Error [ERR_TEST_FAILURE]: NOT_IMPLEMENTED: order assessment] {
+  code: 'ERR_TEST_FAILURE',
+  failureType: 'testCodeFailure',
+  cause: Error: NOT_IMPLEMENTED: order assessment
+      at assessOrders (file:///home/mike/Codex/Projects/logistics-implementation/domain/rules.mjs:1:40)
+      at prepared (file:///home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs:5:51)
+      at TestContext.&lt;anonymous> (file:///home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs:25:69)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1306:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:897:18)
+      at Test.postRun (node:internal/test_runner/test:1447:19)
+      at Test.run (node:internal/test_runner/test:1372:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:897:7)
+}
+		</failure>
+	</testcase>
+	<testcase name="U20 rejection requires a nonblank explanation" time="0.000075" classname="test" file="/home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs" failure="NOT_IMPLEMENTED: workflow">
+		<failure type="testCodeFailure" message="NOT_IMPLEMENTED: workflow">
+[Error [ERR_TEST_FAILURE]: NOT_IMPLEMENTED: workflow] {
+  code: 'ERR_TEST_FAILURE',
+  failureType: 'testCodeFailure',
+  cause: Error: NOT_IMPLEMENTED: workflow
+      at applyAction (file:///home/mike/Codex/Projects/logistics-implementation/domain/rules.mjs:6:39)
+      at act (file:///home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs:6:48)
+      at TestContext.&lt;anonymous> (file:///home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs:26:77)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1306:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:897:18)
+      at Test.postRun (node:internal/test_runner/test:1447:19)
+      at Test.run (node:internal/test_runner/test:1372:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:897:7)
+}
+		</failure>
+	</testcase>
+	<!-- tests 38 -->
+	<!-- suites 0 -->
+	<!-- pass 0 -->
+	<!-- fail 38 -->
+	<!-- cancelled 0 -->
+	<!-- skipped 0 -->
+	<!-- todo 0 -->
+	<!-- duration_ms 891.483076 -->
+</testsuites>

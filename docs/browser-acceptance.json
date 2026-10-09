@@ -1,0 +1,2066 @@
+[
+  {
+    "command": [
+      "wait",
+      "--fn",
+      "!!document.querySelector('.guide-button') && !document.querySelector('.guide-button').disabled"
+    ],
+    "exit": 0,
+    "output": "true\n"
+  },
+  {
+    "command": [
+      "eval",
+      "document.querySelector('.guide h2').textContent"
+    ],
+    "exit": 0,
+    "output": "\"Meet your shared warehouse\"\n"
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "command": [
+      "wait",
+      "--fn",
+      "!document.querySelector('.guide-button').disabled"
+    ],
+    "exit": 0,
+    "output": "true\n"
+  },
+  {
+    "command": [
+      "wait",
+      "--fn",
+      "!!document.querySelector('.guide-button') && !document.querySelector('.guide-button').disabled"
+    ],
+    "exit": 0,
+    "output": "true\n"
+  },
+  {
+    "command": [
+      "eval",
+      "document.querySelector('.guide h2').textContent"
+    ],
+    "exit": 0,
+    "output": "\"Assess order readiness\"\n"
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "command": [
+      "wait",
+      "--fn",
+      "!document.querySelector('.guide-button').disabled"
+    ],
+    "exit": 0,
+    "output": "true\n"
+  },
+  {
+    "command": [
+      "screenshot",
+      "/home/mike/Codex/Projects/logistics-implementation/docs/browser-guide-01.png"
+    ],
+    "exit": 0,
+    "output": "\u2713 Screenshot saved to /home/mike/Codex/Projects/logistics-implementation/docs/browser-guide-01.png\n"
+  },
+  {
+    "command": [
+      "wait",
+      "--fn",
+      "!!document.querySelector('.guide-button') && !document.querySelector('.guide-button').disabled"
+    ],
+    "exit": 0,
+    "output": "true\n"
+  },
+  {
+    "command": [
+      "eval",
+      "document.querySelector('.guide h2').textContent"
+    ],
+    "exit": 0,
+    "output": "\"Coordinate the ready order\"\n"
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "command": [
+      "wait",
+      "--fn",
+      "!document.querySelector('.guide-button').disabled"
+    ],
+    "exit": 0,
+    "output": "true\n"
+  },
+  {
+    "command": [
+      "screenshot",
+      "/home/mike/Codex/Projects/logistics-implementation/docs/browser-guide-02.png"
+    ],
+    "exit": 0,
+    "output": "\u2713 Screenshot saved to /home/mike/Codex/Projects/logistics-implementation/docs/browser-guide-02.png\n"
+  },
+  {
+    "command": [
+      "wait",
+      "--fn",
+      "!!document.querySelector('.guide-button') && !document.querySelector('.guide-button').disabled"
+    ],
+    "exit": 0,
+    "output": "true\n"
+  },
+  {
+    "command": [
+      "eval",
+      "document.querySelector('.guide h2').textContent"
+    ],
+    "exit": 0,
+    "output": "\"Record the physical pick\"\n"
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "command": [
+      "wait",
+      "--fn",
+      "!document.querySelector('.guide-button').disabled"
+    ],
+    "exit": 0,
+    "output": "true\n"
+  },
+  {
+    "command": [
+      "wait",
+      "--fn",
+      "!!document.querySelector('.guide-button') && !document.querySelector('.guide-button').disabled"
+    ],
+    "exit": 0,
+    "output": "true\n"
+  },
+  {
+    "command": [
+      "eval",
+      "document.querySelector('.guide h2').textContent"
+    ],
+    "exit": 0,
+    "output": "\"Record the physical pack\"\n"
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "command": [
+      "wait",
+      "--fn",
+      "!document.querySelector('.guide-button').disabled"
+    ],
+    "exit": 0,
+    "output": "true\n"
+  },
+  {
+    "command": [
+      "wait",
+      "--fn",
+      "!!document.querySelector('.guide-button') && !document.querySelector('.guide-button').disabled"
+    ],
+    "exit": 0,
+    "output": "true\n"
+  },
+  {
+    "command": [
+      "eval",
+      "document.querySelector('.guide h2').textContent"
+    ],
+    "exit": 0,
+    "output": "\"Prepare shipment approval\"\n"
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "command": [
+      "wait",
+      "--fn",
+      "!document.querySelector('.guide-button').disabled"
+    ],
+    "exit": 0,
+    "output": "true\n"
+  },
+  {
+    "command": [
+      "wait",
+      "--fn",
+      "!!document.querySelector('.guide-button') && !document.querySelector('.guide-button').disabled"
+    ],
+    "exit": 0,
+    "output": "true\n"
+  },
+  {
+    "command": [
+      "eval",
+      "document.querySelector('.guide h2').textContent"
+    ],
+    "exit": 0,
+    "output": "\"Approve shipment release\"\n"
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "command": [
+      "wait",
+      "--fn",
+      "!document.querySelector('.guide-button').disabled"
+    ],
+    "exit": 0,
+    "output": "true\n"
+  },
+  {
+    "command": [
+      "screenshot",
+      "/home/mike/Codex/Projects/logistics-implementation/docs/browser-guide-06.png"
+    ],
+    "exit": 0,
+    "output": "\u2713 Screenshot saved to /home/mike/Codex/Projects/logistics-implementation/docs/browser-guide-06.png\n"
+  },
+  {
+    "command": [
+      "wait",
+      "--fn",
+      "!!document.querySelector('.guide-button') && !document.querySelector('.guide-button').disabled"
+    ],
+    "exit": 0,
+    "output": "true\n"
+  },
+  {
+    "command": [
+      "eval",
+      "document.querySelector('.guide h2').textContent"
+    ],
+    "exit": 0,
+    "output": "\"Investigate the stock discrepancy\"\n"
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "command": [
+      "wait",
+      "--fn",
+      "!document.querySelector('.guide-button').disabled"
+    ],
+    "exit": 0,
+    "output": "true\n"
+  },
+  {
+    "command": [
+      "screenshot",
+      "/home/mike/Codex/Projects/logistics-implementation/docs/browser-guide-07.png"
+    ],
+    "exit": 0,
+    "output": "\u2713 Screenshot saved to /home/mike/Codex/Projects/logistics-implementation/docs/browser-guide-07.png\n"
+  },
+  {
+    "command": [
+      "wait",
+      "--fn",
+      "!!document.querySelector('.guide-button') && !document.querySelector('.guide-button').disabled"
+    ],
+    "exit": 0,
+    "output": "true\n"
+  },
+  {
+    "command": [
+      "eval",
+      "document.querySelector('.guide h2').textContent"
+    ],
+    "exit": 0,
+    "output": "\"Approve the stock correction\"\n"
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "command": [
+      "wait",
+      "--fn",
+      "!document.querySelector('.guide-button').disabled"
+    ],
+    "exit": 0,
+    "output": "true\n"
+  },
+  {
+    "command": [
+      "screenshot",
+      "/home/mike/Codex/Projects/logistics-implementation/docs/browser-guide-08.png"
+    ],
+    "exit": 0,
+    "output": "\u2713 Screenshot saved to /home/mike/Codex/Projects/logistics-implementation/docs/browser-guide-08.png\n"
+  },
+  {
+    "command": [
+      "wait",
+      "--fn",
+      "!!document.querySelector('.guide-button') && !document.querySelector('.guide-button').disabled"
+    ],
+    "exit": 0,
+    "output": "true\n"
+  },
+  {
+    "command": [
+      "eval",
+      "document.querySelector('.guide h2').textContent"
+    ],
+    "exit": 0,
+    "output": "\"Reassess the blocked order\"\n"
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "command": [
+      "wait",
+      "--fn",
+      "!document.querySelector('.guide-button').disabled"
+    ],
+    "exit": 0,
+    "output": "true\n"
+  },
+  {
+    "command": [
+      "wait",
+      "--fn",
+      "!!document.querySelector('.guide-button') && !document.querySelector('.guide-button').disabled"
+    ],
+    "exit": 0,
+    "output": "true\n"
+  },
+  {
+    "command": [
+      "eval",
+      "document.querySelector('.guide h2').textContent"
+    ],
+    "exit": 0,
+    "output": "\"Resume fulfillment\"\n"
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "command": [
+      "wait",
+      "--fn",
+      "!document.querySelector('.guide-button').disabled"
+    ],
+    "exit": 0,
+    "output": "true\n"
+  },
+  {
+    "command": [
+      "screenshot",
+      "/home/mike/Codex/Projects/logistics-implementation/docs/browser-guide-10.png"
+    ],
+    "exit": 0,
+    "output": "\u2713 Screenshot saved to /home/mike/Codex/Projects/logistics-implementation/docs/browser-guide-10.png\n"
+  },
+  {
+    "command": [
+      "wait",
+      "--fn",
+      "!!document.querySelector('.guide-button') && !document.querySelector('.guide-button').disabled"
+    ],
+    "exit": 0,
+    "output": "true\n"
+  },
+  {
+    "command": [
+      "eval",
+      "document.querySelector('.guide h2').textContent"
+    ],
+    "exit": 0,
+    "output": "\"Your demo is complete\"\n"
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "command": [
+      "wait",
+      "--fn",
+      "!document.querySelector('.guide-button').disabled"
+    ],
+    "exit": 0,
+    "output": "true\n"
+  },
+  {
+    "command": [
+      "snapshot",
+      "-i"
+    ],
+    "exit": 0,
+    "output": "- link \"Relay home\" [ref=e42]\n- navigation \"Main navigation\" [ref=e43]\n  - button \"Orders\" [ref=e48]\n  - button \"Tasks\" [ref=e49]\n  - button \"Exceptions & approvals\" [ref=e50]\n  - button \"Activity\" [ref=e51]\n  - button \"Settings\" [ref=e52]\n- combobox \"Simulated role\" [expanded=false, ref=e53]: Warehouse manager\n  - option \"Warehouse manager\" [selected, ref=e59]\n  - option \"Fulfillment staff\" [ref=e60]\n  - option \"IT administrator\" [ref=e61]\n- button \"Refresh shared data\" [ref=e44]\n- heading \"Every action has a record.\" [level=1, ref=e45]\n- button \"Reset demo\" [ref=e46]\n- region \"Five-minute guided demo\" [ref=e47]\n  - heading \"Your demo is complete\" [level=2, ref=e57]\n  - button \"Review the audit log\" [ref=e58]\n  - button \"Back\" [ref=e54]\n- heading \"Audit log 10\" [level=2, ref=e85]\n- button \"Coordinate Simulated agent / 6:26:18 AM Created and assigned permitted tasks. Stock reserved once. Accepted\" [ref=e86]\n- button \"Assess Simulated agent / 6:26:18 AM Assessed 1 open orders from current stock and due dates. Accepted\" [ref=e87]\n- button \"Approve manager / 6:26:18 AM Manager approved the simulated recount correction. Accepted\" [ref=e88]\n- button \"Propose Correction Simulated agent / 6:26:17 AM Simulated recount: 6 units of SKU-B, compared with 2 recorded. Manager approval is required before stock changes. Accepted\" [ref=e89]\n- button \"Approve manager / 6:26:17 AM Manager approved release. Accepted\" [ref=e90]\n- button \"Request Release manager / 6:26:17 AM All warehouse tasks are complete. Manager shipment approval is required. Accepted\" [ref=e91]\n- button \"Complete staff / 6:26:17 AM Fulfillment staff recorded physical work. Accepted\" [ref=e92]\n- button \"Complete staff / 6:26:17 AM Fulfillment staff recorded physical work. Accepted\" [ref=e93]\n- button \"Coordinate Simulated agent / 6:26:17 AM Created and assigned permitted tasks. Stock reserved once. Accepted\" [ref=e94]\n- button \"Assess Simulated agent / 6:26:16 AM Assessed 2 open orders from current stock and due dates. Accepted\" [ref=e95]\n- heading \"Agent actions\" [level=2, ref=e65]\n- heading \"Warehouse work coordinated\" [level=3, ref=e96]\n- button \"Inspect audit entry\" [ref=e97]\n- heading \"Recent activity\" [level=3, ref=e67]\n- button \"View full audit log\" [ref=e68]\n"
+  },
+  {
+    "command": [
+      "click",
+      ".audit-link"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "Action details"
+    ],
+    "exit": 0,
+    "output": "Action details\n"
+  },
+  {
+    "command": [
+      "screenshot",
+      "/home/mike/Codex/Projects/logistics-implementation/docs/browser-audit.png"
+    ],
+    "exit": 0,
+    "output": "\u2713 Screenshot saved to /home/mike/Codex/Projects/logistics-implementation/docs/browser-audit.png\n"
+  },
+  {
+    "case": "B01-B03",
+    "result": "pass",
+    "elapsedSeconds": 2.03,
+    "assertions": "Released order; correction 2 to 6; 4 tasks; SKU-A 6/0, SKU-B 6/5; 10 audit entries; details link."
+  },
+  {
+    "session": "relay-qa",
+    "command": [
+      "set",
+      "viewport",
+      "1440",
+      "1000"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "session": "relay-qa",
+    "command": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Reset demo",
+      "--exact"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "session": "relay-qa",
+    "command": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Reset for all reviewers",
+      "--exact"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "session": "relay-qa",
+    "command": [
+      "wait",
+      "--fn",
+      "!document.querySelector('.guide-button').disabled"
+    ],
+    "exit": 0,
+    "output": "true\n"
+  },
+  {
+    "session": "relay-qa",
+    "command": [
+      "wait",
+      "--text",
+      "Meet your shared warehouse"
+    ],
+    "exit": 0,
+    "output": "Meet your shared warehouse\n"
+  },
+  {
+    "session": "relay-qa",
+    "command": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Assess orders",
+      "--exact"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "session": "relay-qa",
+    "command": [
+      "wait",
+      "--fn",
+      "!document.querySelector('.guide-button').disabled"
+    ],
+    "exit": 0,
+    "output": "true\n"
+  },
+  {
+    "session": "relay-qa",
+    "command": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Edit order",
+      "--nth",
+      "0"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "session": "relay-qa",
+    "command": [
+      "fill",
+      "input[aria-label=\"Order quantity\"]",
+      "20"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "session": "relay-qa",
+    "command": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Save order changes",
+      "--exact"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "session": "relay-qa",
+    "command": [
+      "wait",
+      "--fn",
+      "!document.querySelector('.guide-button').disabled"
+    ],
+    "exit": 0,
+    "output": "true\n"
+  },
+  {
+    "session": "relay-qa",
+    "command": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Coordinate",
+      "--nth",
+      "0"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "session": "relay-qa",
+    "command": [
+      "wait",
+      "--fn",
+      "!document.querySelector('.guide-button').disabled"
+    ],
+    "exit": 0,
+    "output": "true\n"
+  },
+  {
+    "session": "relay-qa",
+    "command": [
+      "wait",
+      "--text",
+      "Assessment is missing or stale"
+    ],
+    "exit": 0,
+    "output": "Assessment is missing or stale\n"
+  },
+  {
+    "session": "relay-qa",
+    "command": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Assess orders",
+      "--exact"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "session": "relay-qa",
+    "command": [
+      "wait",
+      "--fn",
+      "!document.querySelector('.guide-button').disabled"
+    ],
+    "exit": 0,
+    "output": "true\n"
+  },
+  {
+    "case": "B04",
+    "result": "pass",
+    "assertions": "Changed quantity to 20; stale coordination denied; explicit reassessment reports shortage; no tasks created."
+  },
+  {
+    "session": "relay-qa",
+    "command": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Exceptions & approvals",
+      "--exact"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "session": "relay-qa",
+    "command": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Propose stock correction",
+      "--exact"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "session": "relay-qa",
+    "command": [
+      "wait",
+      "--fn",
+      "!document.querySelector('.guide-button').disabled"
+    ],
+    "exit": 0,
+    "output": "true\n"
+  },
+  {
+    "session": "relay-qa",
+    "command": [
+      "select",
+      "select[aria-label=\"Simulated role\"]",
+      "staff"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "session": "relay-qa",
+    "command": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Approve exact change",
+      "--exact"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "session": "relay-qa",
+    "command": [
+      "wait",
+      "--fn",
+      "!document.querySelector('.guide-button').disabled"
+    ],
+    "exit": 0,
+    "output": "true\n"
+  },
+  {
+    "session": "relay-qa",
+    "command": [
+      "wait",
+      "--text",
+      "Warehouse manager approval is required"
+    ],
+    "exit": 0,
+    "output": "Warehouse manager approval is required\n"
+  },
+  {
+    "session": "relay-qa",
+    "command": [
+      "select",
+      "select[aria-label=\"Simulated role\"]",
+      "manager"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "session": "relay-qa",
+    "command": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Reject with reason",
+      "--exact"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "session": "relay-qa",
+    "command": [
+      "fill",
+      "textarea",
+      "Recount needs confirmation"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "session": "relay-qa",
+    "command": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Confirm rejection",
+      "--exact"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "session": "relay-qa",
+    "command": [
+      "wait",
+      "--fn",
+      "!document.querySelector('.guide-button').disabled"
+    ],
+    "exit": 0,
+    "output": "true\n"
+  },
+  {
+    "session": "relay-qa",
+    "command": [
+      "select",
+      "select[aria-label=\"Simulated role\"]",
+      "it"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "session": "relay-qa",
+    "command": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Settings",
+      "--exact"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "session": "relay-qa",
+    "command": [
+      "click",
+      "input[aria-label=\"Allow Warehouse manager access\"]"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "session": "relay-qa",
+    "command": [
+      "wait",
+      "--fn",
+      "!document.querySelector('.guide-button').disabled"
+    ],
+    "exit": 0,
+    "output": "true\n"
+  },
+  {
+    "session": "relay-qa",
+    "command": [
+      "select",
+      "select[aria-label=\"Simulated role\"]",
+      "manager"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "session": "relay-qa",
+    "command": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Orders",
+      "--exact"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "session": "relay-qa",
+    "command": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Assess orders",
+      "--exact"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "session": "relay-qa",
+    "command": [
+      "wait",
+      "--fn",
+      "!document.querySelector('.guide-button').disabled"
+    ],
+    "exit": 0,
+    "output": "true\n"
+  },
+  {
+    "session": "relay-qa",
+    "command": [
+      "wait",
+      "--text",
+      "Access is revoked"
+    ],
+    "exit": 0,
+    "output": "Access is revoked\n"
+  },
+  {
+    "session": "relay-qa",
+    "command": [
+      "select",
+      "select[aria-label=\"Simulated role\"]",
+      "it"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "session": "relay-qa",
+    "command": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Settings",
+      "--exact"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "session": "relay-qa",
+    "command": [
+      "click",
+      "input[aria-label=\"Allow Warehouse manager access\"]"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "session": "relay-qa",
+    "command": [
+      "wait",
+      "--fn",
+      "!document.querySelector('.guide-button').disabled"
+    ],
+    "exit": 0,
+    "output": "true\n"
+  },
+  {
+    "case": "B05",
+    "result": "pass",
+    "assertions": "Staff approval denied without stock change; manager rejection reason saved; IT revocation blocks manager mutation; IT restores access."
+  },
+  {
+    "session": "relay-qa-two",
+    "command": [
+      "open",
+      "http://127.0.0.1:5173/"
+    ],
+    "exit": 0,
+    "output": "\u2713 Relay | Agentic Logistics PoC\n  http://127.0.0.1:5173/\n[agent-browser] launched browser\n"
+  },
+  {
+    "session": "relay-qa-two",
+    "command": [
+      "wait",
+      "--text",
+      "Order queue"
+    ],
+    "exit": 0,
+    "output": "Order queue\n"
+  },
+  {
+    "session": "relay-qa",
+    "command": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Reset demo",
+      "--exact"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "session": "relay-qa",
+    "command": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Reset for all reviewers",
+      "--exact"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "session": "relay-qa",
+    "command": [
+      "wait",
+      "--fn",
+      "!document.querySelector('.guide-button').disabled"
+    ],
+    "exit": 0,
+    "output": "true\n"
+  },
+  {
+    "session": "relay-qa-two",
+    "command": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Refresh shared data"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "session": "relay-qa-two",
+    "command": [
+      "wait",
+      "--text",
+      "The shared demo was reset"
+    ],
+    "exit": 0,
+    "output": "The shared demo was reset\n"
+  },
+  {
+    "session": "relay-qa-two",
+    "command": [
+      "eval",
+      "document.querySelector('.guide h2').textContent"
+    ],
+    "exit": 0,
+    "output": "\"Meet your shared warehouse\"\n"
+  },
+  {
+    "case": "B06",
+    "result": "pass",
+    "assertions": "Second independent browser reads shared data; reset changes run ID, displays notice, restarts guide and preserves earlier audit."
+  },
+  {
+    "session": "relay-qa",
+    "command": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Orders",
+      "--exact"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "session": "relay-qa",
+    "command": [
+      "network",
+      "route",
+      "**/api/state",
+      "--abort"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "session": "relay-qa",
+    "command": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Refresh shared data",
+      "--exact"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "session": "relay-qa",
+    "command": [
+      "wait",
+      "--text",
+      "Last known data is stale"
+    ],
+    "exit": 0,
+    "output": "Last known data is stale\n"
+  },
+  {
+    "session": "relay-qa",
+    "command": [
+      "screenshot",
+      "/home/mike/Codex/Projects/logistics-implementation/docs/browser-stale.png"
+    ],
+    "exit": 0,
+    "output": "\u2713 Screenshot saved to /home/mike/Codex/Projects/logistics-implementation/docs/browser-stale.png\n"
+  },
+  {
+    "session": "relay-qa",
+    "command": [
+      "network",
+      "unroute"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "session": "relay-qa",
+    "command": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Refresh shared data",
+      "--exact"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "session": "relay-qa",
+    "command": [
+      "wait",
+      "--fn",
+      "!document.querySelector('.live').textContent.includes('stale')"
+    ],
+    "exit": 0,
+    "output": "true\n"
+  },
+  {
+    "session": "relay-qa",
+    "command": [
+      "press",
+      "Tab"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "session": "relay-qa",
+    "command": [
+      "eval",
+      "JSON.stringify({tag:document.activeElement.tagName,text:document.activeElement.getAttribute('aria-label')||document.activeElement.textContent})"
+    ],
+    "exit": 0,
+    "output": "\"{\\\"tag\\\":\\\"BUTTON\\\",\\\"text\\\":\\\" Reset demo\\\"}\"\n"
+  },
+  {
+    "session": "relay-qa",
+    "command": [
+      "set",
+      "viewport",
+      "1440",
+      "1000"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "session": "relay-qa",
+    "command": [
+      "eval",
+      "document.documentElement.scrollWidth <= innerWidth"
+    ],
+    "exit": 0,
+    "output": "true\n"
+  },
+  {
+    "session": "relay-qa",
+    "command": [
+      "screenshot",
+      "/home/mike/Codex/Projects/logistics-implementation/docs/browser-1440.png"
+    ],
+    "exit": 0,
+    "output": "\u2713 Screenshot saved to /home/mike/Codex/Projects/logistics-implementation/docs/browser-1440.png\n"
+  },
+  {
+    "session": "relay-qa",
+    "command": [
+      "set",
+      "viewport",
+      "768",
+      "1024"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "session": "relay-qa",
+    "command": [
+      "eval",
+      "document.documentElement.scrollWidth <= innerWidth"
+    ],
+    "exit": 0,
+    "output": "true\n"
+  },
+  {
+    "session": "relay-qa",
+    "command": [
+      "screenshot",
+      "/home/mike/Codex/Projects/logistics-implementation/docs/browser-768.png"
+    ],
+    "exit": 0,
+    "output": "\u2713 Screenshot saved to /home/mike/Codex/Projects/logistics-implementation/docs/browser-768.png\n"
+  },
+  {
+    "session": "relay-qa",
+    "command": [
+      "set",
+      "viewport",
+      "390",
+      "844"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "session": "relay-qa",
+    "command": [
+      "eval",
+      "document.documentElement.scrollWidth <= innerWidth"
+    ],
+    "exit": 0,
+    "output": "true\n"
+  },
+  {
+    "session": "relay-qa",
+    "command": [
+      "screenshot",
+      "/home/mike/Codex/Projects/logistics-implementation/docs/browser-390.png"
+    ],
+    "exit": 0,
+    "output": "\u2713 Screenshot saved to /home/mike/Codex/Projects/logistics-implementation/docs/browser-390.png\n"
+  },
+  {
+    "case": "B07",
+    "result": "pass",
+    "assertions": "Tab reaches interactive control; visible focus style present; desktop, tablet, phone have no page overflow. Modal focus needs a separate check."
+  },
+  {
+    "case": "B08",
+    "result": "pass",
+    "assertions": "Empty tasks after reset; network failure labels last-known data stale; no false saved result; retry restores shared data."
+  },
+  {
+    "session": "relay-qa",
+    "command": [
+      "errors"
+    ],
+    "exit": 0,
+    "output": ""
+  },
+  {
+    "command": [
+      "open",
+      "http://127.0.0.1:5173/"
+    ],
+    "output": "\u2713 Relay | Agentic Logistics PoC\n  http://127.0.0.1:5173/\n",
+    "exit": 0
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "Order queue"
+    ],
+    "output": "Order queue\n",
+    "exit": 0
+  },
+  {
+    "command": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Reset demo",
+      "--exact"
+    ],
+    "output": "\u2713 Done\n",
+    "exit": 0
+  },
+  {
+    "command": [
+      "eval",
+      "!!document.querySelector(\"[role=dialog]\")?.contains(document.activeElement)"
+    ],
+    "output": "true\n",
+    "exit": 0
+  },
+  {
+    "command": [
+      "press",
+      "Shift+Tab"
+    ],
+    "output": "\u2713 Done\n",
+    "exit": 0
+  },
+  {
+    "command": [
+      "eval",
+      "document.activeElement.textContent"
+    ],
+    "output": "\"Keep current demo\"\n",
+    "exit": 0
+  },
+  {
+    "command": [
+      "press",
+      "Tab"
+    ],
+    "output": "\u2713 Done\n",
+    "exit": 0
+  },
+  {
+    "command": [
+      "eval",
+      "document.activeElement.textContent"
+    ],
+    "output": "\"Reset for all reviewers\"\n",
+    "exit": 0
+  },
+  {
+    "command": [
+      "press",
+      "Escape"
+    ],
+    "output": "\u2713 Done\n",
+    "exit": 0
+  },
+  {
+    "command": [
+      "eval",
+      "!!document.querySelector(\"[role=dialog]\")"
+    ],
+    "output": "false\n",
+    "exit": 0
+  },
+  {
+    "command": [
+      "network",
+      "route",
+      "**/api/state",
+      "--abort"
+    ],
+    "output": "\u2713 Done\n",
+    "exit": 0
+  },
+  {
+    "command": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Refresh shared data"
+    ],
+    "output": "\u2713 Done\n",
+    "exit": 0
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "Last known data is stale"
+    ],
+    "output": "Last known data is stale\n",
+    "exit": 0
+  },
+  {
+    "command": [
+      "network",
+      "unroute"
+    ],
+    "output": "\u2713 Done\n",
+    "exit": 0
+  },
+  {
+    "command": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Refresh shared data"
+    ],
+    "output": "\u2713 Done\n",
+    "exit": 0
+  },
+  {
+    "command": [
+      "wait",
+      "--fn",
+      "!document.querySelector(\"[role=alert]\")"
+    ],
+    "output": "true\n",
+    "exit": 0
+  },
+  {
+    "case": "D01-D02",
+    "result": "pass",
+    "assertions": "Focus enters modal; Shift+Tab/Tab wrap; Escape closes; successful refresh clears network error."
+  },
+  {
+    "command": [
+      "set",
+      "viewport",
+      "1440",
+      "1000"
+    ],
+    "output": "\u2713 Done\n",
+    "exit": 0
+  },
+  {
+    "command": [
+      "screenshot",
+      "/home/mike/Codex/Projects/logistics-implementation/docs/browser-final-desktop.png"
+    ],
+    "output": "\u2713 Screenshot saved to /home/mike/Codex/Projects/logistics-implementation/docs/browser-final-desktop.png\n",
+    "exit": 0
+  },
+  {
+    "command": [
+      "errors"
+    ],
+    "output": "",
+    "exit": 0
+  },
+  {
+    "build": "production Worker",
+    "command": [
+      "wait",
+      "--fn",
+      "!document.querySelector(\".guide-button\").disabled"
+    ],
+    "exit": 0,
+    "output": "true\n"
+  },
+  {
+    "build": "production Worker",
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "build": "production Worker",
+    "command": [
+      "wait",
+      "--fn",
+      "!document.querySelector(\".guide-button\").disabled"
+    ],
+    "exit": 0,
+    "output": "true\n"
+  },
+  {
+    "build": "production Worker",
+    "command": [
+      "wait",
+      "--fn",
+      "!document.querySelector(\".guide-button\").disabled"
+    ],
+    "exit": 0,
+    "output": "true\n"
+  },
+  {
+    "build": "production Worker",
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "build": "production Worker",
+    "command": [
+      "wait",
+      "--fn",
+      "!document.querySelector(\".guide-button\").disabled"
+    ],
+    "exit": 0,
+    "output": "true\n"
+  },
+  {
+    "build": "production Worker",
+    "command": [
+      "wait",
+      "--fn",
+      "!document.querySelector(\".guide-button\").disabled"
+    ],
+    "exit": 0,
+    "output": "true\n"
+  },
+  {
+    "build": "production Worker",
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "build": "production Worker",
+    "command": [
+      "wait",
+      "--fn",
+      "!document.querySelector(\".guide-button\").disabled"
+    ],
+    "exit": 0,
+    "output": "true\n"
+  },
+  {
+    "build": "production Worker",
+    "command": [
+      "wait",
+      "--fn",
+      "!document.querySelector(\".guide-button\").disabled"
+    ],
+    "exit": 0,
+    "output": "true\n"
+  },
+  {
+    "build": "production Worker",
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "build": "production Worker",
+    "command": [
+      "wait",
+      "--fn",
+      "!document.querySelector(\".guide-button\").disabled"
+    ],
+    "exit": 0,
+    "output": "true\n"
+  },
+  {
+    "build": "production Worker",
+    "command": [
+      "wait",
+      "--fn",
+      "!document.querySelector(\".guide-button\").disabled"
+    ],
+    "exit": 0,
+    "output": "true\n"
+  },
+  {
+    "build": "production Worker",
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "build": "production Worker",
+    "command": [
+      "wait",
+      "--fn",
+      "!document.querySelector(\".guide-button\").disabled"
+    ],
+    "exit": 0,
+    "output": "true\n"
+  },
+  {
+    "build": "production Worker",
+    "command": [
+      "wait",
+      "--fn",
+      "!document.querySelector(\".guide-button\").disabled"
+    ],
+    "exit": 0,
+    "output": "true\n"
+  },
+  {
+    "build": "production Worker",
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "build": "production Worker",
+    "command": [
+      "wait",
+      "--fn",
+      "!document.querySelector(\".guide-button\").disabled"
+    ],
+    "exit": 0,
+    "output": "true\n"
+  },
+  {
+    "build": "production Worker",
+    "command": [
+      "wait",
+      "--fn",
+      "!document.querySelector(\".guide-button\").disabled"
+    ],
+    "exit": 0,
+    "output": "true\n"
+  },
+  {
+    "build": "production Worker",
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "build": "production Worker",
+    "command": [
+      "wait",
+      "--fn",
+      "!document.querySelector(\".guide-button\").disabled"
+    ],
+    "exit": 0,
+    "output": "true\n"
+  },
+  {
+    "build": "production Worker",
+    "command": [
+      "wait",
+      "--fn",
+      "!document.querySelector(\".guide-button\").disabled"
+    ],
+    "exit": 0,
+    "output": "true\n"
+  },
+  {
+    "build": "production Worker",
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "build": "production Worker",
+    "command": [
+      "wait",
+      "--fn",
+      "!document.querySelector(\".guide-button\").disabled"
+    ],
+    "exit": 0,
+    "output": "true\n"
+  },
+  {
+    "build": "production Worker",
+    "command": [
+      "wait",
+      "--fn",
+      "!document.querySelector(\".guide-button\").disabled"
+    ],
+    "exit": 0,
+    "output": "true\n"
+  },
+  {
+    "build": "production Worker",
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "build": "production Worker",
+    "command": [
+      "wait",
+      "--fn",
+      "!document.querySelector(\".guide-button\").disabled"
+    ],
+    "exit": 0,
+    "output": "true\n"
+  },
+  {
+    "build": "production Worker",
+    "command": [
+      "wait",
+      "--fn",
+      "!document.querySelector(\".guide-button\").disabled"
+    ],
+    "exit": 0,
+    "output": "true\n"
+  },
+  {
+    "build": "production Worker",
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "build": "production Worker",
+    "command": [
+      "wait",
+      "--fn",
+      "!document.querySelector(\".guide-button\").disabled"
+    ],
+    "exit": 0,
+    "output": "true\n"
+  },
+  {
+    "build": "production Worker",
+    "command": [
+      "wait",
+      "--fn",
+      "!document.querySelector(\".guide-button\").disabled"
+    ],
+    "exit": 0,
+    "output": "true\n"
+  },
+  {
+    "build": "production Worker",
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "build": "production Worker",
+    "command": [
+      "wait",
+      "--fn",
+      "!document.querySelector(\".guide-button\").disabled"
+    ],
+    "exit": 0,
+    "output": "true\n"
+  },
+  {
+    "build": "production Worker",
+    "command": [
+      "wait",
+      "--fn",
+      "!document.querySelector(\".guide-button\").disabled"
+    ],
+    "exit": 0,
+    "output": "true\n"
+  },
+  {
+    "build": "production Worker",
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "build": "production Worker",
+    "command": [
+      "wait",
+      "--fn",
+      "!document.querySelector(\".guide-button\").disabled"
+    ],
+    "exit": 0,
+    "output": "true\n"
+  },
+  {
+    "build": "production Worker",
+    "command": [
+      "click",
+      ".audit-link"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "build": "production Worker",
+    "command": [
+      "wait",
+      "--text",
+      "Action details"
+    ],
+    "exit": 1,
+    "output": "\u2717 Wait timed out after 25000ms\n"
+  },
+  {
+    "case": "Production Worker smoke",
+    "result": "pass after repeat",
+    "assertions": "Compiled Worker completes the guide with release, 2-to-6 correction and 4 tasks. Audit details open through the named button after one selector click timeout. Shared sample data restored. No browser errors."
+  },
+  {
+    "case": "Shared guide recovery",
+    "session": "relay-qa-two",
+    "command": [
+      "open",
+      "http://127.0.0.1:5173/"
+    ],
+    "exit": 0,
+    "output": "\u2713 Relay | Agentic Logistics PoC\n  http://127.0.0.1:5173/\n"
+  },
+  {
+    "case": "Shared guide recovery",
+    "session": "relay-qa-two",
+    "command": [
+      "wait",
+      "--text",
+      "Order queue"
+    ],
+    "exit": 0,
+    "output": "Order queue\n"
+  },
+  {
+    "case": "Shared guide recovery",
+    "session": "relay-qa",
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "case": "Shared guide recovery",
+    "session": "relay-qa",
+    "command": [
+      "wait",
+      "--fn",
+      "!document.querySelector(\".guide-button\").disabled"
+    ],
+    "exit": 0,
+    "output": "true\n"
+  },
+  {
+    "case": "Shared guide recovery",
+    "session": "relay-qa",
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "case": "Shared guide recovery",
+    "session": "relay-qa",
+    "command": [
+      "wait",
+      "--fn",
+      "!document.querySelector(\".guide-button\").disabled"
+    ],
+    "exit": 0,
+    "output": "true\n"
+  },
+  {
+    "case": "Shared guide recovery",
+    "session": "relay-qa",
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "case": "Shared guide recovery",
+    "session": "relay-qa",
+    "command": [
+      "wait",
+      "--fn",
+      "!document.querySelector(\".guide-button\").disabled"
+    ],
+    "exit": 0,
+    "output": "true\n"
+  },
+  {
+    "case": "Shared guide recovery",
+    "session": "relay-qa-two",
+    "command": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Refresh shared data"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "case": "Shared guide recovery",
+    "session": "relay-qa-two",
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "case": "Shared guide recovery",
+    "session": "relay-qa-two",
+    "command": [
+      "wait",
+      "--fn",
+      "!document.querySelector(\".guide-button\").disabled"
+    ],
+    "exit": 0,
+    "output": "true\n"
+  },
+  {
+    "case": "Shared guide recovery",
+    "session": "relay-qa-two",
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "case": "Shared guide recovery",
+    "session": "relay-qa-two",
+    "command": [
+      "wait",
+      "--fn",
+      "!document.querySelector(\".guide-button\").disabled"
+    ],
+    "exit": 0,
+    "output": "true\n"
+  },
+  {
+    "case": "Shared guide recovery",
+    "session": "relay-qa-two",
+    "command": [
+      "wait",
+      "--text",
+      "Continue from shared result"
+    ],
+    "exit": 0,
+    "output": "Continue from shared result\n"
+  },
+  {
+    "case": "Shared guide recovery",
+    "session": "relay-qa-two",
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "case": "Shared guide recovery",
+    "session": "relay-qa-two",
+    "command": [
+      "wait",
+      "--fn",
+      "!document.querySelector(\".guide-button\").disabled"
+    ],
+    "exit": 0,
+    "output": "true\n"
+  },
+  {
+    "case": "Shared guide recovery",
+    "session": "relay-qa-two",
+    "command": [
+      "wait",
+      "--text",
+      "This step already has a shared result"
+    ],
+    "exit": 0,
+    "output": "This step already has a shared result\n"
+  },
+  {
+    "case": "Shared guide recovery",
+    "session": "relay-qa",
+    "command": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Reset demo",
+      "--exact"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "case": "Shared guide recovery",
+    "session": "relay-qa",
+    "command": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Reset for all reviewers"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "case": "Shared guide recovery",
+    "session": "relay-qa",
+    "command": [
+      "wait",
+      "--text",
+      "Meet your shared warehouse"
+    ],
+    "exit": 0,
+    "output": "Meet your shared warehouse\n"
+  },
+  {
+    "case": "Shared guide recovery",
+    "result": "pass",
+    "assertions": "Second reviewer explicitly continues from existing assigned tasks without duplicate tasks or reservations. Sample data restored afterward."
+  }
+]

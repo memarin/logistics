@@ -1,0 +1,48 @@
+✔ I01 assessment and coordination persist consistent records and audit links (424.66161ms)
+✔ I02 shortage correction waits for approval and resumes fulfillment (134.016303ms)
+✔ I03 shipment release consumes stock exactly once (194.060811ms)
+✔ I04 retries do not duplicate tasks or reservations (153.433886ms)
+✔ I05 concurrent orders cannot reserve the same stock (112.737504ms)
+✔ I06 concurrent approval and rejection accept one decision (116.678903ms)
+✔ I07 backend enforces roles and revoked permissions (147.013645ms)
+✔ I08 rejection records its reason without changing inventory (106.997957ms)
+✔ I09 stale proposals cannot execute (99.460098ms)
+✔ I10 reset preserves history and rejects old-run actions (114.242383ms)
+✔ I11 separate requests and reloads see the same persistent data (85.577595ms)
+✔ I12 failed writes preserve the entire previous state (125.303698ms)
+✔ I13 custom task types participate and invalid types are rejected (110.885845ms)
+✔ I14 reset requires explicit confirmation (51.061886ms)
+✔ I15 foreign-origin writes are rejected (26.390002ms)
+✔ I16 unknown roles cannot mutate state (44.347604ms)
+✔ I17 first read seeds the migrated database once (60.787549ms)
+✔ I18 staff cannot configure tasks (44.078198ms)
+✔ U01 enough stock permits readiness (5.550617ms)
+✔ U02 shortage blocks the order (0.262143ms)
+✔ U03 missing inventory remains unknown (0.183355ms)
+✔ U04 due dates and stable IDs determine priority (0.153756ms)
+✔ U05 invalid quantities block only the affected order (0.215273ms)
+✔ U06 non-finite and missing quantities are rejected (0.22145ms)
+✔ U07 plans include enabled configured task types (0.814004ms)
+✔ U08 plans preserve task dependencies (0.18891ms)
+✔ U09 eligibility and workload determine assignments (0.277708ms)
+✔ U10 no eligible worker causes escalation (0.459942ms)
+✔ U11 unknown and cyclic dependencies are rejected (0.251313ms)
+✔ U12 disabled types produce no new tasks (0.219893ms)
+✔ U13 shortage proposal uses the current records (1.262253ms)
+✔ U14 a correction proposal never changes stock (0.099183ms)
+✔ U15 unauthorized protected actions fail (0.225406ms)
+✔ U16 packing requires completed picking (0.687214ms)
+✔ U17 release requires completed work (0.169867ms)
+✔ U18 changed source records invalidate decisions (0.088079ms)
+✔ U19 revoked permissions prevent agent execution (0.148942ms)
+✔ U20 rejection requires a nonblank explanation (0.164435ms)
+✔ U21 missing order lines block only the malformed order (0.072396ms)
+✔ U22 malformed due dates do not stop other orders (0.056185ms)
+ℹ tests 40
+ℹ suites 0
+ℹ pass 40
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2419.891547

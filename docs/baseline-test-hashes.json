@@ -1,0 +1,5 @@
+{
+  "tests/integration.test.mjs": "d207ca4c6f7fe3ed1b18d73906adba6bc57ee993569d7b89d2e4100834c78bc9",
+  "tests/fixtures.mjs": "3800875ca64a7b4d68c71ada9951b33730f6b5692199c9638e3ba0a0d27a3108",
+  "tests/unit.test.mjs": "b6c39b6806be76f56023f38792207393797b1aa7770dafed9d82ffaf029aa709"
+}

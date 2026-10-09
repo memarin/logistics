@@ -1,0 +1,667 @@
+✖ I01 assessment and coordination persist consistent records and audit links (269.208612ms)
+✖ I02 shortage correction waits for approval and resumes fulfillment (22.923926ms)
+✖ I03 shipment release consumes stock exactly once (20.708003ms)
+✖ I04 retries do not duplicate tasks or reservations (21.536651ms)
+✖ I05 concurrent orders cannot reserve the same stock (29.627868ms)
+✖ I06 concurrent approval and rejection accept one decision (20.879083ms)
+✖ I07 backend enforces roles and revoked permissions (19.907897ms)
+✖ I08 rejection records its reason without changing inventory (19.634448ms)
+✖ I09 stale proposals cannot execute (20.559905ms)
+✖ I10 reset preserves history and rejects old-run actions (20.584348ms)
+✖ I11 separate requests and reloads see the same persistent data (20.538292ms)
+✖ I12 failed writes preserve the entire previous state (20.295966ms)
+✖ I13 custom task types participate and invalid types are rejected (20.928038ms)
+✖ I14 reset requires explicit confirmation (19.52917ms)
+✖ I15 foreign-origin writes are rejected (20.159189ms)
+✖ I16 unknown roles cannot mutate state (22.471122ms)
+✖ I17 first read seeds the migrated database once (29.112266ms)
+✖ I18 staff cannot configure tasks (19.676604ms)
+✖ U01 enough stock permits readiness (1.2062ms)
+✖ U02 shortage blocks the order (0.117364ms)
+✖ U03 missing inventory remains unknown (0.072977ms)
+✖ U04 due dates and stable IDs determine priority (0.068369ms)
+✖ U05 invalid quantities block only the affected order (0.065701ms)
+✖ U06 non-finite and missing quantities are rejected (0.097098ms)
+✖ U07 plans include enabled configured task types (0.073157ms)
+✖ U08 plans preserve task dependencies (0.051933ms)
+✖ U09 eligibility and workload determine assignments (0.110379ms)
+✖ U10 no eligible worker causes escalation (0.121512ms)
+✖ U11 unknown and cyclic dependencies are rejected (0.577405ms)
+✖ U12 disabled types produce no new tasks (0.102682ms)
+✖ U13 shortage proposal uses the current records (0.100781ms)
+✖ U14 a correction proposal never changes stock (0.053141ms)
+✖ U15 unauthorized protected actions fail (0.192054ms)
+✖ U16 packing requires completed picking (0.061395ms)
+✖ U17 release requires completed work (0.070347ms)
+✖ U18 changed source records invalidate decisions (0.059608ms)
+✖ U19 revoked permissions prevent agent execution (0.044016ms)
+✖ U20 rejection requires a nonblank explanation (0.075291ms)
+ℹ tests 38
+ℹ suites 0
+ℹ pass 0
+ℹ fail 38
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 891.483076
+
+✖ failing tests:
+
+test at tests/integration.test.mjs:14:1
+✖ I01 assessment and coordination persist consistent records and audit links (269.208612ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  501 !== 200
+  
+      at prepare (file:///home/mike/Codex/Projects/logistics-implementation/tests/integration.test.mjs:12:33)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async TestContext.<anonymous> (file:///home/mike/Codex/Projects/logistics-implementation/tests/integration.test.mjs:14:101)
+      at async Test.run (node:internal/test_runner/test:1313:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:385:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 501,
+    expected: 200,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/integration.test.mjs:15:1
+✖ I02 shortage correction waits for approval and resumes fulfillment (22.923926ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  501 !== 200
+  
+      at TestContext.<anonymous> (file:///home/mike/Codex/Projects/logistics-implementation/tests/integration.test.mjs:15:92)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async Test.run (node:internal/test_runner/test:1313:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:897:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 501,
+    expected: 200,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/integration.test.mjs:16:1
+✖ I03 shipment release consumes stock exactly once (20.708003ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  501 !== 200
+  
+      at prepare (file:///home/mike/Codex/Projects/logistics-implementation/tests/integration.test.mjs:12:33)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async complete (file:///home/mike/Codex/Projects/logistics-implementation/tests/integration.test.mjs:13:35)
+      at async TestContext.<anonymous> (file:///home/mike/Codex/Projects/logistics-implementation/tests/integration.test.mjs:16:67)
+      at async Test.run (node:internal/test_runner/test:1313:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:897:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 501,
+    expected: 200,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/integration.test.mjs:17:1
+✖ I04 retries do not duplicate tasks or reservations (21.536651ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  501 !== 200
+  
+      at prepare (file:///home/mike/Codex/Projects/logistics-implementation/tests/integration.test.mjs:12:33)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async TestContext.<anonymous> (file:///home/mike/Codex/Projects/logistics-implementation/tests/integration.test.mjs:17:69)
+      at async Test.run (node:internal/test_runner/test:1313:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:897:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 501,
+    expected: 200,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/integration.test.mjs:18:1
+✖ I05 concurrent orders cannot reserve the same stock (29.627868ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  501 !== 200
+  
+      at TestContext.<anonymous> (file:///home/mike/Codex/Projects/logistics-implementation/tests/integration.test.mjs:18:251)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async Test.run (node:internal/test_runner/test:1313:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:897:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 501,
+    expected: 200,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/integration.test.mjs:19:1
+✖ I06 concurrent approval and rejection accept one decision (20.879083ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  501 !== 200
+  
+      at TestContext.<anonymous> (file:///home/mike/Codex/Projects/logistics-implementation/tests/integration.test.mjs:19:83)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async Test.run (node:internal/test_runner/test:1313:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:897:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 501,
+    expected: 200,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/integration.test.mjs:20:1
+✖ I07 backend enforces roles and revoked permissions (19.907897ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  501 !== 200
+  
+      at TestContext.<anonymous> (file:///home/mike/Codex/Projects/logistics-implementation/tests/integration.test.mjs:20:76)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async Test.run (node:internal/test_runner/test:1313:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:897:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 501,
+    expected: 200,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/integration.test.mjs:21:1
+✖ I08 rejection records its reason without changing inventory (19.634448ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  501 !== 200
+  
+      at TestContext.<anonymous> (file:///home/mike/Codex/Projects/logistics-implementation/tests/integration.test.mjs:21:85)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async Test.run (node:internal/test_runner/test:1313:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:897:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 501,
+    expected: 200,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/integration.test.mjs:22:1
+✖ I09 stale proposals cannot execute (20.559905ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  501 !== 200
+  
+      at TestContext.<anonymous> (file:///home/mike/Codex/Projects/logistics-implementation/tests/integration.test.mjs:22:60)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async Test.run (node:internal/test_runner/test:1313:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:897:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 501,
+    expected: 200,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/integration.test.mjs:23:1
+✖ I10 reset preserves history and rejects old-run actions (20.584348ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  501 !== 200
+  
+      at prepare (file:///home/mike/Codex/Projects/logistics-implementation/tests/integration.test.mjs:12:33)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async TestContext.<anonymous> (file:///home/mike/Codex/Projects/logistics-implementation/tests/integration.test.mjs:23:74)
+      at async Test.run (node:internal/test_runner/test:1313:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:897:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 501,
+    expected: 200,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/integration.test.mjs:24:1
+✖ I11 separate requests and reloads see the same persistent data (20.538292ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  501 !== 200
+  
+      at prepare (file:///home/mike/Codex/Projects/logistics-implementation/tests/integration.test.mjs:12:33)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async TestContext.<anonymous> (file:///home/mike/Codex/Projects/logistics-implementation/tests/integration.test.mjs:24:81)
+      at async Test.run (node:internal/test_runner/test:1313:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:897:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 501,
+    expected: 200,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/integration.test.mjs:25:1
+✖ I12 failed writes preserve the entire previous state (20.295966ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  501 !== 200
+  
+      at prepare (file:///home/mike/Codex/Projects/logistics-implementation/tests/integration.test.mjs:12:33)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async TestContext.<anonymous> (file:///home/mike/Codex/Projects/logistics-implementation/tests/integration.test.mjs:25:71)
+      at async Test.run (node:internal/test_runner/test:1313:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:897:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 501,
+    expected: 200,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/integration.test.mjs:26:1
+✖ I13 custom task types participate and invalid types are rejected (20.928038ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  501 !== 200
+  
+      at TestContext.<anonymous> (file:///home/mike/Codex/Projects/logistics-implementation/tests/integration.test.mjs:26:217)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async Test.run (node:internal/test_runner/test:1313:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:897:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 501,
+    expected: 200,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/integration.test.mjs:27:1
+✖ I14 reset requires explicit confirmation (19.52917ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  501 !== 200
+  
+      at state (file:///home/mike/Codex/Projects/logistics-implementation/tests/integration.test.mjs:11:105)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async TestContext.<anonymous> (file:///home/mike/Codex/Projects/logistics-implementation/tests/integration.test.mjs:27:72)
+      at async Test.run (node:internal/test_runner/test:1313:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:897:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 501,
+    expected: 200,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/integration.test.mjs:28:1
+✖ I15 foreign-origin writes are rejected (20.159189ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  501 !== 403
+  
+      at TestContext.<anonymous> (file:///home/mike/Codex/Projects/logistics-implementation/tests/integration.test.mjs:28:317)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async Test.run (node:internal/test_runner/test:1313:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:897:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 501,
+    expected: 403,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/integration.test.mjs:29:1
+✖ I16 unknown roles cannot mutate state (22.471122ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  501 !== 403
+  
+      at TestContext.<anonymous> (file:///home/mike/Codex/Projects/logistics-implementation/tests/integration.test.mjs:29:63)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async Test.run (node:internal/test_runner/test:1313:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:897:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 501,
+    expected: 403,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/integration.test.mjs:30:1
+✖ I17 first read seeds the migrated database once (29.112266ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  501 !== 200
+  
+      at state (file:///home/mike/Codex/Projects/logistics-implementation/tests/integration.test.mjs:11:105)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async TestContext.<anonymous> (file:///home/mike/Codex/Projects/logistics-implementation/tests/integration.test.mjs:30:123)
+      at async Test.run (node:internal/test_runner/test:1313:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:897:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 501,
+    expected: 200,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/integration.test.mjs:31:1
+✖ I18 staff cannot configure tasks (19.676604ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  501 !== 403
+  
+      at TestContext.<anonymous> (file:///home/mike/Codex/Projects/logistics-implementation/tests/integration.test.mjs:31:58)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async Test.run (node:internal/test_runner/test:1313:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:897:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 501,
+    expected: 403,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/unit.test.mjs:7:1
+✖ U01 enough stock permits readiness (1.2062ms)
+  Error: NOT_IMPLEMENTED: order assessment
+      at assessOrders (file:///home/mike/Codex/Projects/logistics-implementation/domain/rules.mjs:1:40)
+      at TestContext.<anonymous> (file:///home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs:7:60)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1306:25)
+      at Test.start (node:internal/test_runner/test:1177:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:385:17)
+
+test at tests/unit.test.mjs:8:1
+✖ U02 shortage blocks the order (0.117364ms)
+  Error: NOT_IMPLEMENTED: order assessment
+      at assessOrders (file:///home/mike/Codex/Projects/logistics-implementation/domain/rules.mjs:1:40)
+      at TestContext.<anonymous> (file:///home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs:8:51)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1306:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:897:18)
+      at Test.postRun (node:internal/test_runner/test:1447:19)
+      at Test.run (node:internal/test_runner/test:1372:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:385:3)
+
+test at tests/unit.test.mjs:9:1
+✖ U03 missing inventory remains unknown (0.072977ms)
+  Error: NOT_IMPLEMENTED: order assessment
+      at assessOrders (file:///home/mike/Codex/Projects/logistics-implementation/domain/rules.mjs:1:40)
+      at TestContext.<anonymous> (file:///home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs:9:97)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1306:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:897:18)
+      at Test.postRun (node:internal/test_runner/test:1447:19)
+      at Test.run (node:internal/test_runner/test:1372:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:897:7)
+
+test at tests/unit.test.mjs:10:1
+✖ U04 due dates and stable IDs determine priority (0.068369ms)
+  Error: NOT_IMPLEMENTED: order assessment
+      at assessOrders (file:///home/mike/Codex/Projects/logistics-implementation/domain/rules.mjs:1:40)
+      at TestContext.<anonymous> (file:///home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs:10:146)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1306:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:897:18)
+      at Test.postRun (node:internal/test_runner/test:1447:19)
+      at Test.run (node:internal/test_runner/test:1372:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:897:7)
+
+test at tests/unit.test.mjs:11:1
+✖ U05 invalid quantities block only the affected order (0.065701ms)
+  Error: NOT_IMPLEMENTED: order assessment
+      at assessOrders (file:///home/mike/Codex/Projects/logistics-implementation/domain/rules.mjs:1:40)
+      at TestContext.<anonymous> (file:///home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs:11:125)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1306:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:897:18)
+      at Test.postRun (node:internal/test_runner/test:1447:19)
+      at Test.run (node:internal/test_runner/test:1372:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:897:7)
+
+test at tests/unit.test.mjs:12:1
+✖ U06 non-finite and missing quantities are rejected (0.097098ms)
+  Error: NOT_IMPLEMENTED: order assessment
+      at assessOrders (file:///home/mike/Codex/Projects/logistics-implementation/domain/rules.mjs:1:40)
+      at TestContext.<anonymous> (file:///home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs:12:170)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1306:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:897:18)
+      at Test.postRun (node:internal/test_runner/test:1447:19)
+      at Test.run (node:internal/test_runner/test:1372:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:897:7)
+
+test at tests/unit.test.mjs:13:1
+✖ U07 plans include enabled configured task types (0.073157ms)
+  Error: NOT_IMPLEMENTED: order assessment
+      at assessOrders (file:///home/mike/Codex/Projects/logistics-implementation/domain/rules.mjs:1:40)
+      at prepared (file:///home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs:5:51)
+      at TestContext.<anonymous> (file:///home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs:13:69)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1306:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:897:18)
+      at Test.postRun (node:internal/test_runner/test:1447:19)
+      at Test.run (node:internal/test_runner/test:1372:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:897:7)
+
+test at tests/unit.test.mjs:14:1
+✖ U08 plans preserve task dependencies (0.051933ms)
+  Error: NOT_IMPLEMENTED: order assessment
+      at assessOrders (file:///home/mike/Codex/Projects/logistics-implementation/domain/rules.mjs:1:40)
+      at prepared (file:///home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs:5:51)
+      at TestContext.<anonymous> (file:///home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs:14:58)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1306:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:897:18)
+      at Test.postRun (node:internal/test_runner/test:1447:19)
+      at Test.run (node:internal/test_runner/test:1372:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:897:7)
+
+test at tests/unit.test.mjs:15:1
+✖ U09 eligibility and workload determine assignments (0.110379ms)
+  Error: NOT_IMPLEMENTED: order assessment
+      at assessOrders (file:///home/mike/Codex/Projects/logistics-implementation/domain/rules.mjs:1:40)
+      at prepared (file:///home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs:5:51)
+      at TestContext.<anonymous> (file:///home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs:15:82)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1306:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:897:18)
+      at Test.postRun (node:internal/test_runner/test:1447:19)
+      at Test.run (node:internal/test_runner/test:1372:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:897:7)
+
+test at tests/unit.test.mjs:16:1
+✖ U10 no eligible worker causes escalation (0.121512ms)
+  Error: NOT_IMPLEMENTED: order assessment
+      at assessOrders (file:///home/mike/Codex/Projects/logistics-implementation/domain/rules.mjs:1:40)
+      at prepared (file:///home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs:5:51)
+      at TestContext.<anonymous> (file:///home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs:16:62)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1306:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:897:18)
+      at Test.postRun (node:internal/test_runner/test:1447:19)
+      at Test.run (node:internal/test_runner/test:1372:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:897:7)
+
+test at tests/unit.test.mjs:17:1
+✖ U11 unknown and cyclic dependencies are rejected (0.577405ms)
+  AssertionError [ERR_ASSERTION]: The input did not match the regular expression /dependency/i. Input:
+  
+  'Error: NOT_IMPLEMENTED: task configuration'
+  
+      at TestContext.<anonymous> (file:///home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs:17:124)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1306:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:897:18)
+      at Test.postRun (node:internal/test_runner/test:1447:19)
+      at Test.run (node:internal/test_runner/test:1372:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:897:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: Error: NOT_IMPLEMENTED: task configuration
+        at validateTypes (file:///home/mike/Codex/Projects/logistics-implementation/domain/rules.mjs:4:41)
+        at file:///home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs:17:135
+        at getActual (node:assert:611:5)
+        at strict.throws (node:assert:759:24)
+        at TestContext.<anonymous> (file:///home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs:17:124)
+        at Test.runInAsyncScope (node:async_hooks:227:14)
+        at Test.run (node:internal/test_runner/test:1306:25)
+        at Test.processPendingSubtests (node:internal/test_runner/test:897:18)
+        at Test.postRun (node:internal/test_runner/test:1447:19)
+        at Test.run (node:internal/test_runner/test:1372:12),
+    expected: /dependency/i,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at tests/unit.test.mjs:18:1
+✖ U12 disabled types produce no new tasks (0.102682ms)
+  Error: NOT_IMPLEMENTED: order assessment
+      at assessOrders (file:///home/mike/Codex/Projects/logistics-implementation/domain/rules.mjs:1:40)
+      at prepared (file:///home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs:5:51)
+      at TestContext.<anonymous> (file:///home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs:18:61)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1306:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:897:18)
+      at Test.postRun (node:internal/test_runner/test:1447:19)
+      at Test.run (node:internal/test_runner/test:1372:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:897:7)
+
+test at tests/unit.test.mjs:19:1
+✖ U13 shortage proposal uses the current records (0.100781ms)
+  Error: NOT_IMPLEMENTED: exception proposal
+      at proposeCorrection (file:///home/mike/Codex/Projects/logistics-implementation/domain/rules.mjs:3:45)
+      at TestContext.<anonymous> (file:///home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs:19:86)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1306:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:897:18)
+      at Test.postRun (node:internal/test_runner/test:1447:19)
+      at Test.run (node:internal/test_runner/test:1372:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:897:7)
+
+test at tests/unit.test.mjs:20:1
+✖ U14 a correction proposal never changes stock (0.053141ms)
+  Error: NOT_IMPLEMENTED: exception proposal
+      at proposeCorrection (file:///home/mike/Codex/Projects/logistics-implementation/domain/rules.mjs:3:45)
+      at TestContext.<anonymous> (file:///home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs:20:85)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1306:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:897:18)
+      at Test.postRun (node:internal/test_runner/test:1447:19)
+      at Test.run (node:internal/test_runner/test:1372:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:897:7)
+
+test at tests/unit.test.mjs:21:1
+✖ U15 unauthorized protected actions fail (0.192054ms)
+  AssertionError [ERR_ASSERTION]: The input did not match the regular expression /manager/i. Input:
+  
+  'Error: NOT_IMPLEMENTED: permissions'
+  
+      at TestContext.<anonymous> (file:///home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs:21:60)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1306:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:897:18)
+      at Test.postRun (node:internal/test_runner/test:1447:19)
+      at Test.run (node:internal/test_runner/test:1372:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:897:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: Error: NOT_IMPLEMENTED: permissions
+        at authorize (file:///home/mike/Codex/Projects/logistics-implementation/domain/rules.mjs:5:37)
+        at file:///home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs:21:71
+        at getActual (node:assert:611:5)
+        at strict.throws (node:assert:759:24)
+        at TestContext.<anonymous> (file:///home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs:21:60)
+        at Test.runInAsyncScope (node:async_hooks:227:14)
+        at Test.run (node:internal/test_runner/test:1306:25)
+        at Test.processPendingSubtests (node:internal/test_runner/test:897:18)
+        at Test.postRun (node:internal/test_runner/test:1447:19)
+        at Test.run (node:internal/test_runner/test:1372:12),
+    expected: /manager/i,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at tests/unit.test.mjs:22:1
+✖ U16 packing requires completed picking (0.061395ms)
+  Error: NOT_IMPLEMENTED: order assessment
+      at assessOrders (file:///home/mike/Codex/Projects/logistics-implementation/domain/rules.mjs:1:40)
+      at prepared (file:///home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs:5:51)
+      at TestContext.<anonymous> (file:///home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs:22:60)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1306:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:897:18)
+      at Test.postRun (node:internal/test_runner/test:1447:19)
+      at Test.run (node:internal/test_runner/test:1372:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:897:7)
+
+test at tests/unit.test.mjs:23:1
+✖ U17 release requires completed work (0.070347ms)
+  Error: NOT_IMPLEMENTED: order assessment
+      at assessOrders (file:///home/mike/Codex/Projects/logistics-implementation/domain/rules.mjs:1:40)
+      at prepared (file:///home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs:5:51)
+      at TestContext.<anonymous> (file:///home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs:23:57)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1306:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:897:18)
+      at Test.postRun (node:internal/test_runner/test:1447:19)
+      at Test.run (node:internal/test_runner/test:1372:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:897:7)
+
+test at tests/unit.test.mjs:24:1
+✖ U18 changed source records invalidate decisions (0.059608ms)
+  Error: NOT_IMPLEMENTED: order assessment
+      at assessOrders (file:///home/mike/Codex/Projects/logistics-implementation/domain/rules.mjs:1:40)
+      at prepared (file:///home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs:5:51)
+      at TestContext.<anonymous> (file:///home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs:24:69)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1306:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:897:18)
+      at Test.postRun (node:internal/test_runner/test:1447:19)
+      at Test.run (node:internal/test_runner/test:1372:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:897:7)
+
+test at tests/unit.test.mjs:25:1
+✖ U19 revoked permissions prevent agent execution (0.044016ms)
+  Error: NOT_IMPLEMENTED: order assessment
+      at assessOrders (file:///home/mike/Codex/Projects/logistics-implementation/domain/rules.mjs:1:40)
+      at prepared (file:///home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs:5:51)
+      at TestContext.<anonymous> (file:///home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs:25:69)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1306:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:897:18)
+      at Test.postRun (node:internal/test_runner/test:1447:19)
+      at Test.run (node:internal/test_runner/test:1372:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:897:7)
+
+test at tests/unit.test.mjs:26:1
+✖ U20 rejection requires a nonblank explanation (0.075291ms)
+  Error: NOT_IMPLEMENTED: workflow
+      at applyAction (file:///home/mike/Codex/Projects/logistics-implementation/domain/rules.mjs:6:39)
+      at act (file:///home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs:6:48)
+      at TestContext.<anonymous> (file:///home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs:26:77)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1306:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:897:18)
+      at Test.postRun (node:internal/test_runner/test:1447:19)
+      at Test.run (node:internal/test_runner/test:1372:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:897:7)

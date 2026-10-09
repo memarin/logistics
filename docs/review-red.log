@@ -1,0 +1,105 @@
+✖ C01 delayed browser responses cannot replace newer state (1.288826ms)
+✖ C02 guide can continue when another reviewer released the order (0.458443ms)
+✖ C03 guide can continue after another reviewer corrected the shortage (0.207241ms)
+✖ I19 stale task configuration cannot overwrite an accepted change (317.364367ms)
+✖ I20 an enabled task cannot retain a disabled dependency (42.365103ms)
+✖ I21 IT controls role access and revoked access blocks the next mutation (42.170585ms)
+✔ tests/unit.test.mjs (36.375328ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 1
+ℹ fail 6
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 728.543467
+
+✖ failing tests:
+
+test at tests/client.test.mjs:5:1
+✖ C01 delayed browser responses cannot replace newer state (1.288826ms)
+  Error: NOT_IMPLEMENTED: browser version reconciliation
+      at isCurrentVersion (file:///home/mike/Codex/Projects/logistics-implementation/domain/client-state.mjs:1:42)
+      at TestContext.<anonymous> (file:///home/mike/Codex/Projects/logistics-implementation/tests/client.test.mjs:5:83)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1306:25)
+      at Test.start (node:internal/test_runner/test:1177:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:385:17)
+
+test at tests/client.test.mjs:6:1
+✖ C02 guide can continue when another reviewer released the order (0.458443ms)
+  Error: NOT_IMPLEMENTED: shared guide reconciliation
+      at guideStepComplete (file:///home/mike/Codex/Projects/logistics-implementation/domain/client-state.mjs:2:43)
+      at TestContext.<anonymous> (file:///home/mike/Codex/Projects/logistics-implementation/tests/client.test.mjs:6:138)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1306:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:897:18)
+      at Test.postRun (node:internal/test_runner/test:1447:19)
+      at Test.run (node:internal/test_runner/test:1372:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:385:3)
+
+test at tests/client.test.mjs:7:1
+✖ C03 guide can continue after another reviewer corrected the shortage (0.207241ms)
+  Error: NOT_IMPLEMENTED: shared guide reconciliation
+      at guideStepComplete (file:///home/mike/Codex/Projects/logistics-implementation/domain/client-state.mjs:2:43)
+      at TestContext.<anonymous> (file:///home/mike/Codex/Projects/logistics-implementation/tests/client.test.mjs:7:137)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1306:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:897:18)
+      at Test.postRun (node:internal/test_runner/test:1447:19)
+      at Test.run (node:internal/test_runner/test:1372:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:897:7)
+
+test at tests/integration.test.mjs:32:1
+✖ I19 stale task configuration cannot overwrite an accepted change (317.364367ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  200 !== 409
+  
+      at TestContext.<anonymous> (file:///home/mike/Codex/Projects/logistics-implementation/tests/integration.test.mjs:32:456)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async Test.run (node:internal/test_runner/test:1313:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:385:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 200,
+    expected: 409,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/integration.test.mjs:33:1
+✖ I20 an enabled task cannot retain a disabled dependency (42.365103ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  200 !== 400
+  
+      at TestContext.<anonymous> (file:///home/mike/Codex/Projects/logistics-implementation/tests/integration.test.mjs:33:128)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async Test.run (node:internal/test_runner/test:1313:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:897:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 200,
+    expected: 400,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/integration.test.mjs:34:1
+✖ I21 IT controls role access and revoked access blocks the next mutation (42.170585ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  400 !== 200
+  
+      at TestContext.<anonymous> (file:///home/mike/Codex/Projects/logistics-implementation/tests/integration.test.mjs:34:97)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async Test.run (node:internal/test_runner/test:1313:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:897:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 400,
+    expected: 200,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

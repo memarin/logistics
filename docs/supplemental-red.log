@@ -1,0 +1,39 @@
+✖ U21 missing order lines block only the malformed order (6.01142ms)
+✖ U22 malformed due dates do not stop other orders (0.118588ms)
+ℹ tests 2
+ℹ suites 0
+ℹ pass 0
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 52.170618
+
+✖ failing tests:
+
+test at tests/unit.test.mjs:27:1
+✖ U21 missing order lines block only the malformed order (6.01142ms)
+  TypeError: Cannot read properties of undefined (reading 'map')
+      at source (file:///home/mike/Codex/Projects/logistics-implementation/domain/rules.mjs:4:127)
+      at file:///home/mike/Codex/Projects/logistics-implementation/domain/rules.mjs:16:165
+      at Array.map (<anonymous>)
+      at assessOrders (file:///home/mike/Codex/Projects/logistics-implementation/domain/rules.mjs:6:113)
+      at TestContext.<anonymous> (file:///home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs:27:119)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1306:25)
+      at Test.start (node:internal/test_runner/test:1177:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:385:17)
+
+test at tests/unit.test.mjs:28:1
+✖ U22 malformed due dates do not stop other orders (0.118588ms)
+  TypeError: Cannot read properties of null (reading 'localeCompare')
+      at file:///home/mike/Codex/Projects/logistics-implementation/domain/rules.mjs:6:65
+      at Array.sort (<anonymous>)
+      at assessOrders (file:///home/mike/Codex/Projects/logistics-implementation/domain/rules.mjs:6:47)
+      at TestContext.<anonymous> (file:///home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs:28:109)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1306:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:897:18)
+      at Test.postRun (node:internal/test_runner/test:1447:19)
+      at Test.run (node:internal/test_runner/test:1372:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:385:3)

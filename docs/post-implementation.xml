@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<testsuites>
+	<testcase name="I01 assessment and coordination persist consistent records and audit links" time="0.424662" classname="test" file="/home/mike/Codex/Projects/logistics-implementation/tests/integration.test.mjs"/>
+	<testcase name="I02 shortage correction waits for approval and resumes fulfillment" time="0.134016" classname="test" file="/home/mike/Codex/Projects/logistics-implementation/tests/integration.test.mjs"/>
+	<testcase name="I03 shipment release consumes stock exactly once" time="0.194061" classname="test" file="/home/mike/Codex/Projects/logistics-implementation/tests/integration.test.mjs"/>
+	<testcase name="I04 retries do not duplicate tasks or reservations" time="0.153434" classname="test" file="/home/mike/Codex/Projects/logistics-implementation/tests/integration.test.mjs"/>
+	<testcase name="I05 concurrent orders cannot reserve the same stock" time="0.112738" classname="test" file="/home/mike/Codex/Projects/logistics-implementation/tests/integration.test.mjs"/>
+	<testcase name="I06 concurrent approval and rejection accept one decision" time="0.116679" classname="test" file="/home/mike/Codex/Projects/logistics-implementation/tests/integration.test.mjs"/>
+	<testcase name="I07 backend enforces roles and revoked permissions" time="0.147014" classname="test" file="/home/mike/Codex/Projects/logistics-implementation/tests/integration.test.mjs"/>
+	<testcase name="I08 rejection records its reason without changing inventory" time="0.106998" classname="test" file="/home/mike/Codex/Projects/logistics-implementation/tests/integration.test.mjs"/>
+	<testcase name="I09 stale proposals cannot execute" time="0.099460" classname="test" file="/home/mike/Codex/Projects/logistics-implementation/tests/integration.test.mjs"/>
+	<testcase name="I10 reset preserves history and rejects old-run actions" time="0.114242" classname="test" file="/home/mike/Codex/Projects/logistics-implementation/tests/integration.test.mjs"/>
+	<testcase name="I11 separate requests and reloads see the same persistent data" time="0.085578" classname="test" file="/home/mike/Codex/Projects/logistics-implementation/tests/integration.test.mjs"/>
+	<testcase name="I12 failed writes preserve the entire previous state" time="0.125304" classname="test" file="/home/mike/Codex/Projects/logistics-implementation/tests/integration.test.mjs"/>
+	<testcase name="I13 custom task types participate and invalid types are rejected" time="0.110886" classname="test" file="/home/mike/Codex/Projects/logistics-implementation/tests/integration.test.mjs"/>
+	<testcase name="I14 reset requires explicit confirmation" time="0.051062" classname="test" file="/home/mike/Codex/Projects/logistics-implementation/tests/integration.test.mjs"/>
+	<testcase name="I15 foreign-origin writes are rejected" time="0.026390" classname="test" file="/home/mike/Codex/Projects/logistics-implementation/tests/integration.test.mjs"/>
+	<testcase name="I16 unknown roles cannot mutate state" time="0.044348" classname="test" file="/home/mike/Codex/Projects/logistics-implementation/tests/integration.test.mjs"/>
+	<testcase name="I17 first read seeds the migrated database once" time="0.060788" classname="test" file="/home/mike/Codex/Projects/logistics-implementation/tests/integration.test.mjs"/>
+	<testcase name="I18 staff cannot configure tasks" time="0.044078" classname="test" file="/home/mike/Codex/Projects/logistics-implementation/tests/integration.test.mjs"/>
+	<testcase name="U01 enough stock permits readiness" time="0.005551" classname="test" file="/home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs"/>
+	<testcase name="U02 shortage blocks the order" time="0.000262" classname="test" file="/home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs"/>
+	<testcase name="U03 missing inventory remains unknown" time="0.000183" classname="test" file="/home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs"/>
+	<testcase name="U04 due dates and stable IDs determine priority" time="0.000154" classname="test" file="/home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs"/>
+	<testcase name="U05 invalid quantities block only the affected order" time="0.000215" classname="test" file="/home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs"/>
+	<testcase name="U06 non-finite and missing quantities are rejected" time="0.000221" classname="test" file="/home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs"/>
+	<testcase name="U07 plans include enabled configured task types" time="0.000814" classname="test" file="/home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs"/>
+	<testcase name="U08 plans preserve task dependencies" time="0.000189" classname="test" file="/home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs"/>
+	<testcase name="U09 eligibility and workload determine assignments" time="0.000278" classname="test" file="/home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs"/>
+	<testcase name="U10 no eligible worker causes escalation" time="0.000460" classname="test" file="/home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs"/>
+	<testcase name="U11 unknown and cyclic dependencies are rejected" time="0.000251" classname="test" file="/home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs"/>
+	<testcase name="U12 disabled types produce no new tasks" time="0.000220" classname="test" file="/home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs"/>
+	<testcase name="U13 shortage proposal uses the current records" time="0.001262" classname="test" file="/home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs"/>
+	<testcase name="U14 a correction proposal never changes stock" time="0.000099" classname="test" file="/home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs"/>
+	<testcase name="U15 unauthorized protected actions fail" time="0.000225" classname="test" file="/home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs"/>
+	<testcase name="U16 packing requires completed picking" time="0.000687" classname="test" file="/home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs"/>
+	<testcase name="U17 release requires completed work" time="0.000170" classname="test" file="/home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs"/>
+	<testcase name="U18 changed source records invalidate decisions" time="0.000088" classname="test" file="/home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs"/>
+	<testcase name="U19 revoked permissions prevent agent execution" time="0.000149" classname="test" file="/home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs"/>
+	<testcase name="U20 rejection requires a nonblank explanation" time="0.000164" classname="test" file="/home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs"/>
+	<testcase name="U21 missing order lines block only the malformed order" time="0.000072" classname="test" file="/home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs"/>
+	<testcase name="U22 malformed due dates do not stop other orders" time="0.000056" classname="test" file="/home/mike/Codex/Projects/logistics-implementation/tests/unit.test.mjs"/>
+	<!-- tests 40 -->
+	<!-- suites 0 -->
+	<!-- pass 40 -->
+	<!-- fail 0 -->
+	<!-- cancelled 0 -->
+	<!-- skipped 0 -->
+	<!-- todo 0 -->
+	<!-- duration_ms 2419.891547 -->
+</testsuites>

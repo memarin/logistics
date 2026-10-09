@@ -1,0 +1,324 @@
+[
+  {
+    "test": "C01 delayed browser responses cannot replace newer state",
+    "baseline": "FAIL - Review regression",
+    "final": "PASS",
+    "originalAssertionsChanged": false,
+    "supplemental": true
+  },
+  {
+    "test": "C02 guide can continue when another reviewer released the order",
+    "baseline": "FAIL - Review regression",
+    "final": "PASS",
+    "originalAssertionsChanged": false,
+    "supplemental": true
+  },
+  {
+    "test": "C03 guide can continue after another reviewer corrected the shortage",
+    "baseline": "FAIL - Review regression",
+    "final": "PASS",
+    "originalAssertionsChanged": false,
+    "supplemental": true
+  },
+  {
+    "test": "I01 assessment and coordination persist consistent records and audit links",
+    "baseline": "FAIL - Missing app behavior",
+    "final": "PASS",
+    "originalAssertionsChanged": false,
+    "supplemental": false
+  },
+  {
+    "test": "I02 shortage correction waits for approval and resumes fulfillment",
+    "baseline": "FAIL - Missing app behavior",
+    "final": "PASS",
+    "originalAssertionsChanged": false,
+    "supplemental": false
+  },
+  {
+    "test": "I03 shipment release consumes stock exactly once",
+    "baseline": "FAIL - Missing app behavior",
+    "final": "PASS",
+    "originalAssertionsChanged": false,
+    "supplemental": false
+  },
+  {
+    "test": "I04 retries do not duplicate tasks or reservations",
+    "baseline": "FAIL - Missing app behavior",
+    "final": "PASS",
+    "originalAssertionsChanged": false,
+    "supplemental": false
+  },
+  {
+    "test": "I05 concurrent orders cannot reserve the same stock",
+    "baseline": "FAIL - Missing app behavior",
+    "final": "PASS",
+    "originalAssertionsChanged": false,
+    "supplemental": false
+  },
+  {
+    "test": "I06 concurrent approval and rejection accept one decision",
+    "baseline": "FAIL - Missing app behavior",
+    "final": "PASS",
+    "originalAssertionsChanged": false,
+    "supplemental": false
+  },
+  {
+    "test": "I07 backend enforces roles and revoked permissions",
+    "baseline": "FAIL - Missing app behavior",
+    "final": "PASS",
+    "originalAssertionsChanged": false,
+    "supplemental": false
+  },
+  {
+    "test": "I08 rejection records its reason without changing inventory",
+    "baseline": "FAIL - Missing app behavior",
+    "final": "PASS",
+    "originalAssertionsChanged": false,
+    "supplemental": false
+  },
+  {
+    "test": "I09 stale proposals cannot execute",
+    "baseline": "FAIL - Missing app behavior",
+    "final": "PASS",
+    "originalAssertionsChanged": false,
+    "supplemental": false
+  },
+  {
+    "test": "I10 reset preserves history and rejects old-run actions",
+    "baseline": "FAIL - Missing app behavior",
+    "final": "PASS",
+    "originalAssertionsChanged": false,
+    "supplemental": false
+  },
+  {
+    "test": "I11 separate requests and reloads see the same persistent data",
+    "baseline": "FAIL - Missing app behavior",
+    "final": "PASS",
+    "originalAssertionsChanged": false,
+    "supplemental": false
+  },
+  {
+    "test": "I12 failed writes preserve the entire previous state",
+    "baseline": "FAIL - Missing app behavior",
+    "final": "PASS",
+    "originalAssertionsChanged": false,
+    "supplemental": false
+  },
+  {
+    "test": "I13 custom task types participate and invalid types are rejected",
+    "baseline": "FAIL - Missing app behavior",
+    "final": "PASS",
+    "originalAssertionsChanged": false,
+    "supplemental": false
+  },
+  {
+    "test": "I14 reset requires explicit confirmation",
+    "baseline": "FAIL - Missing app behavior",
+    "final": "PASS",
+    "originalAssertionsChanged": false,
+    "supplemental": false
+  },
+  {
+    "test": "I15 foreign-origin writes are rejected",
+    "baseline": "FAIL - Missing app behavior",
+    "final": "PASS",
+    "originalAssertionsChanged": false,
+    "supplemental": false
+  },
+  {
+    "test": "I16 unknown roles cannot mutate state",
+    "baseline": "FAIL - Missing app behavior",
+    "final": "PASS",
+    "originalAssertionsChanged": false,
+    "supplemental": false
+  },
+  {
+    "test": "I17 first read seeds the migrated database once",
+    "baseline": "FAIL - Missing app behavior",
+    "final": "PASS",
+    "originalAssertionsChanged": false,
+    "supplemental": false
+  },
+  {
+    "test": "I18 staff cannot configure tasks",
+    "baseline": "FAIL - Missing app behavior",
+    "final": "PASS",
+    "originalAssertionsChanged": false,
+    "supplemental": false
+  },
+  {
+    "test": "I19 stale task configuration cannot overwrite an accepted change",
+    "baseline": "FAIL - Review regression",
+    "final": "PASS",
+    "originalAssertionsChanged": false,
+    "supplemental": true
+  },
+  {
+    "test": "I20 an enabled task cannot retain a disabled dependency",
+    "baseline": "FAIL - Review regression",
+    "final": "PASS",
+    "originalAssertionsChanged": false,
+    "supplemental": true
+  },
+  {
+    "test": "I21 IT controls role access and revoked access blocks the next mutation",
+    "baseline": "FAIL - Review regression",
+    "final": "PASS",
+    "originalAssertionsChanged": false,
+    "supplemental": true
+  },
+  {
+    "test": "U01 enough stock permits readiness",
+    "baseline": "FAIL - Missing app behavior",
+    "final": "PASS",
+    "originalAssertionsChanged": false,
+    "supplemental": false
+  },
+  {
+    "test": "U02 shortage blocks the order",
+    "baseline": "FAIL - Missing app behavior",
+    "final": "PASS",
+    "originalAssertionsChanged": false,
+    "supplemental": false
+  },
+  {
+    "test": "U03 missing inventory remains unknown",
+    "baseline": "FAIL - Missing app behavior",
+    "final": "PASS",
+    "originalAssertionsChanged": false,
+    "supplemental": false
+  },
+  {
+    "test": "U04 due dates and stable IDs determine priority",
+    "baseline": "FAIL - Missing app behavior",
+    "final": "PASS",
+    "originalAssertionsChanged": false,
+    "supplemental": false
+  },
+  {
+    "test": "U05 invalid quantities block only the affected order",
+    "baseline": "FAIL - Missing app behavior",
+    "final": "PASS",
+    "originalAssertionsChanged": false,
+    "supplemental": false
+  },
+  {
+    "test": "U06 non-finite and missing quantities are rejected",
+    "baseline": "FAIL - Missing app behavior",
+    "final": "PASS",
+    "originalAssertionsChanged": false,
+    "supplemental": false
+  },
+  {
+    "test": "U07 plans include enabled configured task types",
+    "baseline": "FAIL - Missing app behavior",
+    "final": "PASS",
+    "originalAssertionsChanged": false,
+    "supplemental": false
+  },
+  {
+    "test": "U08 plans preserve task dependencies",
+    "baseline": "FAIL - Missing app behavior",
+    "final": "PASS",
+    "originalAssertionsChanged": false,
+    "supplemental": false
+  },
+  {
+    "test": "U09 eligibility and workload determine assignments",
+    "baseline": "FAIL - Missing app behavior",
+    "final": "PASS",
+    "originalAssertionsChanged": false,
+    "supplemental": false
+  },
+  {
+    "test": "U10 no eligible worker causes escalation",
+    "baseline": "FAIL - Missing app behavior",
+    "final": "PASS",
+    "originalAssertionsChanged": false,
+    "supplemental": false
+  },
+  {
+    "test": "U11 unknown and cyclic dependencies are rejected",
+    "baseline": "FAIL - Missing app behavior",
+    "final": "PASS",
+    "originalAssertionsChanged": false,
+    "supplemental": false
+  },
+  {
+    "test": "U12 disabled types produce no new tasks",
+    "baseline": "FAIL - Missing app behavior",
+    "final": "PASS",
+    "originalAssertionsChanged": false,
+    "supplemental": false
+  },
+  {
+    "test": "U13 shortage proposal uses the current records",
+    "baseline": "FAIL - Missing app behavior",
+    "final": "PASS",
+    "originalAssertionsChanged": false,
+    "supplemental": false
+  },
+  {
+    "test": "U14 a correction proposal never changes stock",
+    "baseline": "FAIL - Missing app behavior",
+    "final": "PASS",
+    "originalAssertionsChanged": false,
+    "supplemental": false
+  },
+  {
+    "test": "U15 unauthorized protected actions fail",
+    "baseline": "FAIL - Missing app behavior",
+    "final": "PASS",
+    "originalAssertionsChanged": false,
+    "supplemental": false
+  },
+  {
+    "test": "U16 packing requires completed picking",
+    "baseline": "FAIL - Missing app behavior",
+    "final": "PASS",
+    "originalAssertionsChanged": false,
+    "supplemental": false
+  },
+  {
+    "test": "U17 release requires completed work",
+    "baseline": "FAIL - Missing app behavior",
+    "final": "PASS",
+    "originalAssertionsChanged": false,
+    "supplemental": false
+  },
+  {
+    "test": "U18 changed source records invalidate decisions",
+    "baseline": "FAIL - Missing app behavior",
+    "final": "PASS",
+    "originalAssertionsChanged": false,
+    "supplemental": false
+  },
+  {
+    "test": "U19 revoked permissions prevent agent execution",
+    "baseline": "FAIL - Missing app behavior",
+    "final": "PASS",
+    "originalAssertionsChanged": false,
+    "supplemental": false
+  },
+  {
+    "test": "U20 rejection requires a nonblank explanation",
+    "baseline": "FAIL - Missing app behavior",
+    "final": "PASS",
+    "originalAssertionsChanged": false,
+    "supplemental": false
+  },
+  {
+    "test": "U21 missing order lines block only the malformed order",
+    "baseline": "FAIL - Malformed order regression",
+    "final": "PASS",
+    "originalAssertionsChanged": false,
+    "supplemental": true
+  },
+  {
+    "test": "U22 malformed due dates do not stop other orders",
+    "baseline": "FAIL - Malformed order regression",
+    "final": "PASS",
+    "originalAssertionsChanged": false,
+    "supplemental": true
+  }
+]

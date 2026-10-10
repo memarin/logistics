@@ -201,16 +201,25 @@ Deliver the interactive prototype, product roadmap, source, run instructions, an
 Do not create the PPT pack in this implementation phase.
 Do not change repository visibility as part of this plan.
 
-## Product roadmap
+## Product roadmap and scoping pack
 
-| Horizon | Outcome | Evidence required before expansion |
-| --- | --- | --- |
-| Assessment PoC | Demonstrate simulated agent coordination, human authority, and traceable actions. | Automated test comparison, browser acceptance results, and a deployed demo. |
-| Workflow validation | Assess value with warehouse staff. | Baselines for coordination effort, assignment corrections, and exception resolution time. |
-| Real AI pilot | Replace simulated decisions with model proposals under the same controls. | Accuracy checks, cost limits, service access, and approval compliance. |
-| Operational pilot | Connect one real operational system. | Confirmed access, data rules, operator feedback, and reliability checks. |
+The combined [HTML product pack](product-roadmap.html) defines a hypothetical live Relay product.
+Relay consolidates customer orders, stock, tasks, permissions, and shipment records in one operational app.
+The initial release does not require an existing warehouse management system.
 
-Future horizons are proposals. Do not treat future horizons as current implementation scope.
+| Phase | Features added to the live app |
+| --- | --- |
+| Core shipping operations | Order entry, stock, task configuration, assignment, work tracking, role permissions, and dispatch records. |
+| AI investigation and staff assistance | Evidence-linked investigation, count requests, uncertainty, and staff assistance within existing work queues. |
+| Recovery proposals and human decisions | AI options, exact proposals, manager review, feedback, and stale-plan checks. |
+| Controlled agent execution | Approved use of app actions, adaptive assignments, blocker controls, outcome checks, and agent audit views. |
+| Organization controls and wider agent adoption | Site policies, configurable agent authority, operational reporting, onboarding, and optional external connections. |
+
+Each phase in the HTML pack includes proposed operational and adoption metrics.
+Phase 1 delivers the initial app. Later phases build on its records, roles, tasks, and permissions.
+Discovery confirms the task types, initial data, action boundaries, and budget before delivery.
+No live product phase is complete. The simulated prototype appears as a reference appendix.
+The implementation and release gates elsewhere in this plan describe the separate assessment PoC.
 
 ## Release gate
 

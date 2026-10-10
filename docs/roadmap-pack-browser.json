@@ -1,0 +1,211 @@
+[
+  {
+    "command": [
+      "set",
+      "viewport",
+      "1440",
+      "1000"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "eval",
+      "(()=>{const a=document.querySelector('.topbar .button'),r=a.getBoundingClientRect();if(a.href!=='https://relay-logistics-poc.arena-elsewhere027.chatgpt.site/'||a.target!=='_blank'||r.x<innerWidth/2)throw Error('Demo link mismatch');return 'PASS: upper-right demo link and new-tab behavior';})()"
+    ],
+    "exit": 0,
+    "output": "\"PASS: upper-right demo link and new-tab behavior\"\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "screenshot",
+      "/home/mike/Projects/Teoh-Product-bf25/Logistics/.worktrees/roadmap-pack/docs/roadmap-pack-desktop.png"
+    ],
+    "exit": 0,
+    "output": "\u2713 Screenshot saved to /home/mike/Projects/Teoh-Product-bf25/Logistics/.worktrees/roadmap-pack/docs/roadmap-pack-desktop.png\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "find",
+      "role",
+      "link",
+      "click",
+      "--name",
+      "Product roadmap",
+      "--exact"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "eval",
+      "(()=>{if(location.hash!=='#roadmap'||document.querySelectorAll('.phase').length!==5)throw Error('Roadmap navigation mismatch');return 'PASS: roadmap navigation and all five horizons';})()"
+    ],
+    "exit": 0,
+    "output": "\"PASS: roadmap navigation and all five horizons\"\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "set",
+      "viewport",
+      "390",
+      "844"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "open",
+      "http://localhost:5180/product-scope-roadmap.html"
+    ],
+    "exit": 0,
+    "output": "\u2713 Relay | Product Scope & Roadmap\n  http://localhost:5180/product-scope-roadmap\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "eval",
+      "(()=>{if(document.documentElement.scrollWidth>innerWidth)throw Error('Document overflow');return 'PASS: mobile pack fits viewport';})()"
+    ],
+    "exit": 0,
+    "output": "\"PASS: mobile pack fits viewport\"\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "screenshot",
+      "/home/mike/Projects/Teoh-Product-bf25/Logistics/.worktrees/roadmap-pack/docs/roadmap-pack-mobile.png"
+    ],
+    "exit": 0,
+    "output": "\u2713 Screenshot saved to /home/mike/Projects/Teoh-Product-bf25/Logistics/.worktrees/roadmap-pack/docs/roadmap-pack-mobile.png\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "open",
+      "http://localhost:5180/"
+    ],
+    "exit": 0,
+    "output": "\u2713 Relay | Agentic Logistics PoC\n  http://localhost:5180/\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "I understand - open demo",
+      "--exact"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "Stock recovery workspace"
+    ],
+    "exit": 0,
+    "output": "Stock recovery workspace\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "eval",
+      "(()=>{const a=document.querySelector('.product-pack-link');if(!a||a.getAttribute('href')!=='/product-scope-roadmap.html'||a.target!=='_blank')throw Error('App link mismatch');if(document.documentElement.scrollWidth>innerWidth)throw Error('App header overflow');return 'PASS: mobile app header and pack link';})()"
+    ],
+    "exit": 0,
+    "output": "\"PASS: mobile app header and pack link\"\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "screenshot",
+      "/home/mike/Projects/Teoh-Product-bf25/Logistics/.worktrees/roadmap-pack/docs/roadmap-pack-app-mobile.png"
+    ],
+    "exit": 0,
+    "output": "\u2713 Screenshot saved to /home/mike/Projects/Teoh-Product-bf25/Logistics/.worktrees/roadmap-pack/docs/roadmap-pack-app-mobile.png\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "set",
+      "viewport",
+      "1440",
+      "1000"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "screenshot",
+      "/home/mike/Projects/Teoh-Product-bf25/Logistics/.worktrees/roadmap-pack/docs/roadmap-pack-app-desktop.png"
+    ],
+    "exit": 0,
+    "output": "\u2713 Screenshot saved to /home/mike/Projects/Teoh-Product-bf25/Logistics/.worktrees/roadmap-pack/docs/roadmap-pack-app-desktop.png\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "click",
+      ".product-pack-link"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "tab",
+      "list"
+    ],
+    "exit": 0,
+    "output": "  [t1] Relay | Agentic Logistics PoC - http://localhost:5180/\n\u2192 [t2] localhost:5180/product-scope-roadmap - http://localhost:5180/product-scope-roadmap\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "get",
+      "url"
+    ],
+    "exit": 0,
+    "output": "http://localhost:5180/product-scope-roadmap\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "errors"
+    ],
+    "exit": 0,
+    "output": "",
+    "error": ""
+  },
+  {
+    "check": "App-to-pack navigation completed",
+    "result": "PASS",
+    "page_title": "Relay | Product Scope & Roadmap",
+    "sections": [
+      "scope",
+      "capabilities",
+      "roadmap",
+      "measures",
+      "delivery"
+    ],
+    "browser_errors": []
+  }
+]

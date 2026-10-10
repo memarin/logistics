@@ -1,0 +1,7 @@
+{
+  "app/page.tsx": "5ea5fa1f1fd065a646ae0e23156de4b4440ad684384b4a9b6557220dccfaad69",
+  "app/globals.css": "b1bb73e702c1dfc37183ed68433ee749d7c5bca6627002b89867f4a0554318fb",
+  "domain/demo.mjs": "4d712bc6a5e594fd79687ee298c6e3d91d8e968adb9fe1fd7d287fbf186831ed",
+  "tests/demo.test.mjs": "cb318e09c0a798a6c70e61ce6b862302635f5e3a9e022ccb08b91fcd5489c363",
+  "package.json": "79648a02331b7e18131f9e42e37ac853a1f7eb167b455ae4032cc5167777800b"
+}

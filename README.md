@@ -1,6 +1,6 @@
 # Relay logistics PoC
 
-Relay demonstrates three simulated agents for outbound warehouse fulfillment. No model API key is required.
+Relay demonstrates one simulated exception-resolution agent with three capabilities for outbound warehouse fulfillment. No model API key is required.
 
 ## Local setup
 
@@ -22,17 +22,21 @@ If the machine blocks the default Wrangler config directory, set `XDG_CONFIG_HOM
 
 ## Guided demo
 
-Click Start guided demo. Start each step yourself. The guide changes the simulated role when a staff or manager step requires that role.
+A first-load notice explains synthetic data and no connected AI service. Start each agent step yourself. Select the required role explicitly. Staff confirm quantity, condition, and physical work. Managers approve exact recovery and shipment proposals.
 
-Release ORD-1042 after pick and pack completion. Propose the synthetic SKU-B recount from 2 to 6. Approve the correction as manager. Reassess ORD-1043 and resume fulfillment.
+Investigate ORD-1043. Inspect receipts and shift notes. Confirm usable or damaged stock as staff. Compare recovery options and approve the exact correction or hold as manager. Execute recovery, complete pick and pack as staff, then approve shipment release. Run the final agent check.
+
+Manager, staff, and IT selections change the landing view, navigation, and available actions. IT controls role access, agent grants, and availability. If no eligible staff are available, execution pauses. Restore availability as IT, then explicitly resume as manager. Reject a correction to observe a hold recommendation that uses the rejection reason.
 
 Inspect Agent actions and its audit link. Reset restores sample data for every reviewer and keeps earlier audit history.
 
 ## Tests and evidence
 
-- `npm run test:unit`: 25 unit and browser state tests.
-- `npm run test:integration`: 21 endpoint tests against actual Miniflare D1.
-- `npm test`: all 46 tests.
+- `npm run test:unit`: 50 unit, recovery, guide, and browser state tests.
+- `npm run test:integration`: 31 endpoint tests against actual Miniflare D1.
+- `npm test`: all 81 tests.
+- `docs/recovery-test-report.html`: replacement feature checks and pre/post results.
+- `docs/recovery-browser.json`: current browser actions and outcome assertions.
 - `docs/test-comparison.html`: baseline and final results, with test changes disclosed.
 - `docs/browser-acceptance.json`: agent-browser actions and assertions.
 - `docs/phase-01-completion.html` through `docs/phase-08-completion.html`: completed phase reports.
@@ -44,7 +48,7 @@ Inspect Agent actions and its audit link. Reset restores sample data for every r
 
 ## Sites deployment
 
-The existing Site ID and D1 binding are in `.openai/hosting.json`. Sites applies the schema migration during publication. The Sites source helper requires a source commit and push before publication. The Site is not deployed.
+The existing Site ID and D1 binding are in `.openai/hosting.json`. Sites applies the schema migration during publication. The Sites source helper requires a source commit and push before publication. The source is ready for publication through Sites.
 
 The app source is maintained in [memarin/logistics](https://github.com/memarin/logistics). The repository is private. Repository visibility remains unchanged.
 

@@ -25,9 +25,9 @@ The plan does not claim that implementation or tests are complete.
 
 | Function | Agent behavior | Human boundary |
 | --- | --- | --- |
-| Order readiness and prioritization | Assess orders against stock and fulfillment state. Rank ready orders by due date. Explain blocked orders. | Escalate shortages and invalid data. |
-| Task creation and assignment | Create configured tasks. Respect dependencies. Assign eligible workers by workload. | Staff perform physical work. Authorized staff configure task types. |
-| Exception resolution and approval coordination | Explain shortages. Propose corrections after a simulated recount. Prepare approval requests. | Managers approve inventory adjustments, order cancellations, and shipment release. |
+| Evidence-led stock investigation | Read receipts, stock movements, and shift notes. Compare possible causes and request missing evidence. | Staff confirm physical quantity and condition. Missing evidence stays missing. |
+| Fulfillment recovery planning | Compare correction, hold, and another inspection. Use manager rejection as input to a new plan. | The manager approves the exact correction or hold. |
+| Adaptive execution and outcome checks | Inspect current stock and staff availability. Pause on blockers. Resume explicitly and verify the actual result. | IT or the manager restores availability. Staff complete work. The manager approves shipment release. |
 
 Use stable record IDs to resolve equal priorities and workloads. Unknown stock must remain unknown.
 Do not create tasks or change stock from a stale decision.
@@ -47,11 +47,11 @@ Exclude separate staff accounts and production multi-tenancy.
 | Time | Reviewer step | Expected result |
 | --- | --- | --- |
 | 0:00-0:30 | Inspect sample orders, roles, and the simulation notice. | Understand the problem and demo controls. |
-| 0:30-1:15 | Run order assessment. | See explained priorities and an order blocked by a shortage. |
-| 1:15-2:00 | Run task creation and assignment. | See assigned pick and pack tasks for a ready order. |
-| 2:00-3:00 | Complete work as staff. Approve shipment release as manager. | See fulfillment progress, stock changes, and approval history. |
-| 3:00-4:15 | Run shortage assessment. Confirm a simulated recount. Approve the correction as manager. | See the stock correction and refreshed readiness. |
-| 4:15-5:00 | Run coordination for the corrected order. Inspect the audit log and result summary. | See resumed fulfillment and the agent's contribution. |
+| 0:30-1:15 | Start a stock investigation for ORD-1043. | See linked evidence, possible causes, and a staff request. |
+| 1:15-2:00 | Select staff and confirm count and condition. Start recovery planning as manager. | See feasible options and a protected proposal. |
+| 2:00-3:00 | Approve or reject the proposal. Start execution. | See recovery, a hold, or a pause that requires human support. |
+| 3:00-4:15 | Complete physical work as staff. Approve shipment release as manager. | See protected work sequence and exact stock consumption. |
+| 4:15-5:00 | Start the final outcome check. Inspect tool results and audit history. | See the actual result and linked human decisions. |
 
 Each step must explain the action, active role, agent contribution, human boundary, and expected result.
 Only an explicit reviewer action starts an agent step. Data changes invalidate affected decisions but do not trigger agent execution.
@@ -229,3 +229,15 @@ Future horizons are proposals. Do not treat future horizons as current implement
 - Earlier scope, initiative brief, and requirements informed this plan.
 - Current conversation decisions replace the earlier real-AI requirement.
 - [Official Sites documentation](https://learn.chatgpt.com/docs/sites?surface=app).
+
+## Replacement implementation checks
+
+Keep existing stock, approval, concurrency, persistence, reset, and audit tests as regression checks.
+Add RU01-RU12 for investigation, human evidence, feasible options, rejection, execution, pause, stale records, final outcome, role profiles, missing receipts, and revoked grants.
+Add I22-I31 against actual D1 for persistent recovery, holds, concurrent evidence, role boundaries, concurrent execution, and reset.
+Update D01-D08 and C02-C03 for the replacement guide. Add D09-D10 and C04-C06 for case revisions, explicit roles, paused execution, rejection, and stale investigation.
+Preserve failing baseline logs. Compare changed tests separately from unchanged core tests.
+Run the full automated suites before agent-browser checks for normal recovery, damaged evidence, role views, IT intervention, rejection, and reset.
+
+Manager defaults to Recovery. Staff defaults to Tasks with verification requests. IT defaults to Settings.
+Role selection must change the view and available actions. The guide must never silently change the actor of an action.

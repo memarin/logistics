@@ -1,19 +1,24 @@
 export function isCurrentVersion(current,incoming){return Number.isSafeInteger(incoming)&&incoming>=current;}
 export function guideStepComplete(s,step){
- const first=s.orders.find(o=>o.id==='ORD-1042'),second=s.orders.find(o=>o.id==='ORD-1043');
- const closed=o=>o&&o.status!=='open';
- const tasks=s.tasks.filter(t=>t.orderId==='ORD-1042');
- const stock=s.inventory.find(i=>i.sku==='SKU-B');
- const corrected=closed(second)||Boolean(stock&&stock.onHand-stock.reserved>=5)||s.approvals.some(p=>p.kind==='correction'&&p.orderId==='ORD-1043'&&p.status==='approved');
+ const c=s.recoveryCases?.find(c=>c.orderId==='ORD-1043'),o=s.orders.find(o=>o.id==='ORD-1043'),tasks=s.tasks.filter(t=>t.orderId===o?.id);
+ const finished=['resolved','on-hold'].includes(c?.status),released=o?.status==='released';
  switch(step){
- case 2:return closed(first)||tasks.length>0;
- case 3:return closed(first)||tasks.some(t=>t.typeId==='pick'&&t.status==='completed');
- case 4:return closed(first)||tasks.some(t=>t.typeId==='pack'&&t.status==='completed');
- case 5:return closed(first)||s.approvals.some(p=>p.orderId==='ORD-1042'&&p.kind==='release'&&['pending','approved'].includes(p.status));
- case 6:return closed(first);
- case 7:return corrected||s.approvals.some(p=>p.kind==='correction'&&p.orderId==='ORD-1043'&&p.status==='pending');
- case 8:return corrected;
- case 10:return closed(second)||s.tasks.some(t=>t.orderId==='ORD-1043');
+ case 1:return Boolean(c)&&c.status!=='needs-reinvestigation';
+ case 2:return c?.verification?.status==='completed';
+ case 3:return Boolean(c?.approvalId&&s.approvals.some(p=>p.id===c.approvalId&&p.status!=='rejected'));
+ case 4:return ['ready-to-execute','recovered','needs-support','needs-reinvestigation','resolved','on-hold'].includes(c?.status);
+ case 5:return ['recovered','resolved','on-hold'].includes(c?.status);
+ case 6:return finished||released||tasks.some(t=>t.typeId==='pick'&&t.status==='completed');
+ case 7:return finished||released||tasks.some(t=>t.typeId==='pack'&&t.status==='completed');
+ case 8:return finished||released||s.approvals.some(p=>p.orderId===o?.id&&p.kind==='release'&&['pending','approved'].includes(p.status));
+ case 9:return finished||released;
+ case 10:return finished;
  default:return false;
  }
+}
+export function nextGuideStep(s,index){
+ const c=s.recoveryCases?.find(c=>c.orderId==='ORD-1043');
+ if(index===4&&c?.status==='needs-replan')return 3;
+ if(index===5){if(c?.status==='needs-support')return 5;if(c?.status==='needs-reinvestigation')return 1;if(c?.status==='on-hold')return 10;}
+ return Math.min(index+1,11);
 }

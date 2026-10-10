@@ -1,0 +1,66 @@
+
+> relay-logistics@0.1.0 test
+> node --test --test-concurrency=1 tests/*.test.mjs
+
+✔ C01 delayed browser responses cannot replace newer state (0.830124ms)
+✔ C02 guide can continue when another reviewer released the order (0.408776ms)
+✔ C03 guide can continue after another reviewer corrected the shortage (0.17839ms)
+✔ D01 guide distinguishes simulated agents from human authority (0.630886ms)
+✔ D02 exactly three agentic features explain what reviewers can observe (0.147731ms)
+✔ D03 physical task completion requires explicit reviewer confirmation (1.460036ms)
+✔ D04 manager approval uses the exact current proposal after confirmation (0.168441ms)
+✔ D05 reviewer recount drives the proposal and does not mutate stock (0.384065ms)
+✔ D06 missing human work or approval records cannot execute (0.253202ms)
+✔ D07 a human confirms shipment preparation before the request (0.137829ms)
+✔ D08 approval review cannot silently adopt another proposal (0.143256ms)
+✔ I01 assessment and coordination persist consistent records and audit links (264.372263ms)
+✔ I02 shortage correction waits for approval and resumes fulfillment (92.483141ms)
+✔ I03 shipment release consumes stock exactly once (151.769278ms)
+✔ I04 retries do not duplicate tasks or reservations (111.929071ms)
+✔ I05 concurrent orders cannot reserve the same stock (79.514964ms)
+✔ I06 concurrent approval and rejection accept one decision (86.631152ms)
+✔ I07 backend enforces roles and revoked permissions (94.055378ms)
+✔ I08 rejection records its reason without changing inventory (66.039528ms)
+✔ I09 stale proposals cannot execute (66.586228ms)
+✔ I10 reset preserves history and rejects old-run actions (78.126443ms)
+✔ I11 separate requests and reloads see the same persistent data (60.943411ms)
+✔ I12 failed writes preserve the entire previous state (83.477482ms)
+✔ I13 custom task types participate and invalid types are rejected (97.938324ms)
+✔ I14 reset requires explicit confirmation (41.124434ms)
+✔ I15 foreign-origin writes are rejected (19.991976ms)
+✔ I16 unknown roles cannot mutate state (34.211304ms)
+✔ I17 first read seeds the migrated database once (42.675108ms)
+✔ I18 staff cannot configure tasks (34.394883ms)
+✔ I19 stale task configuration cannot overwrite an accepted change (43.795497ms)
+✔ I20 an enabled task cannot retain a disabled dependency (39.582688ms)
+✔ I21 IT controls role access and revoked access blocks the next mutation (83.863075ms)
+✔ U01 enough stock permits readiness (5.811621ms)
+✔ U02 shortage blocks the order (0.247216ms)
+✔ U03 missing inventory remains unknown (0.179899ms)
+✔ U04 due dates and stable IDs determine priority (0.153243ms)
+✔ U05 invalid quantities block only the affected order (0.208192ms)
+✔ U06 non-finite and missing quantities are rejected (0.244355ms)
+✔ U07 plans include enabled configured task types (0.931773ms)
+✔ U08 plans preserve task dependencies (0.20826ms)
+✔ U09 eligibility and workload determine assignments (0.305331ms)
+✔ U10 no eligible worker causes escalation (0.49548ms)
+✔ U11 unknown and cyclic dependencies are rejected (0.222268ms)
+✔ U12 disabled types produce no new tasks (0.225098ms)
+✔ U13 shortage proposal uses the current records (1.466082ms)
+✔ U14 a correction proposal never changes stock (0.119135ms)
+✔ U15 unauthorized protected actions fail (0.324549ms)
+✔ U16 packing requires completed picking (0.797988ms)
+✔ U17 release requires completed work (0.179703ms)
+✔ U18 changed source records invalidate decisions (0.10827ms)
+✔ U19 revoked permissions prevent agent execution (0.175778ms)
+✔ U20 rejection requires a nonblank explanation (0.174115ms)
+✔ U21 missing order lines block only the malformed order (0.076891ms)
+✔ U22 malformed due dates do not stop other orders (0.054671ms)
+ℹ tests 54
+ℹ suites 0
+ℹ pass 54
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2047.34265

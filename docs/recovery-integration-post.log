@@ -1,0 +1,43 @@
+
+> relay-logistics@0.1.0 test:integration
+> node --test --test-concurrency=1 tests/integration.test.mjs
+
+✔ I01 assessment and coordination persist consistent records and audit links (291.837474ms)
+✔ I02 shortage correction waits for approval and resumes fulfillment (122.253368ms)
+✔ I03 shipment release consumes stock exactly once (186.904176ms)
+✔ I04 retries do not duplicate tasks or reservations (133.779339ms)
+✔ I05 concurrent orders cannot reserve the same stock (113.479728ms)
+✔ I06 concurrent approval and rejection accept one decision (103.465447ms)
+✔ I07 backend enforces roles and revoked permissions (139.990736ms)
+✔ I08 rejection records its reason without changing inventory (79.614712ms)
+✔ I09 stale proposals cannot execute (70.417882ms)
+✔ I10 reset preserves history and rejects old-run actions (86.814479ms)
+✔ I11 separate requests and reloads see the same persistent data (63.397352ms)
+✔ I12 failed writes preserve the entire previous state (92.822591ms)
+✔ I13 custom task types participate and invalid types are rejected (113.687346ms)
+✔ I14 reset requires explicit confirmation (46.821466ms)
+✔ I15 foreign-origin writes are rejected (27.836817ms)
+✔ I16 unknown roles cannot mutate state (39.913498ms)
+✔ I17 first read seeds the migrated database once (45.788686ms)
+✔ I18 staff cannot configure tasks (43.272452ms)
+✔ I19 stale task configuration cannot overwrite an accepted change (67.829296ms)
+✔ I20 an enabled task cannot retain a disabled dependency (38.90609ms)
+✔ I21 IT controls role access and revoked access blocks the next mutation (111.222152ms)
+✔ I22 recovery loop persists evidence, staff checks, approval and linked tool traces (186.727127ms)
+✔ I23 damaged receipt produces approved hold without stock changes or tasks (150.612264ms)
+✔ I24 conflicting staff evidence accepts one case revision (103.160494ms)
+✔ I25 operational and administrative roles cannot cross their backend boundaries (77.65833ms)
+✔ I26 concurrent recovery executions cannot duplicate work (184.459579ms)
+✔ I27 reset clears recovery cases and rejects old-run evidence (122.32071ms)
+✔ I28 staffing intervention persists without automatic agent execution (270.109077ms)
+✔ I29 rejection evidence persists in the replacement plan without stock mutation (167.015824ms)
+✔ I30 changed evidence invalidates an exact pending recovery approval (148.868896ms)
+✔ I31 changed stock after approval pauses recovery before task or reservation changes (289.254328ms)
+ℹ tests 31
+ℹ suites 0
+ℹ pass 31
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 3968.118779

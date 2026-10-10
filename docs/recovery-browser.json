@@ -1,0 +1,2418 @@
+[
+  {
+    "command": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "I understand - open demo",
+      "--exact"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "Stock recovery workspace"
+    ],
+    "exit": 0,
+    "output": "Stock recovery workspace\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Reset demo",
+      "--exact"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Reset for all reviewers",
+      "--exact"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "reset accepted"
+    ],
+    "exit": 1,
+    "output": "",
+    "error": "\u2717 Wait timed out after 25000ms\n"
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "Investigate the stock discrepancy"
+    ],
+    "exit": 0,
+    "output": "Investigate the stock discrepancy\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "Confirm physical evidence"
+    ],
+    "exit": 0,
+    "output": "Confirm physical evidence\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "Fulfillment staff workspace"
+    ],
+    "exit": 0,
+    "output": "Fulfillment staff workspace\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "Confirm synthetic physical evidence"
+    ],
+    "exit": 0,
+    "output": "Confirm synthetic physical evidence\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "fill",
+      "input[aria-label=\"Guided synthetic recount\"]",
+      "7"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "check",
+      "input[aria-label=\"Confirm human intervention\"]"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Record staff evidence",
+      "--exact"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "Compare recovery options"
+    ],
+    "exit": 0,
+    "output": "Compare recovery options\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "Warehouse manager workspace"
+    ],
+    "exit": 0,
+    "output": "Warehouse manager workspace\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "Decide the recovery proposal"
+    ],
+    "exit": 0,
+    "output": "Decide the recovery proposal\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "Approve reviewed change"
+    ],
+    "exit": 0,
+    "output": "Approve reviewed change\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "check",
+      "input[aria-label=\"Confirm human intervention\"]"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Approve reviewed change",
+      "--exact"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "Execute or pause recovery"
+    ],
+    "exit": 0,
+    "output": "Execute or pause recovery\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "Record the physical pick"
+    ],
+    "exit": 0,
+    "output": "Record the physical pick\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "snapshot",
+      "-i"
+    ],
+    "exit": 0,
+    "output": "- link \"Relay home\" [ref=e1]\n- navigation \"Main navigation\" [ref=e2]\n  - button \"Recovery\" [ref=e9]\n  - button \"Orders\" [ref=e43]\n  - button \"Tasks\" [ref=e11]\n  - button \"Activity\" [ref=e12]\n  - button \"Settings\" [ref=e44]\n- combobox \"Simulated role\" [expanded=false, ref=e14]: Warehouse manager\n  - option \"Warehouse manager\" [selected, ref=e23]\n  - option \"Fulfillment staff\" [ref=e24]\n  - option \"IT administrator\" [ref=e25]\n- button \"Refresh shared data\" [ref=e3]\n- heading \"Warehouse manager workspace\" [level=1, ref=e4]\n- heading \"Evidence, decisions, and recovery.\" [level=2, ref=e5]\n- button \"Reset demo\" [ref=e42]\n- region \"Agentic features\" [ref=e7]\n  - heading \"Three agentic features to explore\" [level=2, ref=e15]\n  - heading \"Evidence-led stock investigation\" [level=3, ref=e26]\n  - heading \"Fulfillment recovery planning\" [level=3, ref=e27]\n  - heading \"Adaptive execution and outcome checks\" [level=3, ref=e28]\n- region \"Five-minute guided demo\" [ref=e8]\n  - heading \"Record the physical pick\" [level=2, ref=e21]\n  - button \"Switch to Fulfillment staff\" [ref=e22]\n  - button \"Back\" [ref=e16]\n- heading \"Stock recovery workspace\" [level=2, ref=e45]\n- button \"Investigate stock discrepancy\" [ref=e46]\n- heading \"ORD-1043\" [level=3, ref=e50]\n- heading \"Possible causes\" [level=3, ref=e51]\n- heading \"Staff verification\" [level=3, ref=e52]\n- heading \"Recovery options\" [level=3, ref=e53]\n- button \"Check recovery environment\" [ref=e54]\n- heading \"Evidence and tool results\" [level=3, ref=e55]\n- heading \"Manager approvals 0\" [level=2, ref=e47]\n- heading \"Stock correction\" [level=3, ref=e56]\n- heading \"Agent actions\" [level=2, ref=e36]\n- heading \"execute recovery\" [level=3, ref=e48]\n- button \"Inspect audit entry\" [ref=e49]\n- heading \"Recent activity\" [level=3, ref=e38]\n- button \"View full audit log\" [ref=e39]\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "Record the physical pick"
+    ],
+    "exit": 0,
+    "output": "Record the physical pick\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "Fulfillment staff workspace"
+    ],
+    "exit": 0,
+    "output": "Fulfillment staff workspace\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "check",
+      "input[aria-label=\"Confirm human intervention\"]"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Record confirmed work",
+      "--exact"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "Record the physical pack"
+    ],
+    "exit": 0,
+    "output": "Record the physical pack\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "check",
+      "input[aria-label=\"Confirm human intervention\"]"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Record confirmed work",
+      "--exact"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "Prepare shipment approval"
+    ],
+    "exit": 0,
+    "output": "Prepare shipment approval\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "check",
+      "input[aria-label=\"Confirm human intervention\"]"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Send approval request",
+      "--exact"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "Approve shipment release"
+    ],
+    "exit": 0,
+    "output": "Approve shipment release\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "Warehouse manager workspace"
+    ],
+    "exit": 0,
+    "output": "Warehouse manager workspace\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "check",
+      "input[aria-label=\"Confirm human intervention\"]"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Approve reviewed change",
+      "--exact"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "Verify the actual outcome"
+    ],
+    "exit": 0,
+    "output": "Verify the actual outcome\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "Review the recovery record"
+    ],
+    "exit": 0,
+    "output": "Review the recovery record\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "eval",
+      "(async()=>{const s=(await(await fetch('/api/state')).json()).state;if(s.recoveryCases[0].status!=='resolved'||s.inventory[1].onHand!==2||s.inventory[1].reserved!==0||s.tasks.some(t=>t.status!=='completed'))throw Error('Final outcome mismatch');return 'PASS: count 7, release 5, final stock 2, all tasks complete';})()"
+    ],
+    "exit": 0,
+    "output": "\"PASS: count 7, release 5, final stock 2, all tasks complete\"\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "screenshot",
+      "/home/mike/Projects/Teoh-Product-bf25/Logistics/docs/recovery-manager.png"
+    ],
+    "exit": 0,
+    "output": "\u2713 Screenshot saved to /home/mike/Projects/Teoh-Product-bf25/Logistics/docs/recovery-manager.png\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "select",
+      "select[aria-label=\"Simulated role\"]",
+      "staff"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "Fulfillment staff workspace"
+    ],
+    "exit": 0,
+    "output": "Fulfillment staff workspace\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "snapshot",
+      "-i"
+    ],
+    "exit": 0,
+    "output": "- link \"Relay home\" [ref=e1]\n- navigation \"Main navigation\" [ref=e2]\n  - button \"Tasks\" [ref=e11]\n  - button \"Verification\" [ref=e9]\n  - button \"Activity\" [ref=e12]\n- combobox \"Simulated role\" [expanded=false, ref=e14]: Fulfillment staff\n  - option \"Warehouse manager\" [ref=e23]\n  - option \"Fulfillment staff\" [selected, ref=e24]\n  - option \"IT administrator\" [ref=e25]\n- button \"Refresh shared data\" [ref=e3]\n- heading \"Fulfillment staff workspace\" [level=1, ref=e4]\n- heading \"Work, coordinated.\" [level=2, ref=e5]\n- region \"Agentic features\" [ref=e7]\n  - heading \"Three agentic features to explore\" [level=2, ref=e15]\n  - heading \"Evidence-led stock investigation\" [level=3, ref=e26]\n  - heading \"Fulfillment recovery planning\" [level=3, ref=e27]\n  - heading \"Adaptive execution and outcome checks\" [level=3, ref=e28]\n- region \"Five-minute guided demo\" [ref=e8]\n  - heading \"Review the recovery record\" [level=2, ref=e21]\n  - button \"Switch to Warehouse manager\" [ref=e22]\n  - button \"Back\" [ref=e16]\n- heading \"Warehouse tasks\" [level=2, ref=e61]\n- heading \"Pick ORD-1043\" [level=3, ref=e62]\n- button \"Complete task\" [disabled, ref=e63]\n- heading \"Pack ORD-1043\" [level=3, ref=e64]\n- button \"Complete task\" [disabled, ref=e65]\n- heading \"Agent actions\" [level=2, ref=e36]\n- heading \"execute recovery\" [level=3, ref=e48]\n- button \"Inspect audit entry\" [ref=e49]\n- heading \"Recent activity\" [level=3, ref=e38]\n- button \"View full audit log\" [ref=e39]\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "select",
+      "select[aria-label=\"Simulated role\"]",
+      "it"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "IT administrator workspace"
+    ],
+    "exit": 0,
+    "output": "IT administrator workspace\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "snapshot",
+      "-i"
+    ],
+    "exit": 0,
+    "output": "- link \"Relay home\" [ref=e1]\n- navigation \"Main navigation\" [ref=e2]\n  - button \"Settings\" [ref=e67]\n  - button \"Activity\" [ref=e12]\n- combobox \"Simulated role\" [expanded=false, ref=e14]: IT administrator\n  - option \"Warehouse manager\" [ref=e23]\n  - option \"Fulfillment staff\" [ref=e24]\n  - option \"IT administrator\" [selected, ref=e25]\n- button \"Refresh shared data\" [ref=e3]\n- heading \"IT administrator workspace\" [level=1, ref=e4]\n- heading \"Define the agent boundaries.\" [level=2, ref=e5]\n- button \"Reset demo\" [ref=e66]\n- region \"Agentic features\" [ref=e7]\n  - heading \"Three agentic features to explore\" [level=2, ref=e15]\n  - heading \"Evidence-led stock investigation\" [level=3, ref=e26]\n  - heading \"Fulfillment recovery planning\" [level=3, ref=e27]\n  - heading \"Adaptive execution and outcome checks\" [level=3, ref=e28]\n- region \"Five-minute guided demo\" [ref=e8]\n  - heading \"Review the recovery record\" [level=2, ref=e21]\n  - button \"Switch to Warehouse manager\" [ref=e22]\n  - button \"Back\" [ref=e16]\n- heading \"Simulated role access\" [level=2, ref=e68]\n- checkbox \"Allow Warehouse manager access\" [checked=true, ref=e72]\n- checkbox \"Allow Fulfillment staff access\" [checked=true, ref=e73]\n- heading \"Agent permissions\" [level=2, ref=e69]\n- checkbox \"Allow investigation\" [checked=true, ref=e74]\n- checkbox \"Allow planning\" [checked=true, ref=e75]\n- checkbox \"Allow execution\" [checked=true, ref=e76]\n- heading \"Worker availability\" [level=2, ref=e70]\n- checkbox \"Mia Chen available\" [checked=true, ref=e77]\n- checkbox \"Noah Patel available\" [checked=true, ref=e78]\n- checkbox \"Ivy Brooks available\" [checked=false, ref=e79]\n- heading \"Configured task types\" [level=2, ref=e71]\n- checkbox \"Pick enabled\" [checked=true, ref=e80]\n- checkbox \"Pack enabled\" [checked=true, ref=e81]\n- heading \"Add a task type\" [level=3, ref=e82]\n- textbox \"New task name\" [required, ref=e84]\n- combobox \"New task eligible worker\" [expanded=false, ref=e85]: Noah Patel\n  - option \"Mia Chen\" [ref=e87]\n  - option \"Noah Patel\" [selected, ref=e88]\n  - option \"Ivy Brooks\" [ref=e89]\n- combobox \"New task dependency\" [expanded=false, ref=e86]: Pack\n  - option \"No dependency\" [ref=e90]\n  - option \"Pick\" [ref=e91]\n  - option \"Pack\" [selected, ref=e92]\n- button \"Add task type\" [ref=e83]\n- heading \"Agent actions\" [level=2, ref=e36]\n- heading \"execute recovery\" [level=3, ref=e48]\n- button \"Inspect audit entry\" [ref=e49]\n- heading \"Recent activity\" [level=3, ref=e38]\n- button \"View full audit log\" [ref=e39]\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "screenshot",
+      "/home/mike/Projects/Teoh-Product-bf25/Logistics/docs/recovery-it.png"
+    ],
+    "exit": 0,
+    "output": "\u2713 Screenshot saved to /home/mike/Projects/Teoh-Product-bf25/Logistics/docs/recovery-it.png\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "select",
+      "select[aria-label=\"Simulated role\"]",
+      "manager"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "Warehouse manager workspace"
+    ],
+    "exit": 0,
+    "output": "Warehouse manager workspace\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Reset demo",
+      "--exact"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Reset for all reviewers",
+      "--exact"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "wait",
+      "--fn",
+      "!document.querySelector(\"[role=dialog]\")"
+    ],
+    "exit": 0,
+    "output": "true\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "Meet the recovery workspace"
+    ],
+    "exit": 0,
+    "output": "Meet the recovery workspace\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "Confirm physical evidence"
+    ],
+    "exit": 0,
+    "output": "Confirm physical evidence\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "Confirm synthetic physical evidence"
+    ],
+    "exit": 0,
+    "output": "Confirm synthetic physical evidence\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "select",
+      "select[aria-label=\"Stock condition\"]",
+      "damaged"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "check",
+      "input[aria-label=\"Confirm human intervention\"]"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Record staff evidence",
+      "--exact"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "Compare recovery options"
+    ],
+    "exit": 0,
+    "output": "Compare recovery options\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "Decide the recovery proposal"
+    ],
+    "exit": 0,
+    "output": "Decide the recovery proposal\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "check",
+      "input[aria-label=\"Confirm human intervention\"]"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Approve reviewed change",
+      "--exact"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "Execute or pause recovery"
+    ],
+    "exit": 0,
+    "output": "Execute or pause recovery\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "Verify the actual outcome"
+    ],
+    "exit": 0,
+    "output": "Verify the actual outcome\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "eval",
+      "(async()=>{const s=(await(await fetch('/api/state')).json()).state;if(s.orders[1].status!=='on-hold'||s.inventory[1].onHand!==2||s.tasks.length)throw Error('Hold outcome mismatch');return 'PASS: damaged evidence holds order without stock changes or tasks';})()"
+    ],
+    "exit": 0,
+    "output": "\"PASS: damaged evidence holds order without stock changes or tasks\"\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "Review the recovery record"
+    ],
+    "exit": 0,
+    "output": "Review the recovery record\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "errors"
+    ],
+    "exit": 0,
+    "output": "",
+    "error": ""
+  },
+  {
+    "command": [
+      "select",
+      "select[aria-label=\"Simulated role\"]",
+      "manager"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Reset demo",
+      "--exact"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Reset for all reviewers",
+      "--exact"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "wait",
+      "--fn",
+      "!document.querySelector(\"[role=dialog]\")"
+    ],
+    "exit": 0,
+    "output": "true\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "Meet the recovery workspace"
+    ],
+    "exit": 0,
+    "output": "Meet the recovery workspace\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "Confirm physical evidence"
+    ],
+    "exit": 0,
+    "output": "Confirm physical evidence\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "Confirm synthetic physical evidence"
+    ],
+    "exit": 0,
+    "output": "Confirm synthetic physical evidence\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "check",
+      "input[aria-label=\"Confirm human intervention\"]"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Record staff evidence",
+      "--exact"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "Compare recovery options"
+    ],
+    "exit": 0,
+    "output": "Compare recovery options\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "Decide the recovery proposal"
+    ],
+    "exit": 0,
+    "output": "Decide the recovery proposal\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "check",
+      "input[aria-label=\"Confirm human intervention\"]"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Approve reviewed change",
+      "--exact"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "Execute or pause recovery"
+    ],
+    "exit": 0,
+    "output": "Execute or pause recovery\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "select",
+      "select[aria-label=\"Simulated role\"]",
+      "it"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "uncheck",
+      "input[aria-label=\"Mia Chen available\"]"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "wait",
+      "--fn",
+      "!document.querySelector(\"input[aria-label=\\\"Mia Chen available\\\"]\").checked"
+    ],
+    "exit": 0,
+    "output": "true\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "uncheck",
+      "input[aria-label=\"Noah Patel available\"]"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "wait",
+      "--fn",
+      "!document.querySelector(\"input[aria-label=\\\"Noah Patel available\\\"]\").checked"
+    ],
+    "exit": 0,
+    "output": "true\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "select",
+      "select[aria-label=\"Simulated role\"]",
+      "manager"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "Execution paused"
+    ],
+    "exit": 0,
+    "output": "Execution paused\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "eval",
+      "(async()=>{const s=(await(await fetch('/api/state')).json()).state;if(s.recoveryCases[0].status!=='needs-support'||s.tasks.length||s.inventory[1].reserved)throw Error('Pause mismatch');return 'PASS';})()"
+    ],
+    "exit": 0,
+    "output": "\"PASS\"\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "select",
+      "select[aria-label=\"Simulated role\"]",
+      "it"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "check",
+      "input[aria-label=\"Mia Chen available\"]"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "wait",
+      "--fn",
+      "document.querySelector(\"input[aria-label=\\\"Mia Chen available\\\"]\").checked"
+    ],
+    "exit": 0,
+    "output": "true\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "eval",
+      "(async()=>{const s=(await(await fetch('/api/state')).json()).state;if(s.tasks.length)throw Error('IT intervention launched agent automatically');return 'PASS';})()"
+    ],
+    "exit": 0,
+    "output": "\"PASS\"\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "select",
+      "select[aria-label=\"Simulated role\"]",
+      "manager"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "Record the physical pick"
+    ],
+    "exit": 0,
+    "output": "Record the physical pick\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "eval",
+      "(async()=>{const s=(await(await fetch('/api/state')).json()).state;if(s.recoveryCases[0].status!=='recovered'||s.tasks.length!==2||s.inventory[1].reserved!==5)throw Error('Resume mismatch');return 'PASS';})()"
+    ],
+    "exit": 0,
+    "output": "\"PASS\"\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "select",
+      "select[aria-label=\"Simulated role\"]",
+      "manager"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Reset demo",
+      "--exact"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Reset for all reviewers",
+      "--exact"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "wait",
+      "--fn",
+      "!document.querySelector(\"[role=dialog]\")"
+    ],
+    "exit": 0,
+    "output": "true\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "Meet the recovery workspace"
+    ],
+    "exit": 0,
+    "output": "Meet the recovery workspace\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "Confirm physical evidence"
+    ],
+    "exit": 0,
+    "output": "Confirm physical evidence\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "Confirm synthetic physical evidence"
+    ],
+    "exit": 0,
+    "output": "Confirm synthetic physical evidence\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "check",
+      "input[aria-label=\"Confirm human intervention\"]"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Record staff evidence",
+      "--exact"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "Compare recovery options"
+    ],
+    "exit": 0,
+    "output": "Compare recovery options\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "Decide the recovery proposal"
+    ],
+    "exit": 0,
+    "output": "Decide the recovery proposal\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Reject with reason",
+      "--exact"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "fill",
+      "textarea[aria-label=\"Rejection reason\"]",
+      "Receipt needs another inspection"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Confirm rejection",
+      "--exact"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "Manager rejected this plan"
+    ],
+    "exit": 0,
+    "output": "Manager rejected this plan\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "Compare recovery options"
+    ],
+    "exit": 0,
+    "output": "Compare recovery options\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "Decide the recovery proposal"
+    ],
+    "exit": 0,
+    "output": "Decide the recovery proposal\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "eval",
+      "(async()=>{const s=(await(await fetch('/api/state')).json()).state;if(s.recoveryCases[0].plan.selected!=='hold-order'||!s.recoveryCases[0].plan.reason.includes('Receipt needs another inspection')||s.inventory[1].onHand!==2)throw Error('Replan mismatch');return 'PASS';})()"
+    ],
+    "exit": 0,
+    "output": "\"PASS\"\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "screenshot",
+      "/home/mike/Projects/Teoh-Product-bf25/Logistics/docs/recovery-replan.png"
+    ],
+    "exit": 0,
+    "output": "\u2713 Screenshot saved to /home/mike/Projects/Teoh-Product-bf25/Logistics/docs/recovery-replan.png\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "set",
+      "viewport",
+      "390",
+      "844"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "screenshot",
+      "/home/mike/Projects/Teoh-Product-bf25/Logistics/docs/recovery-mobile.png"
+    ],
+    "exit": 0,
+    "output": "\u2713 Screenshot saved to /home/mike/Projects/Teoh-Product-bf25/Logistics/docs/recovery-mobile.png\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "eval",
+      "document.documentElement.scrollWidth <= innerWidth"
+    ],
+    "exit": 0,
+    "output": "true\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "errors"
+    ],
+    "exit": 0,
+    "output": "",
+    "error": ""
+  },
+  {
+    "command": [
+      "select",
+      "select[aria-label=\"Simulated role\"]",
+      "manager"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Reset demo",
+      "--exact"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Reset for all reviewers",
+      "--exact"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "wait",
+      "--fn",
+      "!document.querySelector(\"[role=dialog]\")"
+    ],
+    "exit": 0,
+    "output": "true\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "Meet the recovery workspace"
+    ],
+    "exit": 0,
+    "output": "Meet the recovery workspace\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "set",
+      "viewport",
+      "1440",
+      "1000"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "Confirm physical evidence"
+    ],
+    "exit": 0,
+    "output": "Confirm physical evidence\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "Confirm synthetic physical evidence"
+    ],
+    "exit": 0,
+    "output": "Confirm synthetic physical evidence\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "fill",
+      "input[aria-label=\"Guided synthetic recount\"]",
+      "6"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "check",
+      "input[aria-label=\"Confirm human intervention\"]"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Record staff evidence",
+      "--exact"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "Compare recovery options"
+    ],
+    "exit": 0,
+    "output": "Compare recovery options\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "Decide the recovery proposal"
+    ],
+    "exit": 0,
+    "output": "Decide the recovery proposal\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "check",
+      "input[aria-label=\"Confirm human intervention\"]"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Approve reviewed change",
+      "--exact"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "Execute or pause recovery"
+    ],
+    "exit": 0,
+    "output": "Execute or pause recovery\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Orders",
+      "--exact"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "click",
+      "tbody tr:nth-child(2) .text-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "fill",
+      "input[aria-label=\"Order due date\"]",
+      "2026-10-12"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Save order changes",
+      "--exact"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "wait",
+      "--fn",
+      "!document.querySelector(\"[role=dialog]\")"
+    ],
+    "exit": 0,
+    "output": "false\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 1,
+    "output": "",
+    "error": "\u2717 Element '.guide-button' is covered by <div.modal-backdrop> at its click point, so the input would land on that element instead. Dismiss or interact with the covering element first (it is often a dialog, banner, or sticky header).\n"
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "Confirm physical evidence"
+    ],
+    "exit": 0,
+    "output": "Confirm physical evidence\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "Confirm synthetic physical evidence"
+    ],
+    "exit": 0,
+    "output": "Confirm synthetic physical evidence\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "fill",
+      "input[aria-label=\"Guided synthetic recount\"]",
+      "6"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "check",
+      "input[aria-label=\"Confirm human intervention\"]"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Record staff evidence",
+      "--exact"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "Compare recovery options"
+    ],
+    "exit": 0,
+    "output": "Compare recovery options\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "Decide the recovery proposal"
+    ],
+    "exit": 0,
+    "output": "Decide the recovery proposal\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "check",
+      "input[aria-label=\"Confirm human intervention\"]"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Approve reviewed change",
+      "--exact"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "Execute or pause recovery"
+    ],
+    "exit": 0,
+    "output": "Execute or pause recovery\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Orders",
+      "--exact"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "click",
+      "tbody tr:nth-child(2) .text-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "fill",
+      "input[aria-label=\"Order quantity\"]",
+      "8"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Save order changes",
+      "--exact"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "edit order accepted"
+    ],
+    "exit": 0,
+    "output": "edit order accepted\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "eval",
+      "(async()=>{const s=(await(await fetch('/api/state')).json()).state;if(s.orders[1].lines[0].quantity!==8)throw Error('Edit not saved');return 'PASS: changed order quantity persisted';})()"
+    ],
+    "exit": 0,
+    "output": "\"PASS: changed order quantity persisted\"\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "Investigate the stock discrepancy"
+    ],
+    "exit": 0,
+    "output": "Investigate the stock discrepancy\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "Confirm physical evidence"
+    ],
+    "exit": 0,
+    "output": "Confirm physical evidence\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "Confirm synthetic physical evidence"
+    ],
+    "exit": 0,
+    "output": "Confirm synthetic physical evidence\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "fill",
+      "input[aria-label=\"Guided synthetic recount\"]",
+      "9"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "check",
+      "input[aria-label=\"Confirm human intervention\"]"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Record staff evidence",
+      "--exact"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "Compare recovery options"
+    ],
+    "exit": 0,
+    "output": "Compare recovery options\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "Decide the recovery proposal"
+    ],
+    "exit": 0,
+    "output": "Decide the recovery proposal\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "check",
+      "input[aria-label=\"Confirm human intervention\"]"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Approve reviewed change",
+      "--exact"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "Execute or pause recovery"
+    ],
+    "exit": 0,
+    "output": "Execute or pause recovery\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "Record the physical pick"
+    ],
+    "exit": 0,
+    "output": "Record the physical pick\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "eval",
+      "(async()=>{const s=(await(await fetch('/api/state')).json()).state;if(s.recoveryCases[0].status!=='recovered'||s.inventory[1].onHand!==9||s.inventory[1].reserved!==8||s.tasks.length!==2)throw Error('Fresh investigation failed');return 'PASS: changed order requires new evidence and manager approval before recovery';})()"
+    ],
+    "exit": 0,
+    "output": "\"PASS: changed order requires new evidence and manager approval before recovery\"\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "errors"
+    ],
+    "exit": 0,
+    "output": "",
+    "error": ""
+  },
+  {
+    "command": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Reset demo",
+      "--exact"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Reset for all reviewers",
+      "--exact"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "Meet the recovery workspace"
+    ],
+    "exit": 0,
+    "output": "Meet the recovery workspace\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "screenshot",
+      "/home/mike/Projects/Teoh-Product-bf25/Logistics/docs/recovery-final.png"
+    ],
+    "exit": 0,
+    "output": "\u2713 Screenshot saved to /home/mike/Projects/Teoh-Product-bf25/Logistics/docs/recovery-final.png\n",
+    "error": ""
+  }
+]

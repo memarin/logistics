@@ -1,0 +1,212 @@
+✖ D01 guide distinguishes simulated agents from human authority (0.793888ms)
+✖ D02 exactly three agentic features explain what reviewers can observe (0.201783ms)
+✖ D03 physical task completion requires explicit reviewer confirmation (0.416488ms)
+✖ D04 manager approval uses the exact current proposal after confirmation (0.796598ms)
+✖ D05 reviewer recount drives the proposal and does not mutate stock (0.232668ms)
+✖ D06 missing human work or approval records cannot execute (0.163803ms)
+✖ D07 a human confirms shipment preparation before the request (0.110232ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 0
+ℹ fail 7
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 51.940585
+
+✖ failing tests:
+
+test at tests/demo.test.mjs:5:1
+✖ D01 guide distinguishes simulated agents from human authority (0.793888ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  0 !== 12
+  
+      at TestContext.<anonymous> (file:///home/mike/Projects/Teoh-Product-bf25/Logistics/tests/demo.test.mjs:5:82)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1306:25)
+      at Test.start (node:internal/test_runner/test:1177:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:385:17) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 0,
+    expected: 12,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/demo.test.mjs:6:1
+✖ D02 exactly three agentic features explain what reviewers can observe (0.201783ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  0 !== 3
+  
+      at TestContext.<anonymous> (file:///home/mike/Projects/Teoh-Product-bf25/Logistics/tests/demo.test.mjs:6:90)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1306:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:897:18)
+      at Test.postRun (node:internal/test_runner/test:1447:19)
+      at Test.run (node:internal/test_runner/test:1372:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:385:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 0,
+    expected: 3,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/demo.test.mjs:7:1
+✖ D03 physical task completion requires explicit reviewer confirmation (0.416488ms)
+  AssertionError [ERR_ASSERTION]: The input did not match the regular expression /Confirm/. Input:
+  
+  'Error: NOT_IMPLEMENTED: reviewer intervention'
+  
+      at TestContext.<anonymous> (file:///home/mike/Projects/Teoh-Product-bf25/Logistics/tests/demo.test.mjs:7:185)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1306:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:897:18)
+      at Test.postRun (node:internal/test_runner/test:1447:19)
+      at Test.run (node:internal/test_runner/test:1372:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:897:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: Error: NOT_IMPLEMENTED: reviewer intervention
+        at buildGuideInput (file:///home/mike/Projects/Teoh-Product-bf25/Logistics/domain/demo.mjs:3:41)
+        at file:///home/mike/Projects/Teoh-Product-bf25/Logistics/tests/demo.test.mjs:7:196
+        at getActual (node:assert:611:5)
+        at strict.throws (node:assert:759:24)
+        at TestContext.<anonymous> (file:///home/mike/Projects/Teoh-Product-bf25/Logistics/tests/demo.test.mjs:7:185)
+        at Test.runInAsyncScope (node:async_hooks:227:14)
+        at Test.run (node:internal/test_runner/test:1306:25)
+        at Test.processPendingSubtests (node:internal/test_runner/test:897:18)
+        at Test.postRun (node:internal/test_runner/test:1447:19)
+        at Test.run (node:internal/test_runner/test:1372:12),
+    expected: /Confirm/,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at tests/demo.test.mjs:8:1
+✖ D04 manager approval uses the exact current proposal after confirmation (0.796598ms)
+  AssertionError [ERR_ASSERTION]: The input did not match the regular expression /Confirm/. Input:
+  
+  'Error: NOT_IMPLEMENTED: reviewer intervention'
+  
+      at TestContext.<anonymous> (file:///home/mike/Projects/Teoh-Product-bf25/Logistics/tests/demo.test.mjs:8:215)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1306:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:897:18)
+      at Test.postRun (node:internal/test_runner/test:1447:19)
+      at Test.run (node:internal/test_runner/test:1372:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:897:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: Error: NOT_IMPLEMENTED: reviewer intervention
+        at buildGuideInput (file:///home/mike/Projects/Teoh-Product-bf25/Logistics/domain/demo.mjs:3:41)
+        at file:///home/mike/Projects/Teoh-Product-bf25/Logistics/tests/demo.test.mjs:8:226
+        at getActual (node:assert:611:5)
+        at strict.throws (node:assert:759:24)
+        at TestContext.<anonymous> (file:///home/mike/Projects/Teoh-Product-bf25/Logistics/tests/demo.test.mjs:8:215)
+        at Test.runInAsyncScope (node:async_hooks:227:14)
+        at Test.run (node:internal/test_runner/test:1306:25)
+        at Test.processPendingSubtests (node:internal/test_runner/test:897:18)
+        at Test.postRun (node:internal/test_runner/test:1447:19)
+        at Test.run (node:internal/test_runner/test:1372:12),
+    expected: /Confirm/,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at tests/demo.test.mjs:9:1
+✖ D05 reviewer recount drives the proposal and does not mutate stock (0.232668ms)
+  AssertionError [ERR_ASSERTION]: The input did not match the regular expression /Confirm/. Input:
+  
+  'Error: NOT_IMPLEMENTED: reviewer intervention'
+  
+      at TestContext.<anonymous> (file:///home/mike/Projects/Teoh-Product-bf25/Logistics/tests/demo.test.mjs:9:131)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1306:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:897:18)
+      at Test.postRun (node:internal/test_runner/test:1447:19)
+      at Test.run (node:internal/test_runner/test:1372:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:897:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: Error: NOT_IMPLEMENTED: reviewer intervention
+        at buildGuideInput (file:///home/mike/Projects/Teoh-Product-bf25/Logistics/domain/demo.mjs:3:41)
+        at file:///home/mike/Projects/Teoh-Product-bf25/Logistics/tests/demo.test.mjs:9:142
+        at getActual (node:assert:611:5)
+        at strict.throws (node:assert:759:24)
+        at TestContext.<anonymous> (file:///home/mike/Projects/Teoh-Product-bf25/Logistics/tests/demo.test.mjs:9:131)
+        at Test.runInAsyncScope (node:async_hooks:227:14)
+        at Test.run (node:internal/test_runner/test:1306:25)
+        at Test.processPendingSubtests (node:internal/test_runner/test:897:18)
+        at Test.postRun (node:internal/test_runner/test:1447:19)
+        at Test.run (node:internal/test_runner/test:1372:12),
+    expected: /Confirm/,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at tests/demo.test.mjs:10:1
+✖ D06 missing human work or approval records cannot execute (0.163803ms)
+  AssertionError [ERR_ASSERTION]: The input did not match the regular expression /task.*missing/i. Input:
+  
+  'Error: NOT_IMPLEMENTED: reviewer intervention'
+  
+      at TestContext.<anonymous> (file:///home/mike/Projects/Teoh-Product-bf25/Logistics/tests/demo.test.mjs:10:78)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1306:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:897:18)
+      at Test.postRun (node:internal/test_runner/test:1447:19)
+      at Test.run (node:internal/test_runner/test:1372:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:897:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: Error: NOT_IMPLEMENTED: reviewer intervention
+        at buildGuideInput (file:///home/mike/Projects/Teoh-Product-bf25/Logistics/domain/demo.mjs:3:41)
+        at file:///home/mike/Projects/Teoh-Product-bf25/Logistics/tests/demo.test.mjs:10:89
+        at getActual (node:assert:611:5)
+        at strict.throws (node:assert:759:24)
+        at TestContext.<anonymous> (file:///home/mike/Projects/Teoh-Product-bf25/Logistics/tests/demo.test.mjs:10:78)
+        at Test.runInAsyncScope (node:async_hooks:227:14)
+        at Test.run (node:internal/test_runner/test:1306:25)
+        at Test.processPendingSubtests (node:internal/test_runner/test:897:18)
+        at Test.postRun (node:internal/test_runner/test:1447:19)
+        at Test.run (node:internal/test_runner/test:1372:12),
+    expected: /task.*missing/i,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at tests/demo.test.mjs:11:1
+✖ D07 a human confirms shipment preparation before the request (0.110232ms)
+  AssertionError [ERR_ASSERTION]: The input did not match the regular expression /Confirm/. Input:
+  
+  'Error: NOT_IMPLEMENTED: reviewer intervention'
+  
+      at TestContext.<anonymous> (file:///home/mike/Projects/Teoh-Product-bf25/Logistics/tests/demo.test.mjs:11:81)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1306:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:897:18)
+      at Test.postRun (node:internal/test_runner/test:1447:19)
+      at Test.run (node:internal/test_runner/test:1372:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:897:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: Error: NOT_IMPLEMENTED: reviewer intervention
+        at buildGuideInput (file:///home/mike/Projects/Teoh-Product-bf25/Logistics/domain/demo.mjs:3:41)
+        at file:///home/mike/Projects/Teoh-Product-bf25/Logistics/tests/demo.test.mjs:11:92
+        at getActual (node:assert:611:5)
+        at strict.throws (node:assert:759:24)
+        at TestContext.<anonymous> (file:///home/mike/Projects/Teoh-Product-bf25/Logistics/tests/demo.test.mjs:11:81)
+        at Test.runInAsyncScope (node:async_hooks:227:14)
+        at Test.run (node:internal/test_runner/test:1306:25)
+        at Test.processPendingSubtests (node:internal/test_runner/test:897:18)
+        at Test.postRun (node:internal/test_runner/test:1447:19)
+        at Test.run (node:internal/test_runner/test:1372:12),
+    expected: /Confirm/,
+    operator: 'throws',
+    diff: 'simple'
+  }

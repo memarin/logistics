@@ -1,0 +1,5 @@
+export const roleProfiles={
+ manager:{label:'Warehouse manager',title:'Warehouse manager workspace',defaultView:'Recovery',views:['Recovery','Orders','Tasks','Activity','Settings'],responsibility:'Investigate exceptions, review recovery options, approve protected changes, and supervise fulfillment.',actions:['investigate','plan-recovery','execute-recovery','assess','coordinate','propose-correction','request-release','request-cancel','approve','reject','edit-order','configure','worker','reset']},
+ staff:{label:'Fulfillment staff',title:'Fulfillment staff workspace',defaultView:'Tasks',views:['Tasks','Recovery','Activity'],responsibility:'Inspect requested stock, report usable or damaged items, confirm physical tasks, and request shipment approval.',actions:['verify-evidence','complete','request-release']},
+ it:{label:'IT administrator',title:'IT administrator workspace',defaultView:'Settings',views:['Settings','Activity'],responsibility:'Manage role access, agent permissions, worker availability, task configuration, and demo resets.',actions:['permissions','access','configure','worker','reset']}
+};

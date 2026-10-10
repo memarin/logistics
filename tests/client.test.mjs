@@ -1,7 +1,10 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
-import {isCurrentVersion,guideStepComplete} from '../domain/client-state.mjs';
+import {isCurrentVersion,guideStepComplete,nextGuideStep} from '../domain/client-state.mjs';
 import {fixture} from './fixtures.mjs';
 test('C01 delayed browser responses cannot replace newer state',()=>{assert.equal(isCurrentVersion(8,7),false);assert.equal(isCurrentVersion(8,9),true);assert.equal(isCurrentVersion(8,8),true);assert.equal(isCurrentVersion(8,undefined),false);});
-test('C02 guide can continue when another reviewer released the order',()=>{const s=fixture();s.orders[0].status='released';assert.equal(guideStepComplete(s,2),true);assert.equal(guideStepComplete(s,6),true);assert.equal(guideStepComplete(s,7),false);});
-test('C03 guide can continue after another reviewer corrected the shortage',()=>{const s=fixture();s.inventory[1].onHand=6;assert.equal(guideStepComplete(s,7),true);assert.equal(guideStepComplete(s,8),true);assert.equal(guideStepComplete(s,10),false);});
+test('C02 guide continues from shared release but still requires final agent verification',()=>{const s=fixture();s.orders[1].status='released';for(const step of [6,7,8,9])assert.equal(guideStepComplete(s,step),true);assert.equal(guideStepComplete(s,10),false);});
+test('C03 guide follows case outcomes rather than assuming a stock change completes recovery',()=>{const s=fixture();s.inventory[1].onHand=6;assert.equal(guideStepComplete(s,4),false);s.recoveryCases=[{orderId:'ORD-1043',status:'ready-to-execute',verification:{status:'completed'}}];assert.equal(guideStepComplete(s,2),true);assert.equal(guideStepComplete(s,4),true);assert.equal(guideStepComplete(s,5),false);s.recoveryCases[0].status='on-hold';for(const step of [5,6,7,8,9,10])assert.equal(guideStepComplete(s,step),true);});
+test('C04 paused execution stays on the same reviewer-started step',()=>{const s=fixture();s.recoveryCases=[{orderId:'ORD-1043',status:'needs-support'}];assert.equal(nextGuideStep(s,5),5);s.recoveryCases[0].status='needs-reinvestigation';assert.equal(nextGuideStep(s,5),1);s.recoveryCases[0].status='on-hold';assert.equal(nextGuideStep(s,5),10);s.recoveryCases[0].status='recovered';assert.equal(nextGuideStep(s,5),6);});
+test('C05 a rejected proposal returns the guide to planning',()=>{const s=fixture();s.recoveryCases=[{orderId:'ORD-1043',status:'needs-replan'}];assert.equal(nextGuideStep(s,4),3);});
+test('C06 changed evidence requires a fresh investigation instead of skipping the stale case',()=>{const s=fixture();s.recoveryCases=[{orderId:'ORD-1043',status:'needs-reinvestigation'}];assert.equal(guideStepComplete(s,1),false);});

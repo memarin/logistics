@@ -1,3 +1,5 @@
+import {roleProfiles} from './roles.mjs';
+import {ensureRecovery,investigate,verifyEvidence,planRecovery,executeRecovery,assertRecoveryApproval,recordRecoveryDecision} from './recovery.mjs';
 import {seedState} from './seed.mjs';
 export function fail(message,status=400){const e=new Error(message);e.status=status;throw e;}
 const quantity=q=>Number.isSafeInteger(q)&&q>0;
@@ -29,9 +31,9 @@ export function planTasks(s,orderId){
  }
  return tasks;
 }
-export function proposeCorrection(s,orderId,recount){
+export function proposeCorrection(s,orderId,recount,verifiedSku){
  const o=s.orders.find(o=>o.id===orderId);if(!o||o.status!=='open')fail('Select an open order.');
- const line=o.lines.find(l=>{const i=s.inventory.find(i=>i.sku===l.sku);return i&&quantity(l.quantity)&&i.onHand-i.reserved<l.quantity;});
+ const line=o.lines.find(l=>{const i=s.inventory.find(i=>i.sku===l.sku);return i&&quantity(l.quantity)&&(verifiedSku?l.sku===verifiedSku:i.onHand-i.reserved<l.quantity);});
  if(!line)fail('No known stock shortage needs a correction.');
  const inv=s.inventory.find(i=>i.sku===line.sku);if(!quantity(recount)||recount<inv.reserved||recount>1000)fail('Enter a positive recount that covers reservations.');
  return {id:crypto.randomUUID(),kind:'correction',orderId,status:'pending',sku:line.sku,before:inv.onHand,after:recount,signature:source(s,o),reason:`Simulated recount: ${recount} units of ${line.sku}, compared with ${inv.onHand} recorded. Manager approval is required before stock changes.`,simulated:true};
@@ -54,26 +56,31 @@ export function validateTypes(types,workers){
 export function authorize(role,action,state){
  if(!['manager','staff','it'].includes(role))fail('Unknown simulated role.',403);
  if(state.access?.[role]===false)fail('Access is revoked for this simulated role.',403);
- const actions=['access','assess','coordinate','propose-correction','complete','request-release','request-cancel','approve','reject','configure','permissions','worker','edit-order','reset'];
- if(!actions.includes(action))fail('Unknown action.');
- if(['approve','reject'].includes(action)&&role!=='manager')fail('Warehouse manager approval is required.',403);
- if(['configure','worker','edit-order'].includes(action)&&role==='staff')fail('Permission denied for fulfillment staff.',403);
- if(['permissions','access'].includes(action)&&role!=='it')fail('Only IT can change permissions.',403);
- if(action==='complete'&&role!=='staff')fail('Switch to fulfillment staff to record physical work.',403);
- const grant={assess:'assessment',coordinate:'coordination','propose-correction':'exceptions'}[action];
+ const allActions=Object.values(roleProfiles).flatMap(p=>p.actions);
+ if(!allActions.includes(action))fail('Unknown action.');
+ if(!roleProfiles[role].actions.includes(action)){
+  if(['approve','reject'].includes(action))fail('Warehouse manager approval is required.',403);
+  if(action==='verify-evidence'||action==='complete')fail('Only fulfillment staff can record physical evidence or work.',403);
+  fail(role==='manager'?'Only IT can change permissions.':'Permission denied. Warehouse manager authority is required for operational decisions.',403);
+ }
+ const grant={assess:'assessment',coordinate:'coordination','propose-correction':'exceptions',investigate:'investigation','plan-recovery':'planning','execute-recovery':'execution'}[action];
  if(grant&&!state.permissions[grant])fail('Agent permission is revoked.',403);
  return true;
 }
 export function audit(state,input,now,outcome,details={}){
- const entry={id:crypto.randomUUID(),runId:state.runId,time:now,actor:['assess','coordinate','propose-correction'].includes(input.action)?'Simulated agent':input.role,role:input.role,action:input.action,outcome,reason:details.reason??input.action,records:details.records??[],...details};
+ const entry={id:crypto.randomUUID(),runId:state.runId,time:now,actor:['assess','coordinate','propose-correction','investigate','plan-recovery','execute-recovery'].includes(input.action)?'Simulated agent':input.role,role:input.role,action:input.action,outcome,reason:details.reason??input.action,records:details.records??[],...details};
  state.audit.push(entry);return entry;
 }
 export function applyAction(s,input,now){
  if(input.runId!==s.runId)fail('This demo run changed. Refresh before another action.',409);
- authorize(input.role,input.action,s);
+ ensureRecovery(s);authorize(input.role,input.action,s);
  const o=s.orders.find(x=>x.id===input.orderId);
  let details={};
  switch(input.action){
+ case 'investigate':details=investigate(s,input,now);break;
+ case 'verify-evidence':details=verifyEvidence(s,input,now);break;
+ case 'plan-recovery':details=planRecovery(s,input,now);break;
+ case 'execute-recovery':details=executeRecovery(s,input,now);break;
  case 'reset':{
   if(input.confirmed!==true)fail('Confirm reset for all reviewers.');
   const history=s.audit, previous=s.runId;Object.assign(s,seedState());s.audit=history;details={reason:'Shared sample data restored. Earlier run actions are invalid.',records:[previous,s.runId]};break;
@@ -88,7 +95,7 @@ export function applyAction(s,input,now){
   s.access??={manager:true,staff:true,it:true};const before={...s.access};Object.assign(s.access,input.access);details={reason:'IT updated simulated role access.',before,after:{...s.access}};break;
  }
  case 'permissions':{
-  if(!input.permissions||Object.keys(input.permissions).some(k=>!['assessment','coordination','exceptions'].includes(k)||typeof input.permissions[k]!=='boolean'))fail('Invalid permission values.');
+  if(!input.permissions||Object.keys(input.permissions).some(k=>!['assessment','coordination','exceptions','investigation','planning','execution'].includes(k)||typeof input.permissions[k]!=='boolean'))fail('Invalid permission values.');
   const before={...s.permissions};Object.assign(s.permissions,input.permissions);details={reason:'IT updated agent permissions.',before,after:{...s.permissions}};break;
  }
  case 'worker':{
@@ -141,10 +148,12 @@ export function applyAction(s,input,now){
   if(p.status!=='pending')fail('This approval already has a decision.',409);
   if(input.action==='reject'){
    if(typeof input.reason!=='string'||!input.reason.trim()||input.reason.length>500)fail('Enter a rejection reason.');
-   p.status='rejected';p.reasonRejected=input.reason.trim();p.decidedAt=now;details={reason:p.reasonRejected,records:[p.id,p.orderId],before:'pending',after:'rejected'};break;
+   p.status='rejected';p.reasonRejected=input.reason.trim();p.decidedAt=now;recordRecoveryDecision(s,p,now);details={reason:p.reasonRejected,records:[p.id,p.orderId],before:'pending',after:'rejected'};break;
   }
   const order=s.orders.find(x=>x.id===p.orderId);if(!order||order.status!=='open')fail('Approval source is stale.',409);
-  if(p.kind==='correction'){
+  assertRecoveryApproval(s,p);
+  if(p.kind==='hold'){const before=order.status;order.status='on-hold';details={reason:'Manager approved a hold without adding usable stock.',records:[p.id,order.id,p.caseId],before,after:order.status};}
+  else if(p.kind==='correction'){
    if(p.signature!==source(s,order))fail('Correction source is stale. Request a new proposal.',409);
    const inv=s.inventory.find(i=>i.sku===p.sku);if(!inv||!quantity(p.after)||p.after<inv.reserved)fail('Stock correction cannot be below reservations.');
    const before=inv.onHand;inv.onHand=p.after;details={reason:'Manager approved the simulated recount correction.',records:[p.id,order.id,p.sku],before,after:p.after};
@@ -156,7 +165,7 @@ export function applyAction(s,input,now){
    if(order.reserved)for(const line of order.lines){const inv=s.inventory.find(i=>i.sku===line.sku);inv.reserved-=line.quantity;if(p.kind==='release')inv.onHand-=line.quantity;}
    order.reserved=false;order.status=p.kind==='release'?'released':'cancelled';details={reason:`Manager approved ${p.kind}.`,records:[p.id,order.id],before,after:structuredClone(s.inventory)};
   }
-  p.status='approved';p.decidedAt=now;break;
+  p.status='approved';p.decidedAt=now;recordRecoveryDecision(s,p,now);break;
  }
  }
  audit(s,input,now,'accepted',details);return s;

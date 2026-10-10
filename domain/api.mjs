@@ -1,10 +1,11 @@
+import {ensureRecovery} from './recovery.mjs';
 import { seedState } from './seed.mjs';
 import { applyAction, audit, fail } from './rules.mjs';
 const response=(value,status=200)=>Response.json(value,{status,headers:{'Cache-Control':'no-store'}});
 async function read(db){
  let row=await db.prepare('SELECT data,version FROM demo_state WHERE id=?').bind('shared').first();
  if(!row){await db.prepare('INSERT OR IGNORE INTO demo_state(id,data,version) VALUES (?,?,?)').bind('shared',JSON.stringify(seedState()),0).run();row=await db.prepare('SELECT data,version FROM demo_state WHERE id=?').bind('shared').first();}
- return {state:JSON.parse(row.data),version:row.version};
+ return {state:ensureRecovery(JSON.parse(row.data)),version:row.version};
 }
 export async function handleApi(request,db,now=new Date().toISOString()){
  try{

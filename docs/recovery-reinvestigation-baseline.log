@@ -1,0 +1,29 @@
+✖ I31 changed stock after approval pauses recovery before task or reservation changes (400.417606ms)
+ℹ tests 1
+ℹ suites 0
+ℹ pass 0
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 619.928689
+
+✖ failing tests:
+
+test at tests/integration.test.mjs:47:1
+✖ I31 changed stock after approval pauses recovery before task or reservation changes (400.417606ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  409 !== 200
+  
+      at TestContext.<anonymous> (file:///home/mike/Projects/Teoh-Product-bf25/Logistics/tests/integration.test.mjs:47:718)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async Test.run (node:internal/test_runner/test:1313:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:385:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 409,
+    expected: 200,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

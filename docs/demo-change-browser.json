@@ -1,0 +1,968 @@
+[
+  {
+    "command": [
+      "open",
+      "http://127.0.0.1:5173/"
+    ],
+    "exit": 0,
+    "output": "\u2713 Relay | Agentic Logistics PoC\n  http://127.0.0.1:5173/\n[agent-browser] launched browser\n"
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "No actual AI service is connected."
+    ],
+    "exit": 0,
+    "output": "No actual AI service is connected.\n"
+  },
+  {
+    "command": [
+      "snapshot",
+      "-i"
+    ],
+    "exit": 0,
+    "output": "- link \"Relay home\" [ref=e1]\n- navigation \"Main navigation\" [ref=e2]\n  - button \"Orders\" [ref=e8]\n  - button \"Tasks\" [ref=e9]\n  - button \"Exceptions & approvals\" [ref=e10]\n  - button \"Activity\" [ref=e11]\n  - button \"Settings\" [ref=e12]\n- combobox \"Simulated role\" [expanded=false, ref=e13]: Warehouse manager\n  - option \"Warehouse manager\" [selected, ref=e22]\n  - option \"Fulfillment staff\" [ref=e23]\n  - option \"IT administrator\" [ref=e24]\n- button \"Refresh shared data\" [ref=e3]\n- heading \"Every order. A clear next step.\" [level=1, ref=e4]\n- button \"Reset demo\" [ref=e5]\n- region \"Agentic features\" [ref=e6]\n  - heading \"Three agentic features to explore\" [level=2, ref=e14]\n  - heading \"Order readiness and priority\" [level=3, ref=e25]\n  - heading \"Task creation and assignment\" [level=3, ref=e26]\n  - heading \"Stock exception resolution\" [level=3, ref=e27]\n- region \"Five-minute guided demo\" [ref=e7]\n  - heading \"Meet your shared warehouse\" [level=2, ref=e20]\n  - button \"Start guided demo\" [disabled, ref=e21]\n  - button \"Back\" [disabled, ref=e15]\n- heading \"Load the shared warehouse\" [level=2, ref=e16]\n- button \"Retry shared data\" [ref=e17]\n- heading \"Synthetic data. Simulated agents.\" [level=2, ref=e18]\n- button \"I understand - open demo\" [ref=e19]\n"
+  },
+  {
+    "command": [
+      "press",
+      "Escape"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "command": [
+      "eval",
+      "!!document.querySelector(\".welcome-modal\")"
+    ],
+    "exit": 0,
+    "output": "true\n"
+  },
+  {
+    "command": [
+      "screenshot",
+      "/home/mike/Projects/Teoh-Product-bf25/Logistics/docs/demo-notice.png"
+    ],
+    "exit": 0,
+    "output": "\u2713 Screenshot saved to /home/mike/Projects/Teoh-Product-bf25/Logistics/docs/demo-notice.png\n"
+  },
+  {
+    "command": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "I understand - open demo",
+      "--exact"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "Order queue"
+    ],
+    "exit": 0,
+    "output": "Order queue\n"
+  },
+  {
+    "command": [
+      "eval",
+      "document.querySelectorAll(\".feature-overview li\").length"
+    ],
+    "exit": 0,
+    "output": "3\n"
+  },
+  {
+    "command": [
+      "reload"
+    ],
+    "exit": 0,
+    "output": "http://127.0.0.1:5173/\n"
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "Order queue"
+    ],
+    "exit": 0,
+    "output": "Order queue\n"
+  },
+  {
+    "command": [
+      "wait",
+      "--fn",
+      "!document.querySelector(\".welcome-modal\")"
+    ],
+    "exit": 0,
+    "output": "true\n"
+  },
+  {
+    "case": "UI01-UI02",
+    "result": "pass",
+    "assertions": "First-load disclosure names synthetic data and no AI service; explicit acknowledgement; no mutations; notice stays dismissed in this tab; exactly 3 feature cards."
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "command": [
+      "wait",
+      "--fn",
+      "!document.querySelector(\".guide-button\").disabled"
+    ],
+    "exit": 0,
+    "output": "true\n"
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "SIMULATED AGENT ACTION"
+    ],
+    "exit": 0,
+    "output": "SIMULATED AGENT ACTION\n"
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "command": [
+      "wait",
+      "--fn",
+      "!document.querySelector(\".guide-button\").disabled"
+    ],
+    "exit": 0,
+    "output": "true\n"
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "command": [
+      "wait",
+      "--fn",
+      "!document.querySelector(\".guide-button\").disabled"
+    ],
+    "exit": 0,
+    "output": "true\n"
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "HUMAN INTERVENTION REQUIRED"
+    ],
+    "exit": 0,
+    "output": "HUMAN INTERVENTION REQUIRED\n"
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "command": [
+      "wait",
+      "--fn",
+      "!document.querySelector(\".guide-button\").disabled"
+    ],
+    "exit": 0,
+    "output": "true\n"
+  },
+  {
+    "command": [
+      "eval",
+      "document.querySelector(\".human-review button[type=submit]\")?.disabled ?? document.querySelector(\".human-review .primary\").disabled"
+    ],
+    "exit": 1,
+    "output": "\u2717 Evaluation error: TypeError: Cannot read properties of null (reading 'disabled')\n    at <anonymous>:1:122\n"
+  },
+  {
+    "setup": "First flow check encountered an already released shared order. Reset sample data and repeat human interaction checks."
+  },
+  {
+    "command": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Reset demo",
+      "--exact"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "command": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Reset for all reviewers",
+      "--exact"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "Meet your shared warehouse"
+    ],
+    "exit": 0,
+    "output": "Meet your shared warehouse\n"
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "Assess order readiness"
+    ],
+    "exit": 0,
+    "output": "Assess order readiness\n"
+  },
+  {
+    "command": [
+      "wait",
+      "--fn",
+      "!document.querySelector(\".guide-button\").disabled"
+    ],
+    "exit": 0,
+    "output": "true\n"
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "SIMULATED AGENT ACTION"
+    ],
+    "exit": 0,
+    "output": "SIMULATED AGENT ACTION\n"
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "Coordinate the ready order"
+    ],
+    "exit": 0,
+    "output": "Coordinate the ready order\n"
+  },
+  {
+    "command": [
+      "wait",
+      "--fn",
+      "!document.querySelector(\".guide-button\").disabled"
+    ],
+    "exit": 0,
+    "output": "true\n"
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "Record the physical pick"
+    ],
+    "exit": 0,
+    "output": "Record the physical pick\n"
+  },
+  {
+    "command": [
+      "wait",
+      "--fn",
+      "!document.querySelector(\".guide-button\").disabled"
+    ],
+    "exit": 0,
+    "output": "true\n"
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "HUMAN INTERVENTION REQUIRED"
+    ],
+    "exit": 0,
+    "output": "HUMAN INTERVENTION REQUIRED\n"
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "command": [
+      "wait",
+      "--fn",
+      "!!document.querySelector(\".human-review\")"
+    ],
+    "exit": 0,
+    "output": "true\n"
+  },
+  {
+    "command": [
+      "eval",
+      "document.querySelector(\".human-review .primary\").disabled"
+    ],
+    "exit": 0,
+    "output": "true\n"
+  },
+  {
+    "command": [
+      "press",
+      "Escape"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "command": [
+      "wait",
+      "--fn",
+      "!document.querySelector(\".human-review\")"
+    ],
+    "exit": 0,
+    "output": "true\n"
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "command": [
+      "wait",
+      "--fn",
+      "!!document.querySelector(\".human-review\")"
+    ],
+    "exit": 0,
+    "output": "true\n"
+  },
+  {
+    "command": [
+      "click",
+      "input[aria-label=\"Confirm human intervention\"]"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "command": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Record confirmed work",
+      "--exact"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "Record the physical pack"
+    ],
+    "exit": 0,
+    "output": "Record the physical pack\n"
+  },
+  {
+    "command": [
+      "wait",
+      "--fn",
+      "!document.querySelector(\".human-review\") && !document.querySelector(\".guide-button\").disabled"
+    ],
+    "exit": 0,
+    "output": "true\n"
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "command": [
+      "wait",
+      "--fn",
+      "!!document.querySelector(\".human-review\")"
+    ],
+    "exit": 0,
+    "output": "true\n"
+  },
+  {
+    "command": [
+      "click",
+      "input[aria-label=\"Confirm human intervention\"]"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "command": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Record confirmed work",
+      "--exact"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "Prepare shipment approval"
+    ],
+    "exit": 0,
+    "output": "Prepare shipment approval\n"
+  },
+  {
+    "command": [
+      "wait",
+      "--fn",
+      "!document.querySelector(\".human-review\") && !document.querySelector(\".guide-button\").disabled"
+    ],
+    "exit": 0,
+    "output": "true\n"
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "command": [
+      "wait",
+      "--fn",
+      "!!document.querySelector(\".human-review\")"
+    ],
+    "exit": 0,
+    "output": "true\n"
+  },
+  {
+    "command": [
+      "click",
+      "input[aria-label=\"Confirm human intervention\"]"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "command": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Send approval request",
+      "--exact"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "Approve shipment release"
+    ],
+    "exit": 0,
+    "output": "Approve shipment release\n"
+  },
+  {
+    "command": [
+      "wait",
+      "--fn",
+      "!document.querySelector(\".human-review\") && !document.querySelector(\".guide-button\").disabled"
+    ],
+    "exit": 0,
+    "output": "true\n"
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "command": [
+      "wait",
+      "--fn",
+      "!!document.querySelector(\".human-review\")"
+    ],
+    "exit": 0,
+    "output": "true\n"
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "Before"
+    ],
+    "exit": 0,
+    "output": "Before\n"
+  },
+  {
+    "command": [
+      "screenshot",
+      "/home/mike/Projects/Teoh-Product-bf25/Logistics/docs/demo-release-review.png"
+    ],
+    "exit": 0,
+    "output": "\u2713 Screenshot saved to /home/mike/Projects/Teoh-Product-bf25/Logistics/docs/demo-release-review.png\n"
+  },
+  {
+    "command": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Back to guide",
+      "--exact"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "command": [
+      "wait",
+      "--fn",
+      "!!document.querySelector(\".human-review\")"
+    ],
+    "exit": 0,
+    "output": "true\n"
+  },
+  {
+    "command": [
+      "click",
+      "input[aria-label=\"Confirm human intervention\"]"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "command": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Approve reviewed change",
+      "--exact"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "Investigate the stock discrepancy"
+    ],
+    "exit": 0,
+    "output": "Investigate the stock discrepancy\n"
+  },
+  {
+    "command": [
+      "wait",
+      "--fn",
+      "!document.querySelector(\".human-review\") && !document.querySelector(\".guide-button\").disabled"
+    ],
+    "exit": 0,
+    "output": "true\n"
+  },
+  {
+    "case": "UI03",
+    "result": "pass",
+    "assertions": "Agent/human labels switch per step. Pick and pack require explicit confirmation. Escape and Back preserve state. Shipment stays open until manager approval."
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "command": [
+      "wait",
+      "--fn",
+      "!!document.querySelector(\".human-review\")"
+    ],
+    "exit": 0,
+    "output": "true\n"
+  },
+  {
+    "command": [
+      "fill",
+      "input[aria-label=\"Guided synthetic recount\"]",
+      "7"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "command": [
+      "click",
+      "input[aria-label=\"Confirm human intervention\"]"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "command": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Confirm recount and run agent",
+      "--exact"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "Approve the stock correction"
+    ],
+    "exit": 0,
+    "output": "Approve the stock correction\n"
+  },
+  {
+    "command": [
+      "wait",
+      "--fn",
+      "!document.querySelector(\".human-review\") && !document.querySelector(\".guide-button\").disabled"
+    ],
+    "exit": 0,
+    "output": "true\n"
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "command": [
+      "wait",
+      "--fn",
+      "!!document.querySelector(\".human-review\")"
+    ],
+    "exit": 0,
+    "output": "true\n"
+  },
+  {
+    "command": [
+      "screenshot",
+      "/home/mike/Projects/Teoh-Product-bf25/Logistics/docs/demo-stock-review.png"
+    ],
+    "exit": 0,
+    "output": "\u2713 Screenshot saved to /home/mike/Projects/Teoh-Product-bf25/Logistics/docs/demo-stock-review.png\n"
+  },
+  {
+    "command": [
+      "click",
+      "input[aria-label=\"Confirm human intervention\"]"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "command": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Approve reviewed change",
+      "--exact"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "Reassess the blocked order"
+    ],
+    "exit": 0,
+    "output": "Reassess the blocked order\n"
+  },
+  {
+    "command": [
+      "wait",
+      "--fn",
+      "!document.querySelector(\".human-review\") && !document.querySelector(\".guide-button\").disabled"
+    ],
+    "exit": 0,
+    "output": "true\n"
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "Resume fulfillment"
+    ],
+    "exit": 0,
+    "output": "Resume fulfillment\n"
+  },
+  {
+    "command": [
+      "wait",
+      "--fn",
+      "!document.querySelector(\".guide-button\").disabled"
+    ],
+    "exit": 0,
+    "output": "true\n"
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "Your demo is complete"
+    ],
+    "exit": 0,
+    "output": "Your demo is complete\n"
+  },
+  {
+    "command": [
+      "wait",
+      "--fn",
+      "!document.querySelector(\".guide-button\").disabled"
+    ],
+    "exit": 0,
+    "output": "true\n"
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "case": "UI04",
+    "result": "pass",
+    "assertions": "Reviewer count 7 drives the agent proposal. Stock stays 2 until manager review. Approval changes stock to 7. Reassessment and task creation succeed."
+  },
+  {
+    "command": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Orders",
+      "--exact"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "command": [
+      "set",
+      "viewport",
+      "1440",
+      "1000"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "command": [
+      "eval",
+      "document.documentElement.scrollWidth <= innerWidth"
+    ],
+    "exit": 0,
+    "output": "true\n"
+  },
+  {
+    "command": [
+      "screenshot",
+      "/home/mike/Projects/Teoh-Product-bf25/Logistics/docs/demo-update-1440.png"
+    ],
+    "exit": 0,
+    "output": "\u2713 Screenshot saved to /home/mike/Projects/Teoh-Product-bf25/Logistics/docs/demo-update-1440.png\n"
+  },
+  {
+    "command": [
+      "set",
+      "viewport",
+      "390",
+      "844"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "command": [
+      "eval",
+      "document.documentElement.scrollWidth <= innerWidth"
+    ],
+    "exit": 0,
+    "output": "true\n"
+  },
+  {
+    "command": [
+      "screenshot",
+      "/home/mike/Projects/Teoh-Product-bf25/Logistics/docs/demo-update-390.png"
+    ],
+    "exit": 0,
+    "output": "\u2713 Screenshot saved to /home/mike/Projects/Teoh-Product-bf25/Logistics/docs/demo-update-390.png\n"
+  },
+  {
+    "case": "UI05",
+    "result": "pass",
+    "assertions": "Feature cards and responsibility labels have no page overflow on desktop and phone."
+  },
+  {
+    "command": [
+      "errors"
+    ],
+    "exit": 0,
+    "output": ""
+  },
+  {
+    "command": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Reset demo",
+      "--exact"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "command": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Reset for all reviewers",
+      "--exact"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n"
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "Meet your shared warehouse"
+    ],
+    "exit": 0,
+    "output": "Meet your shared warehouse\n"
+  },
+  {
+    "case": "UI06",
+    "result": "pass",
+    "assertions": "No browser errors. Shared sample data restored after checks."
+  }
+]

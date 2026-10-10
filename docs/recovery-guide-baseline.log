@@ -1,0 +1,214 @@
+✔ C01 delayed browser responses cannot replace newer state (0.611304ms)
+✖ C02 guide continues from shared release but still requires final agent verification (1.433901ms)
+✖ C03 guide follows case outcomes rather than assuming a stock change completes recovery (0.280489ms)
+✔ D01 guide distinguishes simulated agents from human authority (1.762358ms)
+✔ D02 exactly three agentic features explain what reviewers can observe (1.728324ms)
+✖ D03 physical task completion requires explicit reviewer confirmation (0.977267ms)
+✖ D04 manager approval uses the exact current proposal after confirmation (0.220161ms)
+✖ D05 staff evidence drives planning and does not mutate stock (0.566652ms)
+✖ D06 missing human work or approval records cannot execute (0.322757ms)
+✖ D07 a human confirms shipment preparation before the request (0.256705ms)
+✖ D08 approval review cannot silently adopt another proposal (0.355176ms)
+✖ D09 case actions carry the current revision and never mutate the case (0.268642ms)
+✖ D10 guide assigns physical work to staff and protected decisions to managers (0.770585ms)
+ℹ tests 13
+ℹ suites 0
+ℹ pass 3
+ℹ fail 10
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 75.11192
+
+✖ failing tests:
+
+test at tests/client.test.mjs:6:1
+✖ C02 guide continues from shared release but still requires final agent verification (1.433901ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  false !== true
+  
+      at TestContext.<anonymous> (file:///home/mike/Projects/Teoh-Product-bf25/Logistics/tests/client.test.mjs:6:180)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1306:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:897:18)
+      at Test.postRun (node:internal/test_runner/test:1447:19)
+      at Test.run (node:internal/test_runner/test:1372:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:385:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/client.test.mjs:7:1
+✖ C03 guide follows case outcomes rather than assuming a stock change completes recovery (0.280489ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  false !== true
+  
+      at TestContext.<anonymous> (file:///home/mike/Projects/Teoh-Product-bf25/Logistics/tests/client.test.mjs:7:291)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1306:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:897:18)
+      at Test.postRun (node:internal/test_runner/test:1447:19)
+      at Test.run (node:internal/test_runner/test:1372:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:897:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/demo.test.mjs:7:1
+✖ D03 physical task completion requires explicit reviewer confirmation (0.977267ms)
+  Error: The approval request is missing. Return to the request step.
+      at buildGuideInput (file:///home/mike/Projects/Teoh-Product-bf25/Logistics/domain/demo.mjs:47:22)
+      at TestContext.<anonymous> (file:///home/mike/Projects/Teoh-Product-bf25/Logistics/tests/demo.test.mjs:7:263)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1306:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:897:18)
+      at Test.postRun (node:internal/test_runner/test:1447:19)
+      at Test.run (node:internal/test_runner/test:1372:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:897:7)
+
+test at tests/demo.test.mjs:8:1
+✖ D04 manager approval uses the exact current proposal after confirmation (0.220161ms)
+  Error: The task is missing. Return to task creation or reset the demo.
+      at buildGuideInput (file:///home/mike/Projects/Teoh-Product-bf25/Logistics/domain/demo.mjs:42:18)
+      at TestContext.<anonymous> (file:///home/mike/Projects/Teoh-Product-bf25/Logistics/tests/demo.test.mjs:8:275)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1306:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:897:18)
+      at Test.postRun (node:internal/test_runner/test:1447:19)
+      at Test.run (node:internal/test_runner/test:1372:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:897:7)
+
+test at tests/demo.test.mjs:9:1
+✖ D05 staff evidence drives planning and does not mutate stock (0.566652ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception.
+      at TestContext.<anonymous> (file:///home/mike/Projects/Teoh-Product-bf25/Logistics/tests/demo.test.mjs:9:223)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1306:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:897:18)
+      at Test.postRun (node:internal/test_runner/test:1447:19)
+      at Test.run (node:internal/test_runner/test:1372:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:897:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: /Confirm/,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at tests/demo.test.mjs:10:1
+✖ D06 missing human work or approval records cannot execute (0.322757ms)
+  AssertionError [ERR_ASSERTION]: The input did not match the regular expression /task.*missing/i. Input:
+  
+  'Error: The approval request is missing. Return to the request step.'
+  
+      at TestContext.<anonymous> (file:///home/mike/Projects/Teoh-Product-bf25/Logistics/tests/demo.test.mjs:10:78)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1306:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:897:18)
+      at Test.postRun (node:internal/test_runner/test:1447:19)
+      at Test.run (node:internal/test_runner/test:1372:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:897:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: Error: The approval request is missing. Return to the request step.
+        at buildGuideInput (file:///home/mike/Projects/Teoh-Product-bf25/Logistics/domain/demo.mjs:47:22)
+        at file:///home/mike/Projects/Teoh-Product-bf25/Logistics/tests/demo.test.mjs:10:89
+        at getActual (node:assert:611:5)
+        at strict.throws (node:assert:759:24)
+        at TestContext.<anonymous> (file:///home/mike/Projects/Teoh-Product-bf25/Logistics/tests/demo.test.mjs:10:78)
+        at Test.runInAsyncScope (node:async_hooks:227:14)
+        at Test.run (node:internal/test_runner/test:1306:25)
+        at Test.processPendingSubtests (node:internal/test_runner/test:897:18)
+        at Test.postRun (node:internal/test_runner/test:1447:19)
+        at Test.run (node:internal/test_runner/test:1372:12),
+    expected: /task.*missing/i,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at tests/demo.test.mjs:11:1
+✖ D07 a human confirms shipment preparation before the request (0.256705ms)
+  Error: The approval request is missing. Return to the request step.
+      at buildGuideInput (file:///home/mike/Projects/Teoh-Product-bf25/Logistics/domain/demo.mjs:47:22)
+      at TestContext.<anonymous> (file:///home/mike/Projects/Teoh-Product-bf25/Logistics/tests/demo.test.mjs:11:149)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1306:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:897:18)
+      at Test.postRun (node:internal/test_runner/test:1447:19)
+      at Test.run (node:internal/test_runner/test:1372:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:897:7)
+
+test at tests/demo.test.mjs:12:1
+✖ D08 approval review cannot silently adopt another proposal (0.355176ms)
+  AssertionError [ERR_ASSERTION]: The input did not match the regular expression /approval.*missing/i. Input:
+  
+  'Error: The task is missing. Return to task creation or reset the demo.'
+  
+      at TestContext.<anonymous> (file:///home/mike/Projects/Teoh-Product-bf25/Logistics/tests/demo.test.mjs:12:242)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1306:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:897:18)
+      at Test.postRun (node:internal/test_runner/test:1447:19)
+      at Test.run (node:internal/test_runner/test:1372:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:897:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: Error: The task is missing. Return to task creation or reset the demo.
+        at buildGuideInput (file:///home/mike/Projects/Teoh-Product-bf25/Logistics/domain/demo.mjs:42:18)
+        at file:///home/mike/Projects/Teoh-Product-bf25/Logistics/tests/demo.test.mjs:12:253
+        at getActual (node:assert:611:5)
+        at strict.throws (node:assert:759:24)
+        at TestContext.<anonymous> (file:///home/mike/Projects/Teoh-Product-bf25/Logistics/tests/demo.test.mjs:12:242)
+        at Test.runInAsyncScope (node:async_hooks:227:14)
+        at Test.run (node:internal/test_runner/test:1306:25)
+        at Test.processPendingSubtests (node:internal/test_runner/test:897:18)
+        at Test.postRun (node:internal/test_runner/test:1447:19)
+        at Test.run (node:internal/test_runner/test:1372:12),
+    expected: /approval.*missing/i,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at tests/demo.test.mjs:13:1
+✖ D09 case actions carry the current revision and never mutate the case (0.268642ms)
+  Error: Confirm the human intervention before this action.
+      at buildGuideInput (file:///home/mike/Projects/Teoh-Product-bf25/Logistics/domain/demo.mjs:38:84)
+      at TestContext.<anonymous> (file:///home/mike/Projects/Teoh-Product-bf25/Logistics/tests/demo.test.mjs:13:238)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1306:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:897:18)
+      at Test.postRun (node:internal/test_runner/test:1447:19)
+      at Test.run (node:internal/test_runner/test:1372:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:897:7)
+
+test at tests/demo.test.mjs:14:1
+✖ D10 guide assigns physical work to staff and protected decisions to managers (0.770585ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  'manager' !== 'staff'
+  
+      at TestContext.<anonymous> (file:///home/mike/Projects/Teoh-Product-bf25/Logistics/tests/demo.test.mjs:14:195)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1306:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:897:18)
+      at Test.postRun (node:internal/test_runner/test:1447:19)
+      at Test.run (node:internal/test_runner/test:1372:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:897:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'manager',
+    expected: 'staff',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

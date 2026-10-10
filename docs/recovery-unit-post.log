@@ -1,0 +1,62 @@
+
+> relay-logistics@0.1.0 test:unit
+> node --test tests/unit.test.mjs tests/client.test.mjs tests/demo.test.mjs tests/recovery.test.mjs
+
+✔ C01 delayed browser responses cannot replace newer state (0.587996ms)
+✔ C02 guide continues from shared release but still requires final agent verification (0.241723ms)
+✔ C03 guide follows case outcomes rather than assuming a stock change completes recovery (0.177332ms)
+✔ C04 paused execution stays on the same reviewer-started step (0.888829ms)
+✔ C05 a rejected proposal returns the guide to planning (0.139887ms)
+✔ C06 changed evidence requires a fresh investigation instead of skipping the stale case (0.108563ms)
+✔ D01 guide distinguishes simulated agents from human authority (0.862464ms)
+✔ D02 exactly three agentic features explain what reviewers can observe (1.402573ms)
+✔ D03 physical task completion requires explicit reviewer confirmation (0.975426ms)
+✔ D04 manager approval uses the exact current proposal after confirmation (0.233677ms)
+✔ D05 staff evidence drives planning and does not mutate stock (0.583741ms)
+✔ D06 missing human work or approval records cannot execute (0.232205ms)
+✔ D07 a human confirms shipment preparation before the request (0.130496ms)
+✔ D08 approval review cannot silently adopt another proposal (0.164125ms)
+✔ D09 case actions carry the current revision and never mutate the case (0.546251ms)
+✔ D10 guide assigns physical work to staff and protected decisions to managers (0.20566ms)
+✔ RU01 investigation reads linked evidence and requests a human check without stock changes (11.894458ms)
+✔ RU02 only staff can submit confirmed physical evidence (0.891933ms)
+✔ RU03 planner compares recovery options from verified evidence and leaves stock untouched (0.81011ms)
+✔ RU04 damaged stock leads to a hold proposal instead of inventing usable stock (1.151039ms)
+✔ RU05 rejection forces a different recovery plan with the rejection reason (0.545005ms)
+✔ RU06 execution requires approval and retries never duplicate reservations or tasks (1.056166ms)
+✔ RU07 unavailable staff pauses execution and IT intervention permits an explicit resume (0.504119ms)
+✔ RU08 changed stock invalidates verification and stale case revisions cannot execute (0.362182ms)
+✔ RU09 final verification observes actual release without consuming stock twice (0.751901ms)
+✔ RU10 role profiles define different landing views and backend action boundaries (0.396188ms)
+✔ RU11 missing receipts remain missing and require staff verification (0.325431ms)
+✔ RU12 revoked execution permission blocks all recovery mutations (0.41067ms)
+✔ U01 enough stock permits readiness (7.832043ms)
+✔ U02 shortage blocks the order (0.318785ms)
+✔ U03 missing inventory remains unknown (0.213676ms)
+✔ U04 due dates and stable IDs determine priority (0.189968ms)
+✔ U05 invalid quantities block only the affected order (0.360775ms)
+✔ U06 non-finite and missing quantities are rejected (0.407111ms)
+✔ U07 plans include enabled configured task types (1.096462ms)
+✔ U08 plans preserve task dependencies (0.298414ms)
+✔ U09 eligibility and workload determine assignments (0.46778ms)
+✔ U10 no eligible worker causes escalation (0.660655ms)
+✔ U11 unknown and cyclic dependencies are rejected (3.623725ms)
+✔ U12 disabled types produce no new tasks (0.319387ms)
+✔ U13 shortage proposal uses the current records (1.893045ms)
+✔ U14 a correction proposal never changes stock (0.132087ms)
+✔ U15 unauthorized protected actions fail (0.281899ms)
+✔ U16 packing requires completed picking (0.86503ms)
+✔ U17 release requires completed work (0.216559ms)
+✔ U18 changed source records invalidate decisions (0.151406ms)
+✔ U19 revoked permissions prevent agent execution (0.162906ms)
+✔ U20 rejection requires a nonblank explanation (0.202301ms)
+✔ U21 missing order lines block only the malformed order (0.092198ms)
+✔ U22 malformed due dates do not stop other orders (0.063287ms)
+ℹ tests 50
+ℹ suites 0
+ℹ pass 50
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 98.170097

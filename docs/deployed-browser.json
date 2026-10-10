@@ -1,0 +1,549 @@
+[
+  {
+    "command": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "I understand - open demo",
+      "--exact"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "Stock recovery workspace"
+    ],
+    "exit": 0,
+    "output": "Stock recovery workspace\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "eval",
+      "(async()=>{const r=await fetch('/api/state');const d=await r.json();if(!r.ok||!d.state.runId||!Array.isArray(d.state.recoveryCases))throw Error('Hosted D1 read failed');return 'PASS: hosted shared state is available';})()"
+    ],
+    "exit": 0,
+    "output": "\"PASS: hosted shared state is available\"\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "Confirm physical evidence"
+    ],
+    "exit": 0,
+    "output": "Confirm physical evidence\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "Confirm synthetic physical evidence"
+    ],
+    "exit": 0,
+    "output": "Confirm synthetic physical evidence\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "fill",
+      "input[aria-label=\"Guided synthetic recount\"]",
+      "7"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "check",
+      "input[aria-label=\"Confirm human intervention\"]"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Record staff evidence",
+      "--exact"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "Compare recovery options"
+    ],
+    "exit": 0,
+    "output": "Compare recovery options\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "Decide the recovery proposal"
+    ],
+    "exit": 0,
+    "output": "Decide the recovery proposal\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "check",
+      "input[aria-label=\"Confirm human intervention\"]"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Approve reviewed change",
+      "--exact"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "Execute or pause recovery"
+    ],
+    "exit": 0,
+    "output": "Execute or pause recovery\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "Record the physical pick"
+    ],
+    "exit": 0,
+    "output": "Record the physical pick\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "check",
+      "input[aria-label=\"Confirm human intervention\"]"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Record confirmed work",
+      "--exact"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "Record the physical pack"
+    ],
+    "exit": 0,
+    "output": "Record the physical pack\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "check",
+      "input[aria-label=\"Confirm human intervention\"]"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Record confirmed work",
+      "--exact"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "Prepare shipment approval"
+    ],
+    "exit": 0,
+    "output": "Prepare shipment approval\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "check",
+      "input[aria-label=\"Confirm human intervention\"]"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Send approval request",
+      "--exact"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "Approve shipment release"
+    ],
+    "exit": 0,
+    "output": "Approve shipment release\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "check",
+      "input[aria-label=\"Confirm human intervention\"]"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Approve reviewed change",
+      "--exact"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "Verify the actual outcome"
+    ],
+    "exit": 0,
+    "output": "Verify the actual outcome\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "click",
+      ".guide-button"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "Review the recovery record"
+    ],
+    "exit": 0,
+    "output": "Review the recovery record\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "eval",
+      "(async()=>{const s=(await(await fetch('/api/state')).json()).state;if(s.recoveryCases[0].status!=='resolved'||s.inventory[1].onHand!==2||s.inventory[1].reserved!==0||s.tasks.some(t=>t.status!=='completed'))throw Error('Hosted recovery failed');return 'PASS: hosted investigation, staff evidence, manager approval, tasks, release, and final check';})()"
+    ],
+    "exit": 0,
+    "output": "\"PASS: hosted investigation, staff evidence, manager approval, tasks, release, and final check\"\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "select",
+      "select[aria-label=\"Simulated role\"]",
+      "staff"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "snapshot",
+      "-i"
+    ],
+    "exit": 0,
+    "output": "- link \"Relay home\" [ref=e1]\n- navigation \"Main navigation\" [ref=e2]\n  - button \"Tasks\" [ref=e11]\n  - button \"Verification\" [ref=e9]\n  - button \"Activity\" [ref=e12]\n- combobox \"Simulated role\" [expanded=false, ref=e14]: Fulfillment staff\n  - option \"Warehouse manager\" [ref=e23]\n  - option \"Fulfillment staff\" [selected, ref=e24]\n  - option \"IT administrator\" [ref=e25]\n- button \"Refresh shared data\" [ref=e3]\n- heading \"Fulfillment staff workspace\" [level=1, ref=e4]\n- heading \"Work, coordinated.\" [level=2, ref=e5]\n- region \"Agentic features\" [ref=e7]\n  - heading \"Three agentic features to explore\" [level=2, ref=e15]\n  - heading \"Evidence-led stock investigation\" [level=3, ref=e26]\n  - heading \"Fulfillment recovery planning\" [level=3, ref=e27]\n  - heading \"Adaptive execution and outcome checks\" [level=3, ref=e28]\n- region \"Five-minute guided demo\" [ref=e8]\n  - heading \"Review the recovery record\" [level=2, ref=e21]\n  - button \"Switch to Warehouse manager\" [ref=e22]\n  - button \"Back\" [ref=e16]\n- heading \"Warehouse tasks\" [level=2, ref=e36]\n- heading \"Pick ORD-1043\" [level=3, ref=e42]\n- button \"Complete task\" [disabled, ref=e43]\n- heading \"Pack ORD-1043\" [level=3, ref=e44]\n- button \"Complete task\" [disabled, ref=e45]\n- heading \"Agent actions\" [level=2, ref=e37]\n- heading \"execute recovery\" [level=3, ref=e38]\n- button \"Inspect audit entry\" [ref=e39]\n- heading \"Recent activity\" [level=3, ref=e40]\n- button \"View full audit log\" [ref=e41]\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "select",
+      "select[aria-label=\"Simulated role\"]",
+      "it"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "snapshot",
+      "-i"
+    ],
+    "exit": 0,
+    "output": "- link \"Relay home\" [ref=e1]\n- navigation \"Main navigation\" [ref=e2]\n  - button \"Settings\" [ref=e47]\n  - button \"Activity\" [ref=e12]\n- combobox \"Simulated role\" [expanded=false, ref=e14]: IT administrator\n  - option \"Warehouse manager\" [ref=e23]\n  - option \"Fulfillment staff\" [ref=e24]\n  - option \"IT administrator\" [selected, ref=e25]\n- button \"Refresh shared data\" [ref=e3]\n- heading \"IT administrator workspace\" [level=1, ref=e4]\n- heading \"Define the agent boundaries.\" [level=2, ref=e5]\n- button \"Reset demo\" [ref=e46]\n- region \"Agentic features\" [ref=e7]\n  - heading \"Three agentic features to explore\" [level=2, ref=e15]\n  - heading \"Evidence-led stock investigation\" [level=3, ref=e26]\n  - heading \"Fulfillment recovery planning\" [level=3, ref=e27]\n  - heading \"Adaptive execution and outcome checks\" [level=3, ref=e28]\n- region \"Five-minute guided demo\" [ref=e8]\n  - heading \"Review the recovery record\" [level=2, ref=e21]\n  - button \"Switch to Warehouse manager\" [ref=e22]\n  - button \"Back\" [ref=e16]\n- heading \"Simulated role access\" [level=2, ref=e48]\n- checkbox \"Allow Warehouse manager access\" [checked=true, ref=e52]\n- checkbox \"Allow Fulfillment staff access\" [checked=true, ref=e53]\n- heading \"Agent permissions\" [level=2, ref=e49]\n- checkbox \"Allow investigation\" [checked=true, ref=e54]\n- checkbox \"Allow planning\" [checked=true, ref=e55]\n- checkbox \"Allow execution\" [checked=true, ref=e56]\n- heading \"Worker availability\" [level=2, ref=e50]\n- checkbox \"Mia Chen available\" [checked=true, ref=e57]\n- checkbox \"Noah Patel available\" [checked=true, ref=e58]\n- checkbox \"Ivy Brooks available\" [checked=false, ref=e59]\n- heading \"Configured task types\" [level=2, ref=e51]\n- checkbox \"Pick enabled\" [checked=true, ref=e60]\n- checkbox \"Pack enabled\" [checked=true, ref=e61]\n- heading \"Add a task type\" [level=3, ref=e62]\n- textbox \"New task name\" [required, ref=e64]\n- combobox \"New task eligible worker\" [expanded=false, ref=e65]: Noah Patel\n  - option \"Mia Chen\" [ref=e67]\n  - option \"Noah Patel\" [selected, ref=e68]\n  - option \"Ivy Brooks\" [ref=e69]\n- combobox \"New task dependency\" [expanded=false, ref=e66]: Pack\n  - option \"No dependency\" [ref=e70]\n  - option \"Pick\" [ref=e71]\n  - option \"Pack\" [selected, ref=e72]\n- button \"Add task type\" [ref=e63]\n- heading \"Agent actions\" [level=2, ref=e37]\n- heading \"execute recovery\" [level=3, ref=e38]\n- button \"Inspect audit entry\" [ref=e39]\n- heading \"Recent activity\" [level=3, ref=e40]\n- button \"View full audit log\" [ref=e41]\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "select",
+      "select[aria-label=\"Simulated role\"]",
+      "manager"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Reset demo",
+      "--exact"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "find",
+      "role",
+      "button",
+      "click",
+      "--name",
+      "Reset for all reviewers",
+      "--exact"
+    ],
+    "exit": 0,
+    "output": "\u2713 Done\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "wait",
+      "--text",
+      "Meet the recovery workspace"
+    ],
+    "exit": 0,
+    "output": "Meet the recovery workspace\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "eval",
+      "(async()=>{const s=(await(await fetch('/api/state')).json()).state;if(s.recoveryCases.length||s.tasks.length||s.inventory[1].onHand!==2||!s.audit.some(a=>a.action==='execute-recovery'))throw Error('Hosted reset failed');return 'PASS: shared reset restores samples and retains audit history';})()"
+    ],
+    "exit": 0,
+    "output": "\"PASS: shared reset restores samples and retains audit history\"\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "screenshot",
+      "/home/mike/Projects/Teoh-Product-bf25/Logistics/docs/deployed-demo.png"
+    ],
+    "exit": 0,
+    "output": "\u2713 Screenshot saved to /home/mike/Projects/Teoh-Product-bf25/Logistics/docs/deployed-demo.png\n",
+    "error": ""
+  },
+  {
+    "command": [
+      "errors"
+    ],
+    "exit": 0,
+    "output": "",
+    "error": ""
+  }
+]

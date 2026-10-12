@@ -13,7 +13,7 @@
     "lint": "eslint . --ignore-pattern dist --ignore-pattern .next",
     "db:generate": "drizzle-kit generate",
     "test": "node --test --test-concurrency=1 tests/*.test.mjs",
-    "test:unit": "node --test tests/unit.test.mjs tests/client.test.mjs tests/demo.test.mjs tests/recovery.test.mjs",
+    "test:unit": "node --test tests/unit.test.mjs tests/client.test.mjs tests/demo.test.mjs tests/recovery.test.mjs tests/dashboard.test.mjs",
     "test:integration": "node --test --test-concurrency=1 tests/integration.test.mjs",
     "typecheck": "tsc --noEmit"
   },

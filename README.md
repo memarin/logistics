@@ -46,12 +46,6 @@ Inspect Agent actions and its audit link. Reset restores sample data for every r
 
 `domain/rules.mjs` contains simulated decisions and protected workflow transitions. `domain/api.mjs` saves mutations and audit entries atomically through D1 version checks. `domain/client-state.mjs` prevents stale browser responses and lets the guide use shared results. `app/page.tsx` contains the guided interface.
 
-## Sites deployment
-
-The existing Site ID and D1 binding are in `.openai/hosting.json`. Sites applies the schema migration during publication. The Sites source helper requires a source commit and push before publication. The source is ready for publication through Sites.
-
-The app source is maintained in [memarin/logistics](https://github.com/memarin/logistics). The repository is private. Repository visibility remains unchanged.
-
 ## Scope limits
 
 All records and roles are synthetic. Role controls demonstrate intended authorization and do not represent real user authentication. The rules respond to current data and do not call an AI model. Shared JSON state suits this small PoC. Production use needs real identity, a normalized schema, and operational controls.
